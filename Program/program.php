@@ -160,21 +160,21 @@ Fibonacci Series 0 1 1 2 3 5 8 13 21 34 55 89
 Print The Matrix:-
 ==================
 <?php
-	for($i=0;$i<3;$i++)
-	{ 
-	  	for($j=0;$j<3;$j++)
-	  	{
-	    if($i==$j)
-		    {
-			    echo 1;
-			}
-			else
-			{
-			    echo 0;
-		    }     
-	    } 
-	    echo '<br/>';
-	}
+for($i=0;$i<3;$i++)
+{ 
+	for($j=0;$j<3;$j++)
+	{
+		if($i==$j)
+		{
+			echo 1;
+		}
+		else
+		{
+			echo 0;
+		}     
+	} 
+	echo '<br/>';
+}
 ?>
 Output:- 
 1 0 0 
