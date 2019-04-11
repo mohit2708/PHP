@@ -180,3 +180,38 @@ Output:-
 1 0 0 
 0 1 0 
 0 0 1
+
+=============================
+Find The Number Even Or Odd:-
+=============================
+<?php
+	function eof($n)				
+	{
+	if($n%2==0)
+		{
+			echo 'even number'; 
+		}
+		else 
+		{
+	 		echo 'odd number';	
+		}
+	}
+	$a = '5';
+	eof ($a);
+?> 
+Output:-  odd number
+============================
+Highest Value in the array:-
+============================
+<?php
+	$a = array(10, 20, 52, 105, 56, 20, 89, 96);		//highest value in aaray
+	$b = 0;
+	foreach ($a as $key=>$val) 
+	{
+	    if ($b < $val) {
+	        $b = $val;
+	    }
+	}
+	echo $b;
+?>
+Output:- 105
