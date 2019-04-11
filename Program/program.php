@@ -87,4 +87,72 @@ else
 echo 'This is a Prime Number..'."\n";  
 ?>
 Output :-  This is a Prime Number..
-
+========================
+Print the prime number:-
+========================
+<?php 
+function primeno($n){
+  for($i=1;$i<=$n;$i++){  //numbers to be checked as prime
+          $counter = 0; 
+          for($j=1;$j<=$i;$j++){ //all divisible factors
+                if($i % $j==0){
+                      $counter++;
+                }
+          }        
+        if($counter==2){
+               echo $i." is Prime <br/>";
+        }
+    }
+} 
+primeno(100); 
+?>
+========================
+Fibonacci Number print:-
+========================
+<?php
+	$count = 0 ;
+	$f1 = 0;
+	$f2 = 1;
+	echo $f1." , ";
+	echo $f2." , ";
+	while ($count < 20 )
+	{      
+		$f3 = $f2 + $f1 ;
+		echo $f3." , ";
+		$f1 = $f2 ;
+		$f2 = $f3 ;
+		$count = $count + 1;
+	}
+?>
+Output :- 
+0 , 1 , 1 , 2 , 3 , 5 , 8 , 13 , 21 , 34 , 55 , 89 , 144 , 233 , 377
+-----------------------------------
+<?php
+define('NUM',5);
+$a = 0;
+$b = 1;
+echo "$a $b "; // 0 1
+for($i=1; $i<= NUM-2; $a=$b, $b=$c, $i++ )
+ {
+  echo $c = $a+$b;
+  echo " ";
+             }
+?>
+Output :- 
+0, 1, 1, 2
+------------------------------
+<?php
+	$first = 0;
+	$second = 1;
+	echo "Fibonacci Series \n";
+	echo $first.' '.$second.' ';
+	for($i = 2; $i < 12; $i++)
+	{
+		$third = $first + $second;
+		echo $third.' ';
+		$first = $second;
+		$second = $third;
+	}
+?>
+Output :- 
+Fibonacci Series 0 1 1 2 3 5 8 13 21 34 55 89
