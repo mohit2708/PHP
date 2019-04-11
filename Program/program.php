@@ -40,4 +40,51 @@ Reverse String:-
 		echo $s[$i];
 	}
 ?>
+==================
+Reversing number:-
+==================
+<?php
+$num = 2039;
+$revnum = 0;
+while ($num != 0)
+{
+$revnum = $revnum * 10 + $num % 10;
+$num = (int)($num / 10); 
+} 
+echo "Reverse number: $revnum";
+?>
+-------------------
+<?php  
+$num = 23456;  
+$revnum = 0;  
+while ($num > 1)  
+{  
+$rem = $num % 10;  
+$revnum = ($revnum * 10) + $rem;  
+$num = ($num / 10);   
+}  
+echo "Reverse number of 23456 is: $revnum";  
+?>
+===============================
+Check the Prime Number or not:-
+===============================
+<?php  
+function IsPrime($n)
+{
+ for($x=2; $x<$n; $x++)  
+   {  
+      if($n %$x ==0)  
+          {  
+           return 0;  
+          }  
+    }  
+  return 1;  
+   }  
+$a = IsPrime(7);  
+if ($a==0)  
+echo 'This is not a Prime Number.....'."\n";  
+else  
+echo 'This is a Prime Number..'."\n";  
+?>
+Output :-  This is a Prime Number..
 
