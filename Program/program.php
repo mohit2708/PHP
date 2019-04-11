@@ -29,4 +29,15 @@ $a = $a - $b;  // 11 - 5 = 6
 
 echo $a . ',' . $b;
 ?>
+================
+Reverse String:-
+================
+<?php
+	$s = 'mohit saxena';		
+	$l = strlen($s);
+	for($i=$l-1; $i>=0; $i--)
+	{
+		echo $s[$i];
+	}
+?>
 
