@@ -1,4 +1,6 @@
-Swap Number:- 
+=============
+Swap Number:-
+=============
 <?php
   function abc($a,$b)		
   {
@@ -14,8 +16,9 @@ Swap Number:-
   $n2 = 2;
   abc ($n1,$n2);
 ?>
-
-Swap Number Without Third Variable:- 
+====================================
+Swap Number Without Third Variable:-
+====================================
 <?php
 $a = 5;
 $b = 9;
