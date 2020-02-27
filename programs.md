@@ -12,6 +12,8 @@
 |6  | [Print the prime number?](#Print-the-prime-number)|
 |7  | [Fibonacci Number print?](#Fibonacci-Number-print)|
 |8  | [Print The Matrix?](#Print-The-Matrix)|
+|9  | [Find The Number Even Or Odd?](#Find-The-Number-Even-Or-Odd)|
+|10 | [Highest Value in the array?](#Highest-Value-in-the-array)|
 
 
 ### Swap Number?
@@ -199,9 +201,8 @@ Fibonacci Series 0 1 1 2 3 5 8 13 21 34 55 89
 ```
 **[⬆ Back to Top](#table-of-contents)**
 
-==================
-Print The Matrix:-
-==================
+### Print The Matrix?
+```php
 <?php
 for($i=0;$i<3;$i++)
 { 
@@ -223,10 +224,11 @@ Output:-
 1 0 0 
 0 1 0 
 0 0 1
+```
+**[⬆ Back to Top](#table-of-contents)**
 
-=============================
-Find The Number Even Or Odd:-
-=============================
+### Find The Number Even Or Odd?
+```php 
 <?php
 	function eof($n)				
 	{
@@ -243,6 +245,10 @@ Find The Number Even Or Odd:-
 	eof ($a);
 ?> 
 Output:-  odd number
+```
+**[⬆ Back to Top](#table-of-contents)**
+
+```
 ============================
 Highest Value in the array:-
 ============================
