@@ -8,10 +8,10 @@
 |2  | [Swap Number Without Third Variable?](#Swap-Number-Without-Third-Variable)|
 |3  | [Reverse String?](#Reverse-String)|
 |4  | [Revers number?](#Revers-number)|
-|3  | [Reverse String?](#Reverse-String)|
-|3  | [Reverse String?](#Reverse-String)|
-|3  | [Reverse String?](#Reverse-String)|
-|3  | [Reverse String?](#Reverse-String)|
+|3  | [Check the Prime Number or not?](#Check-the-Prime-Number-or-not)|
+|3  | [Print the prime number?](#Print-the-prime-number)|
+|3  | [Fibonacci Number print?](#Fibonacci-Number-print)|
+|3  | [Print The Matrix?](#Print-The-Matrix)|
 
 
 ### Swap Number?
@@ -85,9 +85,8 @@ $num = ($num / 10);
 echo "Reverse number of 23456 is: $revnum";  
 ?>
 ```
-===============================
-Check the Prime Number or not:-
-===============================
+### Check the Prime Number or not
+```php
 <?php  
 function IsPrime($n)
 {
@@ -107,6 +106,7 @@ else
 echo 'This is a Prime Number..'."\n";  
 ?>
 Output :-  This is a Prime Number..
+```
 ========================
 Print the prime number:-
 ========================
