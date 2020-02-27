@@ -39,7 +39,7 @@ $a = $a - $b;  // 11 - 5 = 6
 echo $a . ',' . $b;
 ?>
 ```
-### Reverse String:-
+### Reverse String
 ```
 <?php
 	$s = 'mohit saxena';		
