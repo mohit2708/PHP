@@ -66,7 +66,7 @@ echo $a . ',' . $b;
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Reversing number?
+### Revers number?
 ###### Type 1st:-
 ```php
 <?php
