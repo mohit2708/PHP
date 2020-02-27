@@ -32,6 +32,9 @@
   abc ($n1,$n2);
 ?>
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
 ### Swap Number Without Third Variable?
 ```php
 <?php
@@ -45,7 +48,10 @@ $a = $a - $b;  // 11 - 5 = 6
 echo $a . ',' . $b;
 ?>
 ```
-### Reverse String
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Reverse String?
 
 ```php
 <?php
@@ -57,8 +63,11 @@ echo $a . ',' . $b;
 	}
 ?>
 ```
-### Reversing number
-###### Type 1st
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Reversing number?
+###### Type 1st:-
 ```php
 <?php
 $num = 2039;
@@ -71,7 +80,7 @@ $num = (int)($num / 10);
 echo "Reverse number: $revnum";
 ?>
 ```
-###### Type 2nd
+###### Type 2nd:-
 ```php
 <?php  
 $num = 23456;  
@@ -85,7 +94,10 @@ $num = ($num / 10);
 echo "Reverse number of 23456 is: $revnum";  
 ?>
 ```
-### Check the Prime Number or not
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Check the Prime Number or not?
 ```php
 <?php  
 function IsPrime($n)
@@ -107,7 +119,9 @@ echo 'This is a Prime Number..'."\n";
 ?>
 Output :-  This is a Prime Number..
 ```
-### Print the prime number
+**[⬆ Back to Top](#table-of-contents)**
+
+### Print the prime number?
 ```php
 <?php 
 function primeno($n){
@@ -126,8 +140,10 @@ function primeno($n){
 primeno(100); 
 ?>
 ```
-### Fibonacci Number print
-###### Type 1st
+**[⬆ Back to Top](#table-of-contents)**
+
+### Fibonacci Number print?
+###### Type 1st:-
 ```php
 <?php
 	$count = 0 ;
@@ -147,7 +163,7 @@ primeno(100);
 Output :- 
 0 , 1 , 1 , 2 , 3 , 5 , 8 , 13 , 21 , 34 , 55 , 89 , 144 , 233 , 377
 ```
-###### Type 2nd
+###### Type 2nd:-
 ```php
 <?php
 define('NUM',5);
@@ -163,7 +179,7 @@ for($i=1; $i<= NUM-2; $a=$b, $b=$c, $i++ )
 Output :- 
 0, 1, 1, 2
 ```
-###### Type 3rd
+###### Type 3rd:-
 ```php
 <?php
 	$first = 0;
@@ -181,6 +197,8 @@ Output :-
 Output :- 
 Fibonacci Series 0 1 1 2 3 5 8 13 21 34 55 89
 ```
+**[⬆ Back to Top](#table-of-contents)**
+
 ==================
 Print The Matrix:-
 ==================
