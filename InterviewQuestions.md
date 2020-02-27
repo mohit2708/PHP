@@ -4,7 +4,7 @@
 
 | No. | Questions |
 |---- | ---------
-|1  | [What is the PHP?](#what-is-php) |
+|1  | [What is the PHP?](#what-is-the-php) |
 |2  | [What is prototype chain?](#what-is-prototype-chain)|
 |3  | [What is the difference between Call, Apply and Bind?](#what-is-the-difference-between-call-apply-and-bind)|
 
