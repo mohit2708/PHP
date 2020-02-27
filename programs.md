@@ -1,10 +1,13 @@
 # PHP programs
 
+### Table of Contents
 
+| No. | Questions |
+|---- | ---------
+|1  | [Swap Number?](#Swap-Number) |
+|2  | [What is prototype chain?](#what-is-prototype-chain)|
 
-=============
-Swap Number:-
-=============
+### Swap Number?
 <?php
   function abc($a,$b)		
   {
