@@ -46,6 +46,7 @@ echo $a . ',' . $b;
 ?>
 ```
 ### Reverse String
+
 ```php
 <?php
 	$s = 'mohit saxena';		
@@ -57,6 +58,7 @@ echo $a . ',' . $b;
 ?>
 ```
 ### Reversing number
+###### Type 1st
 ```php
 <?php
 $num = 2039;
@@ -69,7 +71,8 @@ $num = (int)($num / 10);
 echo "Reverse number: $revnum";
 ?>
 ```
--------------------
+###### Type 2nd
+```php
 <?php  
 $num = 23456;  
 $revnum = 0;  
@@ -81,6 +84,7 @@ $num = ($num / 10);
 }  
 echo "Reverse number of 23456 is: $revnum";  
 ?>
+```
 ===============================
 Check the Prime Number or not:-
 ===============================
