@@ -6,6 +6,7 @@
 |---- | ---------
 |1  | [Swap Number?](#Swap-Number) |
 |2  | [Swap Number Without Third Variable?](#Swap-Number-Without-Third-Variable)|
+|3  | [Reverse String?](#Reverse-String)|
 
 ### Swap Number?
 ```
@@ -38,9 +39,8 @@ $a = $a - $b;  // 11 - 5 = 6
 echo $a . ',' . $b;
 ?>
 ```
-================
-Reverse String:-
-================
+### Reverse String:-
+```
 <?php
 	$s = 'mohit saxena';		
 	$l = strlen($s);
@@ -49,6 +49,7 @@ Reverse String:-
 		echo $s[$i];
 	}
 ?>
+```
 ==================
 Reversing number:-
 ==================
