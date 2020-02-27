@@ -7,6 +7,12 @@
 |1  | [Swap Number?](#Swap-Number) |
 |2  | [Swap Number Without Third Variable?](#Swap-Number-Without-Third-Variable)|
 |3  | [Reverse String?](#Reverse-String)|
+|4  | [Revers number?](#Revers-number)|
+|3  | [Reverse String?](#Reverse-String)|
+|3  | [Reverse String?](#Reverse-String)|
+|3  | [Reverse String?](#Reverse-String)|
+|3  | [Reverse String?](#Reverse-String)|
+
 
 ### Swap Number?
 ```php
@@ -50,9 +56,8 @@ echo $a . ',' . $b;
 	}
 ?>
 ```
-==================
-Reversing number:-
-==================
+### Reversing number
+```php
 <?php
 $num = 2039;
 $revnum = 0;
@@ -63,6 +68,7 @@ $num = (int)($num / 10);
 } 
 echo "Reverse number: $revnum";
 ?>
+```
 -------------------
 <?php  
 $num = 23456;  
