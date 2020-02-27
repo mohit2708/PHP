@@ -71,7 +71,7 @@ $num = (int)($num / 10);
 echo "Reverse number: $revnum";
 ?>
 ```
-########### Type 2nd
+###### Type 2nd
 ```php
 <?php  
 $num = 23456;  
