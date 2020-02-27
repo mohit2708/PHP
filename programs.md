@@ -126,9 +126,9 @@ function primeno($n){
 primeno(100); 
 ?>
 ```
-========================
-Fibonacci Number print:-
-========================
+### Fibonacci Number print
+###### Type 1st
+```php
 <?php
 	$count = 0 ;
 	$f1 = 0;
@@ -146,7 +146,9 @@ Fibonacci Number print:-
 ?>
 Output :- 
 0 , 1 , 1 , 2 , 3 , 5 , 8 , 13 , 21 , 34 , 55 , 89 , 144 , 233 , 377
------------------------------------
+```
+###### Type 2nd
+```php
 <?php
 define('NUM',5);
 $a = 0;
@@ -160,7 +162,9 @@ for($i=1; $i<= NUM-2; $a=$b, $b=$c, $i++ )
 ?>
 Output :- 
 0, 1, 1, 2
-------------------------------
+```
+###### Type 3rd
+```php
 <?php
 	$first = 0;
 	$second = 1;
@@ -176,6 +180,7 @@ Output :-
 ?>
 Output :- 
 Fibonacci Series 0 1 1 2 3 5 8 13 21 34 55 89
+```
 ==================
 Print The Matrix:-
 ==================
