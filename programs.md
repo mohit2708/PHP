@@ -5,7 +5,7 @@
 | No. | Questions |
 |---- | ---------
 |1  | [Swap Number?](#Swap-Number) |
-|2  | [What is prototype chain?](#what-is-prototype-chain)|
+|2  | [Swap Number Without Third Variable?](#Swap-Number-Without-Third-Variable)|
 
 ### Swap Number?
 ```
@@ -25,9 +25,8 @@
   abc ($n1,$n2);
 ?>
 ```
-====================================
-Swap Number Without Third Variable:-
-====================================
+### Swap Number Without Third Variable?
+```
 <?php
 $a = 5;
 $b = 9;
@@ -38,6 +37,7 @@ $a = $a - $b;  // 11 - 5 = 6
 
 echo $a . ',' . $b;
 ?>
+```
 ================
 Reverse String:-
 ================
