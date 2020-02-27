@@ -8,6 +8,7 @@
 |2  | [What is prototype chain?](#what-is-prototype-chain)|
 
 ### Swap Number?
+```
 <?php
   function abc($a,$b)		
   {
@@ -23,6 +24,7 @@
   $n2 = 2;
   abc ($n1,$n2);
 ?>
+```
 ====================================
 Swap Number Without Third Variable:-
 ====================================
