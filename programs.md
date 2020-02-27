@@ -3,7 +3,7 @@
 ### Table of Contents
 
 | No. | Questions |
-|---- | ---------
+|:----:| ---------
 |1  | [Swap Number?](#Swap-Number) |
 |2  | [Swap Number Without Third Variable?](#Swap-Number-Without-Third-Variable)|
 |3  | [Reverse String?](#Reverse-String)|
