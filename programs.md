@@ -9,7 +9,7 @@
 |3  | [Reverse String?](#Reverse-String)|
 
 ### Swap Number?
-```
+```php
 <?php
   function abc($a,$b)		
   {
@@ -27,7 +27,7 @@
 ?>
 ```
 ### Swap Number Without Third Variable?
-```
+```php
 <?php
 $a = 5;
 $b = 9;
@@ -40,7 +40,7 @@ echo $a . ',' . $b;
 ?>
 ```
 ### Reverse String
-```
+```php
 <?php
 	$s = 'mohit saxena';		
 	$l = strlen($s);
