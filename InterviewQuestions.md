@@ -16,8 +16,8 @@
 |10 | [What is Variable?](#Ques-What-is-Variable)|
 |11 | [Difference between Constant And Variable?](#Ques-Difference-between-Constant-And-Variable)|
 |12 | [Difference between Echo And Print?](#Ques-Difference-between-Echo-And-Print)|
-|13 | [Php Global Variables (Superglobals)?](#Ques-Difference-between-Echo-And-Print)|
-|14 | [ Difference between Get and Post?](#)|
+|13 | [Php Global Variables (Superglobals)?](#Ques-Php Global Variables)|
+|14 | [Difference between Get and Post?](#Difference-between-Get-and-Post)|
 |15 | [Difference between Unlink and Unset?](#)|
 |16 | [Difference between Require and Include?](#)|
 |17 | [What is the difference between Single Quoted & Double Quoted?](#)|
@@ -121,11 +121,27 @@ __Ans.__
 |echo can pass multiple string separated as ( , ) | using print can doesn’t pass multiple argument |
 
 **[⬆ Back to Top](#table-of-contents)**
-###
-__Ans.__ 
+### Ques. Php Global Variables (Superglobals)?
+__Ans.__ predefined array varible  by php
+* $GLOBALS
+* $_SERVER
+* $_REQUEST
+* $_POST
+* $_GET
+* $_FILES
+* $_ENV
+* $_COOKIE
+* $_SEESION
+
 **[⬆ Back to Top](#table-of-contents)**
-###
-__Ans.__ 
+### Ques. Difference between Get and Post?
+__Ans.__
+|Get|Post|
+|:----:|:---------:|
+|Get method  ki value url mai query string ka rup show hoti hai|post mai value hidden variable ka rup mai jati hai.|
+|The get method is restricted to send upto 1024 characters only.|The post method can be used to send ASCII as well as binary data.|
+|Get method ki value bookmark kar sakte hai|post method ki value bookmark nahi kar sakte hai.|
+
 **[⬆ Back to Top](#table-of-contents)**
 ###
 
@@ -204,17 +220,7 @@ __Ans.__
 
 
 
-Ques. Php Global Variables (Superglobals) ?
-Ans. predefined array varible  by php
-$GLOBALS
-$_SERVER
-$_REQUEST
-$_POST
-$_GET
-$_FILES
-$_ENV
-$_COOKIE
-$_SEESION
+
  
 Ques. Difference between Require and Include ?
 Ans. 
