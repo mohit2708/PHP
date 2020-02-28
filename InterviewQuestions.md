@@ -16,7 +16,10 @@
 |10 | [What is Variable?](#Ques-What-is-Variable)|
 |11 | [Difference between Constant And Variable?](#Ques-Difference-between-Constant-And-Variable)|
 |12 | [Difference between Echo And Print?](#Ques-Difference-between-Echo-And-Print)|
-
+|13 | [Php Global Variables (Superglobals)?](#Ques-Difference-between-Echo-And-Print)|
+|14 | [Difference between Require and Include?](#)|
+|15 | [Difference between Unlink and Unset?](#)|
+|16 | [ Difference between Get and Post?](#)|
 
 ### Ques. What is the PHP?
 
@@ -68,8 +71,8 @@ Output:- Welcome to mohit
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. Difference between Echo And Print?
 __Ans.__ 
-|: Echo. :|: Print :|
-|:----:| ---------
+|Echo. |: Print |
+|:----:| ---------|
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
@@ -178,17 +181,6 @@ PHP
 Perl
 
 
-Ques. What is Constant ?
-Ans.
-A constant is a name or an identifier for a simple value. A Constant value cannot be changed during the execution of the Script.
-A valid constant name starts with a letter or underscore (no $ sign before the constant name).
-Syntax:- define(name, value, case-insensitive)
-EX:-
-<?php
-define("GREETING", "Welcome to mohit");
-echo GREETING;
-?>
-Output:- Welcome to mohit
 
 Ques. What is Variable ?
 Ans. 
