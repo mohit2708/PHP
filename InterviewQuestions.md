@@ -13,9 +13,8 @@
 |7  | [Full Form of WAMP?](#Full-Form-of-WAMP)|
 |8  | [Full Form of XAMPP?](#Full-Form-of-XAMPP)|
 |9  | [What is Constant?](#What-is-Constant)|
-|10  | [What is Variable?](#What-is-Variable)|
-|11 | [What is Variable?](#What-is-Variable)|
-|12 | [Difference between Constant And Variable?](#Difference-between-Constant-And-Variable)|
+|10 | [What is Variable?](#What-is-Variable)|
+|11 | [Difference between Constant And Variable?](#Difference-between-Constant-And-Variable)|
 |12 | [Difference between Echo And Print?](#Difference-between-Echo-And-Print)|
 
 
@@ -53,7 +52,17 @@ Linux Apache MySql and Php.
 ###
 
 **[⬆ Back to Top](#table-of-contents)**
-###
+### What is Constant ?
+..* A constant is a name or an identifier for a simple value. A Constant value cannot be changed during the execution of the Script.
+..* A valid constant name starts with a letter or underscore (no $ sign before the constant name).
+__Syntex__ define(name, value, case-insensitive)
+```php
+<?php
+define("GREETING", "Welcome to mohit");
+echo GREETING;
+?>
+Output:- Welcome to mohit
+```
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
