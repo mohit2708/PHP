@@ -45,9 +45,6 @@ __Ans.__ Wordpress, Joomla, Magento, Drupal, etc
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Ques. Difference between Php4 and php5 ?
-**[⬆ Back to Top](#table-of-contents)**
-
 ### Ques. Full Form of LAMP?
 __Ans.__ Linux Apache MySql and Php.
 
@@ -64,7 +61,24 @@ Apache(HTTP Server)
 Mysql(Database)
 PHP
 Perl
+
 **[⬆ Back to Top](#table-of-contents)**
+### Ques. Difference between Php4 and php5?
+__Ans.__
+```
+Php5
+Php4
+Php5 magic methods are used such as get, set etc 
+But not used in Php4
+All objects are passed by reference
+Everything was passed by value 
+Php5 abstract classes and interfaces are used
+Not used in php4
+Php5 has 3 levels of visibility: public, Private, and Protected
+Not
+```
+**[⬆ Back to Top](#table-of-contents)**
+
 ### Ques. What is Constant?
 __Ans.__ 
 * A constant is a name or an identifier for a simple value. A Constant value cannot be changed during the execution of the Script.
@@ -170,18 +184,7 @@ __Ans.__
 
 
 
-Ques. Difference between Php4 and php5 ?
-Ans.
-Php5
-Php4
-Php5 magic methods are used such as get, set etc 
-But not used in Php4
-All objects are passed by reference
-Everything was passed by value 
-Php5 abstract classes and interfaces are used
-Not used in php4
-Php5 has 3 levels of visibility: public, Private, and Protected
-Not
+
 
 
 
