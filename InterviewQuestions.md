@@ -20,9 +20,11 @@
 |14 | [Difference between Get and Post?](#Ques-Difference-between-Get-and-Post)|
 |15 | [Difference between Unlink and Unset?](#Ques-Difference-between-Unlink-and-Unset)|
 |16 | [Difference between Require and Include?](Ques-Difference-between-Require-and-Include)|
-|17 | [What is the difference between Single Quoted & Double Quoted?](#)|
+|17 | [What is the difference between Single Quoted & Double Quoted?](#Ques-What-is-the-difference-between-Single-Quoted-&-Double-Quoted)|
 |18 | [Types of Error in Php?](#)|
 |19 | [What is the difference between Single == & ===?](#)|
+|20 | [What is the difference between $message and $$message?](#)|
+|21 | []
 
 ### Ques. What is the PHP?
 
@@ -158,7 +160,15 @@ __Ans.__
 	__Ex:-__ unset($var);
 
 **[⬆ Back to Top](#table-of-contents)**
-###
+### Ques. What is the difference between Single Quoted & Double Quoted?
+__Ans.__
+* Single quoted mai value parse nahi hoti.
+* Double quoted mai value parse ho jati hai.
+```php
+$s = "dollars";
+echo 'This costs a lot of $s.'; // This costs a lot of $s.
+echo "This costs a lot of $s."; // This costs a lot of dollars.
+```
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
@@ -229,12 +239,7 @@ __Ans.__
  
 
 
-Ques. What is the difference between Single Quoted & Double Quoted ?
-Ans. Single quoted mai value parse nahi hoti.
-·        Double quoted mai value parse ho jati hai.
-$s = "dollars";
-echo 'This costs a lot of $s.'; // This costs a lot of $s.
-echo "This costs a lot of $s."; // This costs a lot of dollars.
+
 Ques. Types of Error in Php ?
 Ans. 
 Notice:- Undefined varible,  does not stop the execution of script..
