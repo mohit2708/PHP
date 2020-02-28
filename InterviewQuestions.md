@@ -7,7 +7,7 @@
 |1  | [What is the PHP?](#What-is-the-PHP) |
 |2  | [Which is the latest version of PHP?](#Which-is-the-latest-version-of-PHP)|
 |3  | [What Type of Framework in Php?](#What-Type-of-Framework-in-Php)|
-|4  | [What Type of CMS() in Php?](#What-Type-of-CMS-in-Php)|
+|4  | [What Type of CMS(Content Management System) in Php?](#What-Type-of-CMS-in-Php)|
 
 
 ### What is the PHP?
@@ -26,7 +26,7 @@ Cakephp, Laravel, Codeigniter, Yii 2, Zend Framework, Phalcon, Slim, FuelPhp, Ph
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### What Type of CMS in Php?
+### What Type of CMS(Content Management System) in Php?
 Wordpress, Joomla, Magento, Drupal
 
 **[⬆ Back to Top](#table-of-contents)**
