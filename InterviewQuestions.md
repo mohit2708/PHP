@@ -21,8 +21,8 @@
 |15 | [Difference between Unlink and Unset?](#Ques-Difference-between-Unlink-and-Unset)|
 |16 | [Difference between Require and Include?](Ques-Difference-between-Require-and-Include)|
 |17 | [What is the difference between Single Quoted & Double Quoted?](#Ques-What-is-the-difference-between-Single-Quoted-&-Double-Quoted)|
-|18 | [Types of Error in Php?](#)|
-|19 | [What is the difference between Single == & ===?](#)|
+|18 | [Types of Error in Php?](#Ques-Types-of-Error-in-Php)|
+|19 | [What is the difference between Single == & ===?](#Ques-What-is-the-difference-between-Single-==-&-===)|
 |20 | [What is the difference between $message and $$message?](#)|
 |21 | []
 
@@ -171,10 +171,18 @@ echo "This costs a lot of $s."; // This costs a lot of dollars.
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-###
+### Ques. Types of Error in Php?
+__Ans.__
+__Notice:-__ Undefined varible,  does not stop the execution of script..
+__Fettel:-__ Undefined  function, this kind of error stop the execution of script
+__Warning:-__ file error(missing  included are required file)
+__Parse:-__ syntex Error, this kind of error stop the execution of script
 
 **[⬆ Back to Top](#table-of-contents)**
-###
+### Ques. What is the difference between Single == & ===?
+__Ans.__ 
+==:-  Check the value.
+===:- Check the value and datatype.
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
@@ -236,21 +244,8 @@ echo "This costs a lot of $s."; // This costs a lot of dollars.
 
  
  
- 
 
 
-
-Ques. Types of Error in Php ?
-Ans. 
-Notice:- Undefined varible,  does not stop the execution of script..
-Fettel:- Undefined  function, this kind of error stop the execution of script
-Warning:- file error(missing  included are required file)
-Parse:- syntex Error, this kind of error stop the execution of script
-
-Ques. What is the difference between Single == & === ?
-Ans. 
-==    Check the value.
-=== Check the value and datatype.
 
 Ques. What is the difference between $message and $$message ?
 Ans. $message stores variable data while $$message is used to store variable of variable.
