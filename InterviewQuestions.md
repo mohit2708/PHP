@@ -85,7 +85,7 @@ Output:- Welcome to mohit
 __Ans.__ 
 |Echo | Print |
 |:----:| ---------|
-|Echo is a statement i.e. used to display the output. It can be used with parentheses echo or without parentheses echo.||Print is also a statement i.e. used to display the output. It can be used with parentheses print ( ) or without parentheses print.|
+|Echo is a statement i.e. used to display the output. It can be used with parentheses echo or without parentheses echo.|Print is also a statement i.e. used to display the output. It can be used with parentheses print ( ) or without parentheses print.|
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
