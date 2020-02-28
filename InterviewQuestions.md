@@ -82,9 +82,8 @@ Output:- Welcome to mohit
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. Difference between Echo And Print?
-__Ans.__ 
-|Echo | Print |
-|:----:| ---------|
+__Ans.__ |Echo | Print |
+|:----:|:---------:|
 |Echo is a statement i.e. used to display the output. It can be used with parentheses echo or without parentheses echo.|Print is also a statement i.e. used to display the output. It can be used with parentheses print ( ) or without parentheses print.|
 |Echo does not return any value | Print always return 1 |
 |Echo is faster than print | Print is slower than echo |
