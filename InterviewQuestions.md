@@ -52,16 +52,17 @@ Linux Apache MySql and Php.
 ###
 
 **[⬆ Back to Top](#table-of-contents)**
-### What is Constant ?
-..* A constant is a name or an identifier for a simple value. A Constant value cannot be changed during the execution of the Script.
-..* A valid constant name starts with a letter or underscore (no $ sign before the constant name).
-__Syntex__ define(name, value, case-insensitive)
-```php
+### What is Constant?
+* A constant is a name or an identifier for a simple value. A Constant value cannot be changed during the execution of the Script.
+* A valid constant name starts with a letter or underscore (no $ sign before the constant name).
+
+__Syntex__  define(name, value, case-insensitive)
+```php 
 <?php
-define("GREETING", "Welcome to mohit");
-echo GREETING;
+ define("GREETING", "Welcome to mohit");
+ echo GREETING;
 ?>
-Output:- Welcome to mohit
+Output:- Welcome to mohit 
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
