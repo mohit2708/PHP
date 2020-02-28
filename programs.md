@@ -57,12 +57,12 @@ echo $a . ',' . $b;
 
 ```php
 <?php
-	$s = 'mohit saxena';		
-	$l = strlen($s);
-	for($i=$l-1; $i>=0; $i--)
-	{
-		echo $s[$i];
-	}
+ $s = 'mohit saxena';		
+ $l = strlen($s);
+ for($i=$l-1; $i>=0; $i--)
+  {
+   echo $s[$i];
+  }
 ?>
 ```
 
@@ -72,28 +72,28 @@ echo $a . ',' . $b;
 ###### Type 1st:-
 ```php
 <?php
-	$num = 2039;
-	$revnum = 0;
-		while ($num != 0)
-		{
-			$revnum = $revnum * 10 + $num % 10;
-			$num = (int)($num / 10); 
-		} 
-	echo "Reverse number: $revnum";
+ $num = 2039;
+ $revnum = 0;
+ while ($num != 0)
+ {
+  $revnum = $revnum * 10 + $num % 10;
+  $num = (int)($num / 10); 
+ } 
+ echo "Reverse number: $revnum";
 ?>
 ```
 ###### Type 2nd:-
 ```php
 <?php  
-	$num = 23456;  
-	$revnum = 0;  
-		while ($num > 1)  
-		{  
-			$rem = $num % 10;  
-			$revnum = ($revnum * 10) + $rem;  
-			$num = ($num / 10);   
-		}  
-	echo "Reverse number of 23456 is: $revnum";  
+ $num = 23456;  
+ $revnum = 0;  
+ while ($num > 1)  
+ {  
+  $rem = $num % 10;  
+  $revnum = ($revnum * 10) + $rem;  
+  $num = ($num / 10);   
+ }  
+ echo "Reverse number of 23456 is: $revnum";  
 ?>
 ```
 
@@ -102,22 +102,21 @@ echo $a . ',' . $b;
 ### Check the Prime Number or not?
 ```php
 <?php  
-	function IsPrime($n)
-	{
-		for($x=2; $x<$n; $x++)  
-		{  
-			if($n %$x ==0)  
-			{  
-				return 0;  
-			}  
-		}  
-		return 1;  
-	}  
-	$a = IsPrime(7);  
-	if ($a==0)  
-	echo 'This is not a Prime Number.....'."\n";  
-	else  
-	echo 'This is a Prime Number..'."\n";  
+ function IsPrime($n)
+ {
+ for($x=2; $x<$n; $x++)  
+  {  
+   if($n %$x ==0)  
+  {  
+  return 0;  
+  }  
+ return 1;  
+ }  
+ $a = IsPrime(7);  
+ if ($a==0)  
+ echo 'This is not a Prime Number.....'."\n";  
+ else  
+ echo 'This is a Prime Number..'."\n";  
 ?>
 Output :-  This is a Prime Number..
 ```
@@ -126,21 +125,21 @@ Output :-  This is a Prime Number..
 ### Print the prime number?
 ```php
 <?php 
-function primeno($n)
-{
-	for($i=1;$i<=$n;$i++){  //numbers to be checked as prime
-		$counter = 0; 
-		for($j=1;$j<=$i;$j++){ //all divisible factors
-			if($i % $j==0)
-			{
-				$counter++;
-			}
-		}        
-		if($counter==2){
-		echo $i." is Prime <br/>";
-		}
-	}
-} 
+ function primeno($n)
+ {
+  for($i=1;$i<=$n;$i++){  //numbers to be checked as prime
+  $counter = 0; 
+  for($j=1;$j<=$i;$j++){ //all divisible factors
+  if($i % $j==0)
+  {
+  $counter++;
+  }
+ }        
+if($counter==2){
+echo $i." is Prime <br/>";
+ }
+ }
+ } 
 primeno(100); 
 ?>
 ```
