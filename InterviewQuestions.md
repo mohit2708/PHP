@@ -10,23 +10,34 @@
 |4  | [What Type of CMS(Content Management System) in Php?](#What-Type-of-CMS-Content-Management-System-in-Php)|
 |5  | [Difference between Php4 and php5?](#Difference-between-Php4-and-php5)|
 |6  | [Full Form of LAMP?](#Full-Form-of-LAMP)|
+|7  | [Full Form of WAMP?](#Full-Form-of-WAMP)|
+|8  | [Full Form of XAMPP?](#Full-Form-of-XAMPP)|
+|9  | [What is Constant?](#What-is-Constant)|
+|10  | [What is Variable?](#What-is-Variable)|
+|11 | [What is Variable?](#What-is-Variable)|
+|12 | [Difference between Constant And Variable?](#Difference-between-Constant-And-Variable)|
+|12 | [Difference between Echo And Print?](#Difference-between-Echo-And-Print)|
 
 
 ### What is the PHP?
 
 PHP is an open source server side scripting language used to develop dynamic websites . PHP  stands for Hypertext Preprocessor , also stood for Personal Home Page. It was created by Rasmus lerdorf in 1995 . It is free software released under the PHP license .
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Which is the latest version of PHP?
 The latest stable version of PHP is 7.2  released on November 30, 2019.
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ### What Type of Framework in Php?
 Cakephp, Laravel, Codeigniter, Yii 2, Zend Framework, Phalcon, Slim, FuelPhp, Phpixie, etc
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ### What Type of CMS(Content Management System) in Php?
 Wordpress, Joomla, Magento, Drupal, etc
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Difference between Php4 and php5 ?
@@ -34,6 +45,7 @@ Wordpress, Joomla, Magento, Drupal, etc
 
 ### Full Form of LAMP ?
 Linux Apache MySql and Php.
+
 **[⬆ Back to Top](#table-of-contents)**
 ### 
 
@@ -140,8 +152,6 @@ Not used in php4
 Php5 has 3 levels of visibility: public, Private, and Protected
 Not
 
-Ques. Full Form of LAMP ?
-Ans. Linux Apache MySql and Php.
 
 Ques. Full Form of WAMP ?
 Ans.  Windows Apache MySql And Php.
