@@ -64,7 +64,6 @@ Apache(HTTP Server)
 Mysql(Database)
 PHP
 Perl
-
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Constant?
 __Ans.__ 
@@ -82,7 +81,8 @@ Output:- Welcome to mohit
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. Difference between Echo And Print?
-__Ans.__ |Echo | Print |
+__Ans.__ 
+|Echo | Print |
 |:----:|:---------:|
 |Echo is a statement i.e. used to display the output. It can be used with parentheses echo or without parentheses echo.|Print is also a statement i.e. used to display the output. It can be used with parentheses print ( ) or without parentheses print.|
 |Echo does not return any value | Print always return 1 |
@@ -184,16 +184,6 @@ Php5 has 3 levels of visibility: public, Private, and Protected
 Not
 
 
-Ques. Full Form of WAMP ?
-Ans.  Windows Apache MySql And Php.
-
-Ques. Full Form of XAMPP ?
-Ans. X-OS, Apache Mysql Php Perl
-X: Any of the different operating system(Windows, Linux, Mac OS X), to be read as “cross”, meaning cross-platform.
-Apache(HTTP Server)
-Mysql(Database)
-PHP
-Perl
 
 
 
@@ -211,20 +201,7 @@ There is no need to write a dollar sign ($) before a constant, whereas in Variab
 Constants cannot be defined by simple assignment, they may only be defined using the define () function.
 Constants may be defined and accessed anywhere without regard to variable scoping rules.
 Once the Constants have been set, may not be redefined or undefined.
-Ques. Difference between Echo And Print ?
-Ans. 
-Echo
-Print
-Echo is a statement i.e. used to display the output. It can be used with parentheses echo or without parentheses echo.
-Print is also a statement i.e. used to display the output. It can be used with parentheses
-print ( ) or without parentheses print.
-Echo does not return any value
-Print always return 1
-Echo is faster than print
-Print is slower than echo
-echo can pass multiple string separated as ( , )
- 
-using print can doesn’t pass multiple argument
+
 
 Ques. Php Global Variables (Superglobals) ?
 Ans. predefined array varible  by php
