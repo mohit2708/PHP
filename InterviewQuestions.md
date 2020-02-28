@@ -16,8 +16,8 @@
 |10 | [What is Variable?](#Ques-What-is-Variable)|
 |11 | [Difference between Constant And Variable?](#Ques-Difference-between-Constant-And-Variable)|
 |12 | [Difference between Echo And Print?](#Ques-Difference-between-Echo-And-Print)|
-|13 | [Php Global Variables (Superglobals)?](#Ques-Php Global Variables)|
-|14 | [Difference between Get and Post?](#Difference-between-Get-and-Post)|
+|13 | [Php Global Variables/Superglobals?](#Ques-Php Global Variables)|
+|14 | [Difference between Get and Post?](#Ques-Difference-between-Get-and-Post)|
 |15 | [Difference between Unlink and Unset?](#)|
 |16 | [Difference between Require and Include?](#)|
 |17 | [What is the difference between Single Quoted & Double Quoted?](#)|
