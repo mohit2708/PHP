@@ -6,16 +6,16 @@
 |:----:| ---------
 |1  | [What is the PHP?](#Ques-What-is-the-PHP) |
 |2  | [Which is the latest version of PHP?](#Ques-Which-is-the-latest-version-of-PHP)|
-|3  | [What Type of Framework in Php?](#What-Type-of-Framework-in-Php)|
-|4  | [What Type of CMS(Content Management System) in Php?](#What-Type-of-CMS-Content-Management-System-in-Php)|
-|5  | [Difference between Php4 and php5?](#Difference-between-Php4-and-php5)|
-|6  | [Full Form of LAMP?](#Full-Form-of-LAMP)|
-|7  | [Full Form of WAMP?](#Full-Form-of-WAMP)|
-|8  | [Full Form of XAMPP?](#Full-Form-of-XAMPP)|
-|9  | [What is Constant?](#What-is-Constant)|
-|10 | [What is Variable?](#What-is-Variable)|
-|11 | [Difference between Constant And Variable?](#Difference-between-Constant-And-Variable)|
-|12 | [Difference between Echo And Print?](#Difference-between-Echo-And-Print)|
+|3  | [What Type of Framework in Php?](#Ques-What-Type-of-Framework-in-Php)|
+|4  | [What Type of CMS(Content Management System) in Php?](#Ques-What-Type-of-CMS-Content-Management-System-in-Php)|
+|5  | [Difference between Php4 and php5?](#Ques-Difference-between-Php4-and-php5)|
+|6  | [Full Form of LAMP?](#Ques-Full-Form-of-LAMP)|
+|7  | [Full Form of WAMP?](#Ques-Full-Form-of-WAMP)|
+|8  | [Full Form of XAMPP?](#Ques-Full-Form-of-XAMPP)|
+|9  | [What is Constant?](#Ques-What-is-Constant)|
+|10 | [What is Variable?](#Ques-What-is-Variable)|
+|11 | [Difference between Constant And Variable?](#Ques-Difference-between-Constant-And-Variable)|
+|12 | [Difference between Echo And Print?](#Ques-Difference-between-Echo-And-Print)|
 
 
 ### Ques. What is the PHP?
@@ -24,25 +24,25 @@ __Ans.__ PHP is an open source server side scripting language used to develop dy
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Which is the latest version of PHP?
+### Ques. Which is the latest version of PHP?
 The latest stable version of PHP is 7.2  released on November 30, 2019.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### What Type of Framework in Php?
+### Ques. What Type of Framework in Php?
 Cakephp, Laravel, Codeigniter, Yii 2, Zend Framework, Phalcon, Slim, FuelPhp, Phpixie, etc
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### What Type of CMS(Content Management System) in Php?
+### Ques. What Type of CMS(Content Management System) in Php?
 Wordpress, Joomla, Magento, Drupal, etc
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Difference between Php4 and php5 ?
+### Ques. Difference between Php4 and php5 ?
 **[⬆ Back to Top](#table-of-contents)**
 
-### Full Form of LAMP ?
+### Ques. Full Form of LAMP ?
 Linux Apache MySql and Php.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -52,7 +52,7 @@ Linux Apache MySql and Php.
 ###
 
 **[⬆ Back to Top](#table-of-contents)**
-### What is Constant?
+### Ques. What is Constant?
 * A constant is a name or an identifier for a simple value. A Constant value cannot be changed during the execution of the Script.
 * A valid constant name starts with a letter or underscore (no $ sign before the constant name).
 
@@ -66,7 +66,10 @@ Output:- Welcome to mohit
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-###
+### Ques. Difference between Echo And Print?
+__Ans.__ 
+|: Echo. :|: Print :|
+|:----:| ---------
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
