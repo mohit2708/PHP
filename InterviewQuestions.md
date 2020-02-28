@@ -31,34 +31,36 @@ __Ans.__ PHP is an open source server side scripting language used to develop dy
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Ques. Which is the latest version of PHP?
-The latest stable version of PHP is 7.2  released on November 30, 2019.
+__Ans.__ The latest stable version of PHP is 7.2  released on November 30, 2019.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Ques. What Type of Framework in Php?
-Cakephp, Laravel, Codeigniter, Yii 2, Zend Framework, Phalcon, Slim, FuelPhp, Phpixie, etc
+__Ans.__ Cakephp, Laravel, Codeigniter, Yii 2, Zend Framework, Phalcon, Slim, FuelPhp, Phpixie, etc
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Ques. What Type of CMS(Content Management System) in Php?
-Wordpress, Joomla, Magento, Drupal, etc
+__Ans.__ Wordpress, Joomla, Magento, Drupal, etc
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Ques. Difference between Php4 and php5 ?
 **[⬆ Back to Top](#table-of-contents)**
 
-### Ques. Full Form of LAMP ?
-Linux Apache MySql and Php.
+### Ques. Full Form of LAMP?
+__Ans.__ Linux Apache MySql and Php.
 
 **[⬆ Back to Top](#table-of-contents)**
-### 
+### Ques. Full Form of WAMP?
+__Ans.__ Windows Apache MySql And Php.
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Constant?
+__Ans.__ 
 * A constant is a name or an identifier for a simple value. A Constant value cannot be changed during the execution of the Script.
 * A valid constant name starts with a letter or underscore (no $ sign before the constant name).
 
@@ -79,10 +81,10 @@ __Ans.__
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
-
+__Ans.__ 
 **[⬆ Back to Top](#table-of-contents)**
 ###
-
+__Ans.__ 
 **[⬆ Back to Top](#table-of-contents)**
 ###
 
