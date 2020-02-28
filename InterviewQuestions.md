@@ -56,7 +56,14 @@ __Ans.__ Linux Apache MySql and Php.
 __Ans.__ Windows Apache MySql And Php.
 
 **[⬆ Back to Top](#table-of-contents)**
-###
+### Ques. Full Form of XAMP?
+__Ans.__
+X-OS, Apache Mysql Php Perl
+X: Any of the different operating system(Windows, Linux, Mac OS X), to be read as “cross”, meaning cross-platform.
+Apache(HTTP Server)
+Mysql(Database)
+PHP
+Perl
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Constant?
