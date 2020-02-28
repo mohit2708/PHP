@@ -4,7 +4,7 @@
 
 | No. | Questions |
 |:----:| ---------
-|1  | [What is the PHP?](#What-is-the-PHP) |
+|1  | [What is the PHP?](#Ques-What-is-the-PHP) |
 |2  | [Which is the latest version of PHP?](#Ques-Which-is-the-latest-version-of-PHP)|
 |3  | [What Type of Framework in Php?](#What-Type-of-Framework-in-Php)|
 |4  | [What Type of CMS(Content Management System) in Php?](#What-Type-of-CMS-Content-Management-System-in-Php)|
