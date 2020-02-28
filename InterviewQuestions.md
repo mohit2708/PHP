@@ -18,8 +18,8 @@
 |12 | [Difference between Echo And Print?](#Ques-Difference-between-Echo-And-Print)|
 |13 | [Php Global Variables/Superglobals?](#Ques-Php Global Variables)|
 |14 | [Difference between Get and Post?](#Ques-Difference-between-Get-and-Post)|
-|15 | [Difference between Unlink and Unset?](#)|
-|16 | [Difference between Require and Include?](#)|
+|15 | [Difference between Unlink and Unset?](#Ques-Difference-between-Unlink-and-Unset)|
+|16 | [Difference between Require and Include?](Ques-Difference-between-Require-and-Include)|
 |17 | [What is the difference between Single Quoted & Double Quoted?](#)|
 |18 | [Types of Error in Php?](#)|
 |19 | [What is the difference between Single == & ===?](#)|
@@ -144,10 +144,18 @@ __Ans.__
 |Get method secure nahi hota hai  We can send 1024 bytes using GET method|but POST method can transfer large amount of data|
 
 **[⬆ Back to Top](#table-of-contents)**
-###
+### Ques. Difference between Require and Include?
+__Ans.__
+* If the file is not found by include(), A warning will be issued, but the script will continue.
+* If the file is not found by require(), it will cause a fatal error and stop the execution of the script.
 
 **[⬆ Back to Top](#table-of-contents)**
-###
+### Ques. Difference between Unlink and Unset?
+__Ans.__
+* Unlink is used to delete the file used in the context.
+	__Ex:-__ unlink(“index.html”);
+* Unset is used to unset or destroy the variable.
+	__Ex:-__ unset($var);
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
@@ -216,29 +224,11 @@ __Ans.__
 
 ```
 
-
-
-
-
-
-
  
-Ques. Difference between Require and Include ?
-Ans. 
-If the file is not found by include(), A warning will be issued, but the script will continue.
-If the file is not found by require(), it will cause a fatal error and stop the execution of the script. 
+ 
  
 
 
-
-
-
-
-Ques. Difference between Unlink and Unset ?
-Ans. 	Unlink is used to delete the file used in the context.
-Ex:- unlink(“index.html”);
-Unset is used to unset or destroy the variable.
-Ex:- unset($var);
 Ques. What is the difference between Single Quoted & Double Quoted ?
 Ans. Single quoted mai value parse nahi hoti.
 ·        Double quoted mai value parse ho jati hai.
