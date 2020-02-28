@@ -5,7 +5,7 @@
 | No. | Questions |
 |:----:| ---------
 |1  | [What is the PHP?](#What-is-the-PHP) |
-|2  | [Which is the latest version of PHP?](#Which-is-the-latest-version-of-PHP)|
+|2  | [Which is the latest version of PHP?](#Ques-Which-is-the-latest-version-of-PHP)|
 |3  | [What Type of Framework in Php?](#What-Type-of-Framework-in-Php)|
 |4  | [What Type of CMS(Content Management System) in Php?](#What-Type-of-CMS-Content-Management-System-in-Php)|
 |5  | [Difference between Php4 and php5?](#Difference-between-Php4-and-php5)|
@@ -18,7 +18,7 @@
 |12 | [Difference between Echo And Print?](#Difference-between-Echo-And-Print)|
 
 
-### What is the PHP?
+### Ques. What is the PHP?
 
 PHP is an open source server side scripting language used to develop dynamic websites . PHP  stands for Hypertext Preprocessor , also stood for Personal Home Page. It was created by Rasmus lerdorf in 1995 . It is free software released under the PHP license .
 
