@@ -24,6 +24,7 @@
 |18 | [Types of Error in Php?](#Ques-Types-of-Error-in-Php)|
 |19 | [What is the difference between Single == & ===?](#Ques-What-is-the-difference-between-Single-==-&-===)|
 |20 | [What is the difference between $message and $$message?](#Ques-What-is-the-difference-between-$message-and-$$message)|
+|21 | [What is Cookie?](#ques-What-is-Cookie)|
 |21 | [What is Oops(Object-oriented programming System)?](#)|
 |22 | [What is Advantage of Oops(Object-oriented programming System)?](#)|
 |23 | [What is class?](#Ques-What-is-class)|
@@ -217,7 +218,9 @@ __Ans.__
 Php cookie is a small piece of information, which is stored on the client browser.
 __Ex:-__ Remember me.
 session_start();
+
 $_SESSION["username"] = 'nikita';	// store session data
+
 __How to set cookie:-__        Setcookie(“name”, “value”, time()+3600);
 __How to Retrieve a cookie:-__ echo $_cookie[“user”];
 __How to unset Cookie:-__      Setcookie(“sample”, “ram”, time()-3600);
