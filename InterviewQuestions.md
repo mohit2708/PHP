@@ -212,7 +212,20 @@ $$message = ?
 Output:- mohit 
 ```
 **[⬆ Back to Top](#table-of-contents)**
-###
+### Ques. What is Cookie?
+__Ans.__
+Php cookie is a small piece of information, which is stored on the client browser.
+__Ex:-__ Remember me.
+session_start();
+$_SESSION["username"] = 'nikita';	// store session data
+__How to set cookie:-__        Setcookie(“name”, “value”, time()+3600);
+__How to Retrieve a cookie:-__ echo $_cookie[“user”];
+__How to unset Cookie:-__      Setcookie(“sample”, “ram”, time()-3600);
+
+##### Two types of cookie:-
+__Persistent Cookie:-__ A persistent cookie is a cookie which is store information for certain time in a browser. By default cookie are temporary and are erased if we close the browser.
+
+__Non Persistent Cookie:-__ Non persistent cookies are stored in ram on the server. Ex:- login
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
@@ -346,29 +359,18 @@ $personObj->getName();
 **[⬆ Back to Top](#table-of-contents)**
 
 ```
-Ques. How we can retrive the data in the result set of the mysql using Php ?
-Ans. 
+### Ques. How we can retrive the data in the result set of the mysql using Php ?
+__Ans.__
 Mysql_fetch_row:- It fetch array 
 Mysql_fetch_object:-
 Mysql_fetch_array:-
 Mysql_fetch_assoc:-
 
-Ques. What is the difference between mysqli_fetch_object() and mysqli_fetch_array ?
-Ans. The mysqli_fetch_object() function collects the first single matching record where mysqli_fetch_array() collects all matching records from the table in an array.
+### Ques. What is the difference between mysqli_fetch_object() and mysqli_fetch_array ?
+__Ans.__
+The mysqli_fetch_object() function collects the first single matching record where mysqli_fetch_array() collects all matching records from the table in an array.
  
-Ques. What is Cookie ?
-Ans. Php cookie is a small piece of information, which is stored on the client browser.
-	Ex:- Remember me.
-session_start();
-$_SESSION["username"] = 'nikita';	// store session data
-How to set cookie:- Setcookie(“name”, “value”, time()+3600);
-How to Retrieve a cookie:- echo $_cookie[“user”];
-How to unset Cookie:- Setcookie(“sample”, “ram”, time()-3600);
-
-Two types of cookie:-
-Persistent Cookie:- A persistent cookie is a cookie which is store information for certain time in a browser. By default cookie are temporary and are erased if we close the browser.
-
-Non Persistent Cookie:- Non persistent cookies are stored in ram on the server. Ex:- login 
+ 
 
 Ques. What is Session ?
 Ans. Session is way to store information to be used across multiple pages. It stores information on the server.
