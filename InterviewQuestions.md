@@ -16,7 +16,7 @@
 |10 | [What is Variable?](#Ques-What-is-Variable)|
 |11 | [Difference between Constant And Variable?](#Ques-Difference-between-Constant-And-Variable)|
 |12 | [Difference between Echo And Print?](#Ques-Difference-between-Echo-And-Print)|
-|13 | [Php Global Variables/Superglobals?](#Ques-Php Global Variables)|
+|13 | [Php Global Variables/Superglobals?](#)|
 |14 | [Difference between Get and Post?](#Ques-Difference-between-Get-and-Post)|
 |15 | [Difference between Unlink and Unset?](#Ques-Difference-between-Unlink-and-Unset)|
 |16 | [Difference between Require and Include?](Ques-Difference-between-Require-and-Include)|
@@ -237,13 +237,19 @@ __Ans.__
 ###
 
 **[⬆ Back to Top](#table-of-contents)**
-###
-
-**[⬆ Back to Top](#table-of-contents)**
-
 ### Ques. What is Oops(Object-oriented programming System)?
 __Ans.__
 Oops provide a way of programming language that organizes with objects rather than data.
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Advantage of Oops(Object-oriented programming System)?
+__Ans.__ 
+* __Code Reusability:__ it can be achieved through inheritance and traits. 
+* __Modularity:__ it can be achieved through breaking large code into small modules, Modularity reduces complexity.
+* __Flexibility:__ it can be achieved through polymorphism
+* __Maintainability:__ it is to maintain code which follow Object Oriented Programming Concepts.
+* __Security:__ it can be achieved through Encapsulation
+* __Testability:__ it is easy to test.
 
 **[⬆ Back to Top](#table-of-contents)**
 ```
@@ -358,16 +364,6 @@ Ques. What is PDO ?
 Ans. Oops 
 
 ======Oops(Object oriented)======
-
-
-Ques. Oops(Object oriented) ?
-Ans. 
-Code Reusability: it can be achieved through inheritance and traits.
-Modularity: it can be achieved through breaking large code into small modules, Modularity reduces complexity.
-Flexibility: it can be achieved through polymorphism
-Maintainability: it is to maintain code which follow Object Oriented Programming Concepts.
-Security: it can be achieved through Encapsulation
-Testability: it is easy to test.
 
 Ques. What is class ?
 A class/method is a blueprint or a prototype that defines the variables and methods.
