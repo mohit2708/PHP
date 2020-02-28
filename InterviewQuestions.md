@@ -141,6 +141,7 @@ __Ans.__
 |Get method  ki value url mai query string ka rup show hoti hai|post mai value hidden variable ka rup mai jati hai.|
 |The get method is restricted to send upto 1024 characters only.|The post method can be used to send ASCII as well as binary data.|
 |Get method ki value bookmark kar sakte hai|post method ki value bookmark nahi kar sakte hai.|
+|Get method secure nahi hota hai  We can send 1024 bytes using GET method|but POST method can transfer large amount of data|
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
@@ -227,20 +228,10 @@ Ans.
 If the file is not found by include(), A warning will be issued, but the script will continue.
 If the file is not found by require(), it will cause a fatal error and stop the execution of the script. 
  
-Ques. Difference between Get and Post ?
-Ans. 
-GET
-POST
-Get method  ki value url mai query string ka rup show hoti hai
-post mai value hidden variable ka rup mai jati hai.
-The get method is restricted to send upto 1024 characters only.
-The post method can be used to send ASCII as well as binary data.
-Get method ki value bookmark kar sakte hai
-post method ki value bookmark nahi kar sakte hai.
 
 
-Get method secure nahi hota hai  We can send 1024 bytes using GET method
-but POST method can transfer large amount of data
+
+
 
 
 Ques. Difference between Unlink and Unset ?
