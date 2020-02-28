@@ -56,7 +56,7 @@ __Ans.__ Linux Apache MySql and Php.
 __Ans.__ Windows Apache MySql And Php.
 
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. Full Form of XAMP?
+### Ques. Full Form of XAMPP?
 __Ans.__
 X-OS, Apache Mysql Php Perl
 X: Any of the different operating system(Windows, Linux, Mac OS X), to be read as “cross”, meaning cross-platform.
@@ -83,8 +83,9 @@ Output:- Welcome to mohit
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. Difference between Echo And Print?
 __Ans.__ 
-|Echo. |: Print |
+|Echo | Print |
 |:----:| ---------|
+|Echo is a statement i.e. used to display the output. It can be used with parentheses echo or without parentheses echo.||Print is also a statement i.e. used to display the output. It can be used with parentheses print ( ) or without parentheses print.|
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
