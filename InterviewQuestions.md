@@ -24,10 +24,11 @@
 |18 | [Types of Error in Php?](#Ques-Types-of-Error-in-Php)|
 |19 | [What is the difference between Single == & ===?](#Ques-What-is-the-difference-between-Single-==-&-===)|
 |20 | [What is the difference between $message and $$message?](#)|
-|21 | []
+|21 | [What is Oops(Object-oriented programming System)?](#)|
+|22 | [What is Advantage of Oops(Object-oriented programming System)?](#)|
+
 
 ### Ques. What is the PHP?
-
 __Ans.__ PHP is an open source server side scripting language used to develop dynamic websites . PHP  stands for Hypertext Preprocessor , also stood for Personal Home Page. It was created by Rasmus lerdorf in 1995 . It is free software released under the PHP license .
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -173,16 +174,16 @@ echo "This costs a lot of $s."; // This costs a lot of dollars.
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. Types of Error in Php?
 __Ans.__
-__Notice:-__ Undefined varible,  does not stop the execution of script..
-__Fettel:-__ Undefined  function, this kind of error stop the execution of script
-__Warning:-__ file error(missing  included are required file)
-__Parse:-__ syntex Error, this kind of error stop the execution of script
+* __Notice:-__ Undefined varible,  does not stop the execution of script..
+* __Fettel:-__ Undefined  function, this kind of error stop the execution of script
+* __Warning:-__ file error(missing  included are required file)
+* __Parse:-__ syntex Error, this kind of error stop the execution of script
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is the difference between Single == & ===?
 __Ans.__ 
-==:-  Check the value.
-===:- Check the value and datatype.
+* ==:-  Check the value.
+* ===:- Check the value and datatype.
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
@@ -240,13 +241,14 @@ __Ans.__
 
 **[⬆ Back to Top](#table-of-contents)**
 
+### Ques. What is Oops(Object-oriented programming System)?
+__Ans.__
+Oops provide a way of programming language that organizes with objects rather than data.
+
+**[⬆ Back to Top](#table-of-contents)**
 ```
 
  
- 
-
-
-
 Ques. What is the difference between $message and $$message ?
 Ans. $message stores variable data while $$message is used to store variable of variable.
          $message is variable whereas $$message is reference variable
@@ -357,8 +359,6 @@ Ans. Oops
 
 ======Oops(Object oriented)======
 
-Ques. Oops(Object oriented) ?
-Ans. Oops provide way of programming language that organizes with object rather than data.
 
 Ques. Oops(Object oriented) ?
 Ans. 
