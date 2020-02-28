@@ -103,6 +103,14 @@ __Ans.__
 * Variable names are case-sensitive ($age and $AGE are two different variables).
 
 **[⬆ Back to Top](#table-of-contents)**
+### Ques. Difference between Constant And Variable?
+__Ans.__
+* There is no need to write a dollar sign ($) before a constant, whereas in Variable one has to write a dollar sign.
+* Constants cannot be defined by simple assignment, they may only be defined using the define () function.
+* Constants may be defined and accessed anywhere without regard to variable scoping rules.
+* Once the Constants have been set, may not be redefined or undefined.
+
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. Difference between Echo And Print?
 __Ans.__ 
 |Echo | Print |
@@ -194,25 +202,6 @@ __Ans.__
 
 
 
-
-
-
-
-
-Ques. What is Variable ?
-Ans. 
-Variable temporary data hold Karta hai.
-A variable starts with the $ sign, followed by the name of the variable.
-A variable name must start with a letter or the underscore character.
-A variable name cannot start with a number.
-Variable names are case-sensitive ($age and $AGE are two different variables).
-
-Ques. Difference between Constant And Variable ?
-Ans. 
-There is no need to write a dollar sign ($) before a constant, whereas in Variable one has to write a dollar sign.
-Constants cannot be defined by simple assignment, they may only be defined using the define () function.
-Constants may be defined and accessed anywhere without regard to variable scoping rules.
-Once the Constants have been set, may not be redefined or undefined.
 
 
 Ques. Php Global Variables (Superglobals) ?
