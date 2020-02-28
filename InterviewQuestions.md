@@ -23,9 +23,21 @@
 |17 | [What is the difference between Single Quoted & Double Quoted?](#Ques-What-is-the-difference-between-Single-Quoted-&-Double-Quoted)|
 |18 | [Types of Error in Php?](#Ques-Types-of-Error-in-Php)|
 |19 | [What is the difference between Single == & ===?](#Ques-What-is-the-difference-between-Single-==-&-===)|
-|20 | [What is the difference between $message and $$message?](#)|
+|20 | [What is the difference between $message and $$message?](#Ques-What-is-the-difference-between-$message-and-$$message)|
 |21 | [What is Oops(Object-oriented programming System)?](#)|
 |22 | [What is Advantage of Oops(Object-oriented programming System)?](#)|
+|23 | [What is class?](#)|
+|24 | [What is object?](#)|
+|25 | [What is Encapsulation?](#)|
+|26 | [What is Abstraction?](#)|
+|27 | [What is Abstraction?](#)|
+|28 | [What is Polymorphism?](#)|
+|29 | [What is Interface?](#)|
+|30 | [What is Inheritance?](#)|
+|31 | [What is Static class?](#)|
+|32 | [What is Constructor?](#)|
+|33 | [What is Destructor ?](#)|
+
 
 
 ### Ques. What is the PHP?
@@ -186,8 +198,19 @@ __Ans.__
 * ===:- Check the value and datatype.
 
 **[⬆ Back to Top](#table-of-contents)**
-###
-
+### Ques. What is the difference between $message and $$message?
+__Ans.__
+* $message stores variable data while $$message is used to store variable of variable.
+* $message is variable whereas $$message is reference variable
+__EX:-__
+```php
+<?php
+$hello = “mohit”;
+$message = “Hello”;
+$$message = ?
+?>
+Output:- mohit 
+```
 **[⬆ Back to Top](#table-of-contents)**
 ###
 
@@ -254,15 +277,6 @@ __Ans.__
 **[⬆ Back to Top](#table-of-contents)**
 ```
 
- 
-Ques. What is the difference between $message and $$message ?
-Ans. $message stores variable data while $$message is used to store variable of variable.
-         $message is variable whereas $$message is reference variable
-EX:-
-$hello = “mohit”;
-$message = “Hello”;
-$$message = ?
-Output:- mohit 
 
 Ques. How we can retrive the data in the result set of the mysql using Php ?
 Ans. 
