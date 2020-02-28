@@ -7,7 +7,7 @@
 |1  | [What is the PHP?](#What-is-the-PHP) |
 |2  | [Which is the latest version of PHP?](#Which-is-the-latest-version-of-PHP)|
 |3  | [What Type of Framework in Php?](#What-Type-of-Framework-in-Php)|
-|4  | [What Type of CMS in Php?](#What-Type-of-CMS-in-Php)|
+|4  | [What Type of CMS() in Php?](#What-Type-of-CMS-in-Php)|
 
 
 ### What is the PHP?
@@ -126,14 +126,7 @@ Wordpress, Joomla, Magento, Drupal
 
 ```
 
-Ques. Which is the latest version of PHP ?
-Ans. The latest stable version of PHP is 7.2  released on November 30, 2019.
 
-Ques. Framework in Php ?
-Ans. Cakephp, Laravel, Codeigniter, Yii 2, Zend Framework, Phalcon, Slim, FuelPhp, Phpixie
-
-Ques. Content Management System(CMS) in Php ?
-Ans. Wordpress, Joomla, Magento, Drupal
 
 Ques. Difference between Php4 and php5 ?
 Ans.
