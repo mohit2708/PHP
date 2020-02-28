@@ -26,9 +26,9 @@
 |20 | [What is the difference between $message and $$message?](#Ques-What-is-the-difference-between-$message-and-$$message)|
 |21 | [What is Oops(Object-oriented programming System)?](#)|
 |22 | [What is Advantage of Oops(Object-oriented programming System)?](#)|
-|23 | [What is class?](#)|
-|24 | [What is object?](#)|
-|25 | [What is Encapsulation?](#)|
+|23 | [What is class?](#Ques-What-is-class)|
+|24 | [What is object?](#ques-What-is-object)|
+|25 | [What is Encapsulation?](#Ques-What-is-Encapsulation)|
 |26 | [What is Abstraction?](#)|
 |27 | [What is Abstraction?](#)|
 |28 | [What is Polymorphism?](#)|
@@ -280,6 +280,7 @@ __Ans.__
 * A class/method is a blueprint or a prototype that defines the variables and methods.
 * A class is a collection of objects of similar type.  
 * Class represent all properties and behaviors of an object.
+
 __Example:-__
 ```php
 <?php
@@ -312,8 +313,37 @@ echo $obj->getUserDetails();
 Hi, My Name is Ajay and I'm 23 old
 ```
 **[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Object ?
+__Ans.__
+Any entity that has state and behaviours is known as object. Ex- Chair, Pen, table etc
+```php
+//Create an object of MyClass 
+$obj = new MyClass();
+OR
+$obj = new MyClass;
+```
 
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Encapsulation?
+__Ans.__
+Binding(or wrapping) code and data together into a single unit is known as encapsulation.
+One object is encapsulated from another object.
+```php
+class Person {
+	private $name;
+	public function setName($name) {
+		$this->name = $name;
+	}
+	public function getName($name) {
+		return $this->name;
+	}
+}
+$personObj = new Person();
+$personObj->setName('Full Stack Tutorials');
+$personObj->getName();
+```
 
+**[⬆ Back to Top](#table-of-contents)**
 
 ```
 Ques. How we can retrive the data in the result set of the mysql using Php ?
@@ -417,44 +447,9 @@ Ans. Oops
 
 ======Oops(Object oriented)======
 
-Ques. What is class ?
-A class/method is a blueprint or a prototype that defines the variables and methods.
-A class is a collection of objects of similar type.  
-Class represent all properties and behaviors of an object.
-Example:-
-<?php
-class abc
-{       	public function add()
-        	{
-                    	echo "mohit";
-        	}
-}
-$obj = new abc(); //object create
-$obj->add();    //call function
-?>
-class Person{
-   public $name;
-   public $age;
-   function __construct($name, $age){
-       $this->name = $name;
-       $this->age = $age;
-   }
-   function getUserDetails(){
-       return "Hi, My Name is ".$this->name." and I'm ". $this->age ." old <br>";
-   }
-}
-//To create php object we have to use a new operator. 
-$obj = new Person("Ajay", 23);
-echo $obj->getUserDetails();
-//Output:
-Hi, My Name is Ajay and I'm 23 old
 
-Ques. What is Object ?
-Any entity that has state and behaviours is known as object. Ex- Chair, Pen, table etc
-//Create an object of MyClass 
-$obj = new MyClass();
-OR
-$obj = new MyClass;
+
+
 
 Ques. What is the relation between Classes and Objects ?
 They look very much same but are not same.
@@ -483,25 +478,7 @@ Ques:- What is Member Variable and Member function?
 Member Variable − These are the variables defined inside a class. This data will be invisible to the outside of the class and can be accessed via member functions. These variables are called attribute of the object once an object is created.
 Member function − These are the function defined inside a class and are used to access object data.
 
-Ques. What is Encapsulation ?
-Binding(or wrapping) code and data together into a single unit is known as encapsulation.
-One object is encapsulated from another object.
 
-
-
-
-class Person {
-	private $name;
-	public function setName($name) {
-		$this->name = $name;
-	}
-	public function getName($name) {
-		return $this->name;
-	}
-}
-$personObj = new Person();
-$personObj->setName('Full Stack Tutorials');
-$personObj->getName();
 
 
 Ques. What is Abstraction ?
