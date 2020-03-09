@@ -42,7 +42,13 @@
 
 
 ### Ques. What is the PHP?
-__Ans.__ PHP is an open source server side scripting language used to develop dynamic websites . PHP  stands for Hypertext Preprocessor , also stood for Personal Home Page. It was created by Rasmus lerdorf in 1995 . It is free software released under the PHP license .
+__Ans.__ 
+* PHP is an open source server side scripting language used to develop dynamic websites . PHP  stands for Hypertext Preprocessor , also stood for Personal Home Page. It was created by Rasmus lerdorf in 1995 . It is free software released under the PHP license .
+* PHP is an acronym for "PHP: Hypertext Pre-processor" And Old name of PHP personal home page. 
+* Rasmus Lerdorf is known as the father of PHP. 1994
+* PHP is a server side scripting language/s/w/tool commonly used for web applications. And PHP has many framework and CMS for creating a website.
+* PHP is a widely-used, open source scripting language. And server side scripting language.
+* PHP it is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -164,6 +170,8 @@ __Ans.__
 __Ans.__
 * If the file is not found by include(), A warning will be issued, but the script will continue.
 * If the file is not found by require(), it will cause a fatal error and stop the execution of the script.
+
+__Example:-__ "include(a.php)"
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. Difference between Unlink and Unset?
