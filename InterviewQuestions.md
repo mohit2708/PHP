@@ -442,8 +442,29 @@ __Ans.__ A timestamp is the current time of event that is recorded by a computer
 ### Ques. What does PEAR stand for ?
 __Ans.__ PEAR means "PHP Extension and Application Repository". It extends PHP and provides a higher level of programming for web developers.
 
-Ques. What is the use of header function in php ?
-Ans. The header() function sends a raw HTTP header to a client browser. We can use header() function for redirection of pages. It is important to notice that header() must be called before any actual output is seen.
+### Ques. How to find the length of an array in php?
+__Ans.__  count() or sizeof() function to get the number of elements or value in an array.
+```php
+<?php
+$days = array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+echo count($days);
+echo "<br>";
+echo sizeof($days);
+?>
+```
+
+### Ques. What is the output of the following Code?
+__Ans.__
+```php
+$a = '1';
+$b = &$a;
+$b = "2$b";
+echo $a.", ".$b;
+Output:- 21, 21
+```
+
+### Ques. What is the use of header function in php ?
+__Ans.__ The header() function sends a raw HTTP header to a client browser. We can use header() function for redirection of pages. It is important to notice that header() must be called before any actual output is seen.
 PHP header are bits of information that are sent to a computer before anything else, like a web page is sent
 THey tell the computer the information it needs so that it can execute commands when the rest of the information is received. 
 
@@ -453,7 +474,7 @@ Ans. The Model-view-controller (MVC) is an architectural pattern that separates 
 ·         Model mai hum database ke function rakhte hai
 ·         View mai hum html part rakhta hai.
 
-Ques. What is Ajax ?
+Ques. What is Ajax?
 Ans. AJAX = Asynchronous JavaScript and XML. 
 AJAX is a technique for creating fast and dynamic web pages. 
 AJAX allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
@@ -716,23 +737,10 @@ $no = 6.5;
         	Echo $ans;
         	Output:- 6
 
-Ques. What is the output of the following Code ?
-$a = '1';
-$b = &$a;
-$b = "2$b";
-echo $a.", ".$b;
-Output:- 21, 21
 
-Ques. How to find the length of an array in php  ?
-Ans.  count() or sizeof() function to get the number of elements or value in an array.
-<?php
-$days = array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
-echo count($days);
-echo "<br>";
-echo sizeof($days);
-?>
 
-Ques. p  ?
-Ans. 
 ```
+
+
+
 
