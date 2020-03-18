@@ -436,6 +436,26 @@ __Overriding__ is redefining parent class functions/methods in child class with 
  The overloading methods are invoked when interacting with properties or methods that have not been declared or are not visible in the current scope. The rest of this section will use the terms "inaccessible properties" and "inaccessible methods" to refer to this combination of declaration and visibility.
 
 **[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Constructor ?
+__Ans.__ Constructors are special function/method which is automatically called when an object is created.
+
+#### Types of  Constructor ?
+
+__Default Constructor:__ A constructor without any parameters is called a default constructor.
+
+__Parameterized Constructor:__ A constructor with at least one parameter is called a parametrized constructor.
+
+__Copy Constructor:__
+
+__Static Constructor:__
+
+__Private Constructor:__
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Destructor ?
+__Ans.__ A Destructor is special functions which are automatically called when an object is destroyed.
+
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. How we can retrive the data in the result set of the mysql using Php ?
 __Ans.__
 Mysql_fetch_row:- It fetch array 
@@ -678,48 +698,35 @@ An interface contains only incomplete member (signature of member)
 
 
 
+### Ques. Is Multiple inheritance support in php ?
+__Ans.__ PHP supports only single inheritance; it means that a class can be extended from only one single class using the keyword 'extended'.
 
+### Ques. What is the meaning of a final class and final method ?
+__Ans.__ Final class means that this class cannot be extended and a final method cannot be overridden.
 
-Ques. What is Constructor ?
-Ans. Constructors are special function/method which is automatically called when an object is created.
-Ques. Types of  Constructor ?
-Ans.
-Default Constructor: A constructor without any parameters is called a default constructor.
-Parameterized Constructor: A constructor with at least one parameter is called a parametrized constructor.
-Copy Constructor:
-Static Constructor:
-Private Constructor:
+### Ques. How to collect IP address from an HTTP request ?
+__Ans.__ $_SERVER['REMOTE_ADDR'];
 
-Ques. What is Destructor ?
-Ans. A Destructor is special functions which are automatically called when an object is destroyed.
-
-Ques. Is Multiple inheritance support in php ?
-Ans. PHP supports only single inheritance; it means that a class can be extended from only one single class using the keyword 'extended'.
-
-Ques. What is the meaning of a final class and final method ?
-Ans. Final class means that this class cannot be extended and a final method cannot be overridden.
-
-Ques. How to collect IP address from an HTTP request ?
-Ans. $_SERVER['REMOTE_ADDR'];
-
-Ques. How to collect IP address of the web server in php ?
+### ### Ques. How to collect IP address of the web server in php ?
 Ans. $_SERVER['SERVER_ADDR'];
 
-Ques. Find The Php Information ?
-Ans.   <?php
+### Ques. Find The Php Information ?
+__Ans.__
+```php
+<?php
    echo phpinfo();
 ?>
-
-Ques. how to create a mySql connection ?
-Ans.
+```
+### Ques. how to create a mySql connection ?
+__Ans.__
 mysql_connect("host_name", "User_name", "Password") ;
 mysql_select_db("db_name");
 
-Ques. how to stop the execution of php Script ?
-Ans. The exit() function is used to stop the execution of PHP script.
+### Ques. how to stop the execution of php Script ?
+__Ans.__ The exit() function is used to stop the execution of PHP script.
 
-Ques. how to upload file in php ?
-Ans. The move_uploaded_file() function is used to upload file in PHP.
+Q### ues. how to upload file in php ?
+__Ans.__ The move_uploaded_file() function is used to upload file in PHP.
 	move_uploaded_file($source_path,$des_path);
 
 ### Ques. Difference between two dates in Php ?
