@@ -368,7 +368,32 @@ $personObj->getName();
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-
+### Ques. What is Abstraction ?
+__Ans.__
+* Hiding internal details and showing functionality is known as abstraction. 
+* Abstract class is a class which contains at least one or more abstract methods.
+* Abstract method is a method which is declared, but not defined.
+* Abstract class ka hum obj nahi bana sakte hai... agar banate hai to fatal error dega: cannot instance abstract class.
+Agar hame abstract class ke function ko call karni hai to inherit karke call karenge.
+```php
+<?php
+abstract class testParent
+{
+        	public function abc()
+        	{
+        	echo "mohit";
+        	}
+}
+class testChild extends testParent
+{
+        	public function xyz()
+        	{
+        	echo "saxena";
+        	}
+}
+$a = new testChild();
+$a -> abc();
+?>
 ```
 ### Ques. How we can retrive the data in the result set of the mysql using Php ?
 __Ans.__
@@ -383,14 +408,14 @@ The mysqli_fetch_object() function collects the first single matching record whe
  
  
 
-Ques. What is Session ?
-Ans. Session is way to store information to be used across multiple pages. It stores information on the server.
+### Ques. What is Session ?
+__Ans.__ Session is way to store information to be used across multiple pages. It stores information on the server.
 Create session:- 			session_start(); 
 Set value into session:- 		$_SESSION['USER_ID']=1; 
 Remove data from a session:- 	unset($_SESSION['USER_ID'];
 
-Ques. What is difference between seesion_unregister and session_unset ?
-Ans. The session_unregister() function unregister a global variable from the current session and the session_unset() function frees all session variables.
+### Ques. What is difference between seesion_unregister and session_unset ?
+__Ans.__ The session_unregister() function unregister a global variable from the current session and the session_unset() function frees all session variables.
 Ques. Difference between cookie and Session ?
 Ans.
 Cookie
@@ -407,15 +432,15 @@ Users do not have access to the data you stored in Session,Since it is stored in
 cookies using for user activity tracking
 Session is mainly used for login/logout purpose
 
-Ques. What is .htaccess file ?
-Ans. .htaccess is a configuration file used to alter the default behavior of a Apache web server software. Most common usage is to redirect the http request to some URLs based on some conditions. For example, we can hide the .html or .php extensions of the URLs to make it SEO friendly
+### Ques. What is .htaccess file ?
+__Ans.__ .htaccess is a configuration file used to alter the default behavior of a Apache web server software. Most common usage is to redirect the http request to some URLs based on some conditions. For example, we can hide the .html or .php extensions of the URLs to make it SEO friendly
 
 
-Ques. What is Timestamp ?
-Ans. A timestamp is the current time of event that is recorded by a computer.
+### Ques. What is Timestamp ?
+__Ans.__ A timestamp is the current time of event that is recorded by a computer.
 
-Ques. What does PEAR stand for ?
-Ans. PEAR means "PHP Extension and Application Repository". It extends PHP and provides a higher level of programming for web developers.
+### Ques. What does PEAR stand for ?
+__Ans.__ PEAR means "PHP Extension and Application Repository". It extends PHP and provides a higher level of programming for web developers.
 
 Ques. What is the use of header function in php ?
 Ans. The header() function sends a raw HTTP header to a client browser. We can use header() function for redirection of pages. It is important to notice that header() must be called before any actual output is seen.
@@ -494,32 +519,7 @@ Member function − These are the function defined inside a class and are used t
 
 
 
-Ques. What is Abstraction ?
-Hiding internal details and showing functionality is known as abstraction. 
-Abstract class is a class which contains at least one or more abstract methods.
-Abstract method is a method which is declared, but not defined.
 
-Abstract class ka hum obj nahi bana sakte hai... agar banate hai to fatal error dega: cannot instance abstract class.
-Agar hame abstract class ke function ko call karni hai to inherit karke call karenge.
-Ex:-
-<?php
-abstract class testParent
-{
-        	public function abc()
-        	{
-        	echo "mohit";
-        	}
-}
-class testChild extends testParent
-{
-        	public function xyz()
-        	{
-        	echo "saxena";
-        	}
-}
-$a = new testChild();
-$a -> abc();
-?>
 PHP 5 introduces abstract classes and methods.
 Classes defined as abstract may not be instantiated
 Classes that contains at least one abstract method must also be abstract.
