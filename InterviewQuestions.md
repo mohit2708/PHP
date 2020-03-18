@@ -474,12 +474,12 @@ __Overriding__ is redefining parent class functions/methods in child class with 
  The overloading methods are invoked when interacting with properties or methods that have not been declared or are not visible in the current scope. The rest of this section will use the terms "inaccessible properties" and "inaccessible methods" to refer to this combination of declaration and visibility.
 
 
-### Ques:- What is Inheritance?
+### Ques. What is Inheritance?
 __Ans.__ 
 * Acquiring the property from parent class to child class is called the inheritance.
 * An inherited class is defined by using the extends keyword.
 
-### Ques:- What is Static class?
+### Ques. What is Static class?
 __Ans.__ Static class ka hame object nahi banna padta hai, scope resolution se call kar lete hai.
 ```php
 <?php
