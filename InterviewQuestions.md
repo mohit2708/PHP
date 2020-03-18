@@ -733,17 +733,17 @@ Ans. $sort = $_GET[‘url’]
 ### Ques. What We can ceil() and floor() function in php ?
 __Ceil()__ is used to find nearest maximum values of passing value.
 ```php
-		$no = 6.5;
-        	$ans = ceil($no);
-        	Echo $ans;
-        	Output:- 7
+$no = 6.5;
+$ans = ceil($no);
+Echo $ans;
+Output:- 7
 ```
 __Floor()__ is used to find nearest minimum values of  passing value.
 ```php
-		$no = 6.5;
-        	$ans = ceil($no);
-        	Echo $ans;
-        	Output:- 6
+$no = 6.5;
+$ans = ceil($no);
+Echo $ans;
+Output:- 6
 ```
 
 
