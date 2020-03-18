@@ -411,6 +411,11 @@ $a = new testChild();
 $a -> abc();
 ?>
 ```
+#### What is the need of abstract class?
+Suppose we were modeling the behavior of animals, by creating a class hierarchy that started with a base class called Animal.
+Animals are capable of doing different things like flying, digging and walking, but there are some common operations as well like eating and sleeping.
+Some common operations are performed by all animals, but in a different way as well.
+When an operation is performed in a different way, it is a good candidate for an abstract method (forcing subclasses to provide a custom implementation).
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Interface?
@@ -682,24 +687,16 @@ class Sony extends TV {
        return "Sony";
    }
 }
-###  Q:- What is the need of abstract class?
-Suppose we were modeling the behavior of animals, by creating a class hierarchy that started with a base class called Animal.
-Animals are capable of doing different things like flying, digging and walking, but there are some common operations as well like eating and sleeping.
-Some common operations are performed by all animals, but in a different way as well.
-When an operation is performed in a different way, it is a good candidate for an abstract method (forcing subclasses to provide a custom implementation).
- 
 
 
 
 ### Ques:- What is the key difference between concrete class and abstract class?
+__Ans.__ 
 Concrete classes are those classes which has to declare body of abstract methods which extends or implements from abstract class or interface
+
 OR
+
 Abstract classes usually have partial or no implementation. On the other hand, Concrete classes always have full implementation of its behavior. Unlike Concrete classes, Abstract classes cannot be instantiated.
-
-
-
-
-
 
 ### Ques. Is Multiple inheritance support in php ?
 __Ans.__ PHP supports only single inheritance; it means that a class can be extended from only one single class using the keyword 'extended'.
@@ -710,8 +707,8 @@ __Ans.__ Final class means that this class cannot be extended and a final method
 ### Ques. How to collect IP address from an HTTP request ?
 __Ans.__ $_SERVER['REMOTE_ADDR'];
 
-### ### Ques. How to collect IP address of the web server in php ?
-Ans. $_SERVER['SERVER_ADDR'];
+### Ques. How to collect IP address of the web server in php ?
+__Ans.__ $_SERVER['SERVER_ADDR'];
 
 ### Ques. Find The Php Information ?
 __Ans.__
