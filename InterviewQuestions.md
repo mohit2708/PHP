@@ -31,9 +31,9 @@
 |24 | [What is object?](#ques-What-is-object)|
 |25 | [What is Encapsulation?](#Ques-What-is-Encapsulation)|
 |26 | [What is Abstraction?](#)|
-|27 | [What is Abstraction?](#)|
-|28 | [What is Polymorphism?](#)|
-|29 | [What is Interface?](#)|
+|27 | [What is Interface?](#)|
+|28 | [What is the difference between Abstract class Interface?](#)|
+|29 | [What is Polymorphism?](#)|
 |30 | [What is Inheritance?](#)|
 |31 | [What is Static class?](#)|
 |32 | [What is Constructor?](#)|
@@ -413,24 +413,6 @@ $a -> abc();
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. What is Polymorphism?
-__Ans.__ 
-* When one task is performed by different ways i.e known as polymorphism.
-* Polymorphism is ability to use function & method in different ways.
-
-#### Types of Polymorphism?
-Polymorphism could be static and dynamic both. Overloading is static polymorphism while, overriding is dynamic polymorphism.
-
-1. Compile time polymorphism (Static) - Method Overloading
-
-2. Runtime time polymorphism (Dynamic) - Method Overriding
-
-__Overloading__ is defining functions/methods that have same signatures with different parameters in the same class.
-
-__Overriding__ is redefining parent class functions/methods in child class with same signature. So, basically the purpose of overriding is to change the behavior of your parent class method.
-
- The overloading methods are invoked when interacting with properties or methods that have not been declared or are not visible in the current scope. The rest of this section will use the terms "inaccessible properties" and "inaccessible methods" to refer to this combination of declaration and visibility.
-
 ### Ques. What is Interface?
 __Ans.__ 
 * An interface is a description of action that object can do.
@@ -457,6 +439,41 @@ $obj = new xyz();
 $obj->a();
 ?>
 ```
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the difference between Abstract class Interface?
+__Ans.__
+|Abstract Class|Interface|
+|:---:|:---:|
+|In abstract class a method must be declared as abstract. Abstract methods doesn’t have any implementation.|In interface all the methods by default are abstract.|
+|Abstract class can also contain member variables and concrete functions/methods.|Interfaces cannot contain any member variables and concrete functions/methods except constants.|
+|An Abstract methods can be declare with access modifiers like public, protected etc. Concrete Class which is extending the abstract class must be defined with the same or visibility.|All methods declared in an interface must be public.|
+|A class can Inherits only one Abstract class and Multiple inheritance is not possible for Abstract class.|A class can implement many interfaces and Multiple interface inheritance is possible.|
+|Only complete member of abstract class can be static.|Members of Interface can not be static.|
+|Abstract class does nor support multiple inheritance.|Interface Supports multiple inheritance|
+|Abstract class contains Data Member.|Interface does not Contains Data member.|
+|Abstract class contains Constructors.|Interface does not contains Constructors|
+|An Abstract class  can contain both incomplete(abstract) and complete member|An interface contains only incomplete member (signature of member)|
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Polymorphism?
+__Ans.__ 
+* When one task is performed by different ways i.e known as polymorphism.
+* Polymorphism is ability to use function & method in different ways.
+
+#### Types of Polymorphism?
+Polymorphism could be static and dynamic both. Overloading is static polymorphism while, overriding is dynamic polymorphism.
+
+1. Compile time polymorphism (Static) - Method Overloading
+
+2. Runtime time polymorphism (Dynamic) - Method Overriding
+
+__Overloading__ is defining functions/methods that have same signatures with different parameters in the same class.
+
+__Overriding__ is redefining parent class functions/methods in child class with same signature. So, basically the purpose of overriding is to change the behavior of your parent class method.
+
+ The overloading methods are invoked when interacting with properties or methods that have not been declared or are not visible in the current scope. The rest of this section will use the terms "inaccessible properties" and "inaccessible methods" to refer to this combination of declaration and visibility.
+
+
 ### Ques:- What is Inheritance?
 __Ans.__ 
 * Acquiring the property from parent class to child class is called the inheritance.
@@ -681,19 +698,7 @@ Abstract classes usually have partial or no implementation. On the other hand, C
 
 
 
-### Ques. What is the difference between Abstract class Interface ?
-__Ans.__
-|Abstract Class|Interface|
-|:---:|:---:|
-|In abstract class a method must be declared as abstract. Abstract methods doesn’t have any implementation.|In interface all the methods by default are abstract.|
-|Abstract class can also contain member variables and concrete functions/methods.|Interfaces cannot contain any member variables and concrete functions/methods except constants.|
-|An Abstract methods can be declare with access modifiers like public, protected etc. Concrete Class which is extending the abstract class must be defined with the same or visibility.|All methods declared in an interface must be public.|
-|A class can Inherits only one Abstract class and Multiple inheritance is not possible for Abstract class.|A class can implement many interfaces and Multiple interface inheritance is possible.|
-|Only complete member of abstract class can be static.|Members of Interface can not be static.|
-|Abstract class does nor support multiple inheritance.|Interface Supports multiple inheritance|
-|Abstract class contains Data Member.|Interface does not Contains Data member.|
-|Abstract class contains Constructors.|Interface does not contains Constructors|
-|An Abstract class  can contain both incomplete(abstract) and complete member|An interface contains only incomplete member (signature of member)|
+
 
 
 ### Ques. Is Multiple inheritance support in php ?
