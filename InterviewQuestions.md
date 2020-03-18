@@ -510,29 +510,30 @@ __Ans.__ The header() function sends a raw HTTP header to a client browser. We c
 PHP header are bits of information that are sent to a computer before anything else, like a web page is sent
 THey tell the computer the information it needs so that it can execute commands when the rest of the information is received. 
 
-Ques. What is MVC ?
+### Ques. What is MVC ?
 Ans. The Model-view-controller (MVC) is an architectural pattern that separates an application into three main logical components: the model, the view, and the controller.
 ·         Control mai hum logic rakhte hai
 ·         Model mai hum database ke function rakhte hai
 ·         View mai hum html part rakhta hai.
 
-Ques. What is Ajax?
+### Ques. What is Ajax?
 Ans. AJAX = Asynchronous JavaScript and XML. 
 AJAX is a technique for creating fast and dynamic web pages. 
 AJAX allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
 
-Ques. What are the 3 scope levels available in php  /  What is difference type of visibility ? or what are access modifiers  ? 
+### Ques. What are the 3 scope levels available in php  /  What is difference type of visibility ? or what are access modifiers  ? 
 Ans. 
 Public:- Public method or variable can be accessible from anywhere, Means a public method or variable of a class can be called outside of the class or in a subclass. 
 Private:- A private  method or variable of a class can only be called inside that class only in which it is declared.
 Protected:- A protected method or variable can only be called in that class & its subclass.
 
-Ques. What are the formatting and printing strings available in php  ?
-Ans.    printf(): Display a formatted string.
-	sprintf(): Saves a formatted string in a variable.
-	fprintf(): prints a formatted string to a file.
-	number_format(): Formats number as string.
- 
+### Ques. What are the formatting and printing strings available in php  ?
+__Ans.__    
+* printf(): Display a formatted string.
+* sprintf(): Saves a formatted string in a variable.
+* fprintf(): prints a formatted string to a file.
+* number_format(): Formats number as string.
+```php
 $today = date("F j, Y, g:i a"); // March 10, 2001, 5:16 pm 
 $today = date("m.d.y"); // 03.10.01 
 $today = date("j, n, Y"); // 10, 3, 2001 
@@ -542,14 +543,13 @@ $today = date("D M j G:i:s T Y"); // Sat Mar 10 17:16:18 MST 2001
 $today = date('H:m:s \m \i\s\ \m\o\n\t\h'); // 17:03:18 m is month 
 $today = date("H:i:s"); // 17:16:18 
 $today = date("Y-m-d H:i:s"); // 2001-03-10 17:16:18 (the MySQL DATETIME format)
+```
 
-Ques. What is PDO ?
-Ans. Oops 
-
-======Oops(Object oriented)======
+###  Ques. What is PDO ?
+Ans.  
 
 
-Ques. What is the relation between Classes and Objects ?
+### Ques. What is the relation between Classes and Objects ?
 They look very much same but are not same.
 A class is a definition, while an object is an instance of the class.
 A class is a blueprint while objects are actual objects existing in the real world.
@@ -606,7 +606,7 @@ class Sony extends TV {
        return "Sony";
    }
 }
-Q:- What is the need of abstract class?
+###  Q:- What is the need of abstract class?
 Suppose we were modeling the behavior of animals, by creating a class hierarchy that started with a base class called Animal.
 Animals are capable of doing different things like flying, digging and walking, but there are some common operations as well like eating and sleeping.
 Some common operations are performed by all animals, but in a different way as well.
@@ -614,7 +614,7 @@ When an operation is performed in a different way, it is a good candidate for an
  
 
 
-Interface:- An interface is a description of action that object can do.
+### Interface:- An interface is a description of action that object can do.
 jo interface mai function honge wo class mai hona jaruri hai.
 Purpose of interface is to allow the computer to enforce these properties and to know that an object of type t.
 Example:-
@@ -637,7 +637,8 @@ class xyz implements abc
 $obj = new xyz();
 $obj->a();
 ?>
-Q:- What is the key difference between concrete class and abstract class?
+
+### Q:- What is the key difference between concrete class and abstract class?
 Concrete classes are those classes which has to declare body of abstract methods which extends or implements from abstract class or interface
 OR
 Abstract classes usually have partial or no implementation. On the other hand, Concrete classes always have full implementation of its behavior. Unlike Concrete classes, Abstract classes cannot be instantiated.
