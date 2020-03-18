@@ -239,7 +239,27 @@ __Persistent Cookie:-__ A persistent cookie is a cookie which is store informati
 __Non Persistent Cookie:-__ Non persistent cookies are stored in ram on the server. Ex:- login
 
 **[⬆ Back to Top](#table-of-contents)**
-###
+### Ques. What is Session ?
+__Ans.__ Session is way to store information to be used across multiple pages. It stores information on the server.
+```php
+Create session:- 			session_start(); 
+Set value into session:- 		$_SESSION['USER_ID']=1; 
+Remove data from a session:- 		unset($_SESSION['USER_ID'];
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is difference between seesion_unregister and session_unset ?
+__Ans.__ The session_unregister() function unregister a global variable from the current session and the session_unset() function frees all session variables.
+
+### Ques. Difference between cookie and Session ?
+__Ans.__
+|Cookie|Session|
+|:---:|:---:|
+|Cookie are stored on the server in text file format|Session are stored on the server Side|
+|Cookie can not hold multiple variables|Session can hold multiple variables.  |
+|We can set expiry for a cookie|session only remains active as long as the browser is open|
+| |Users do not have access to the data you stored in Session,Since it is stored in the server|
+|cookies using for user activity tracking|Session is mainly used for login/logout purpose|
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
@@ -395,6 +415,27 @@ $a = new testChild();
 $a -> abc();
 ?>
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Polymorphism?
+__Ans.__ 
+* When one task is performed by different ways i.e known as polymorphism.
+* Polymorphism is ability to use function & method in different ways.
+
+#### Types of Polymorphism?
+Polymorphism could be static and dynamic both. Overloading is static polymorphism while, overriding is dynamic polymorphism.
+
+1. Compile time polymorphism (Static) - Method Overloading
+
+2. Runtime time polymorphism (Dynamic) - Method Overriding
+
+__Overloading__ is defining functions/methods that have same signatures with different parameters in the same class.
+
+__Overriding__ is redefining parent class functions/methods in child class with same signature. So, basically the purpose of overriding is to change the behavior of your parent class method.
+
+ The overloading methods are invoked when interacting with properties or methods that have not been declared or are not visible in the current scope. The rest of this section will use the terms "inaccessible properties" and "inaccessible methods" to refer to this combination of declaration and visibility.
+
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. How we can retrive the data in the result set of the mysql using Php ?
 __Ans.__
 Mysql_fetch_row:- It fetch array 
@@ -402,44 +443,26 @@ Mysql_fetch_object:-
 Mysql_fetch_array:-
 Mysql_fetch_assoc:-
 
+
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is the difference between mysqli_fetch_object() and mysqli_fetch_array ?
 __Ans.__
 The mysqli_fetch_object() function collects the first single matching record where mysqli_fetch_array() collects all matching records from the table in an array.
  
- 
 
-### Ques. What is Session ?
-__Ans.__ Session is way to store information to be used across multiple pages. It stores information on the server.
-Create session:- 			session_start(); 
-Set value into session:- 		$_SESSION['USER_ID']=1; 
-Remove data from a session:- 	unset($_SESSION['USER_ID'];
-
-### Ques. What is difference between seesion_unregister and session_unset ?
-__Ans.__ The session_unregister() function unregister a global variable from the current session and the session_unset() function frees all session variables.
-
-### Ques. Difference between cookie and Session ?
-__Ans.__
-|Cookie|Session|
-|:---:|:---:|
-|Cookie are stored on the server in text file format|Session are stored on the server Side|
-|Cookie can not hold multiple variables|Session can hold multiple variables.  |
-|We can set expiry for a cookie|session only remains active as long as the browser is open|
-
-
-Users do not have access to the data you stored in Session,Since it is stored in the server
-cookies using for user activity tracking
-Session is mainly used for login/logout purpose
-
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is .htaccess file ?
 __Ans.__ .htaccess is a configuration file used to alter the default behavior of a Apache web server software. Most common usage is to redirect the http request to some URLs based on some conditions. For example, we can hide the .html or .php extensions of the URLs to make it SEO friendly
 
-
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Timestamp ?
 __Ans.__ A timestamp is the current time of event that is recorded by a computer.
 
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. What does PEAR stand for ?
 __Ans.__ PEAR means "PHP Extension and Application Repository". It extends PHP and provides a higher level of programming for web developers.
 
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. How to find the length of an array in php?
 __Ans.__  count() or sizeof() function to get the number of elements or value in an array.
 ```php
@@ -451,6 +474,7 @@ echo sizeof($days);
 ?>
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is the output of the following Code?
 __Ans.__
 ```php
@@ -568,16 +592,7 @@ Animals are capable of doing different things like flying, digging and walking, 
 Some common operations are performed by all animals, but in a different way as well.
 When an operation is performed in a different way, it is a good candidate for an abstract method (forcing subclasses to provide a custom implementation).
  
-Ques. What is Polymorphism ?
-When one task is performed by different ways i.e known as polymorphism.
-Polymorphism is ability to use function & method in different ways.
-Ques. Types of Polymorphism?
-Polymorphism could be static and dynamic both. Overloading is static polymorphism while, overriding is dynamic polymorphism.
-Compile time polymorphism (Static) - Method Overloading
-Runtime time polymorphism (Dynamic) - Method Overriding
-Overloading is defining functions/methods that have same signatures with different parameters in the same class.
-Overriding is redefining parent class functions/methods in child class with same signature. So, basically the purpose of overriding is to change the behavior of your parent class method.
- The overloading methods are invoked when interacting with properties or methods that have not been declared or are not visible in the current scope. The rest of this section will use the terms "inaccessible properties" and "inaccessible methods" to refer to this combination of declaration and visibility.
+
 
 Interface:- An interface is a description of action that object can do.
 jo interface mai function honge wo class mai hona jaruri hai.
@@ -730,14 +745,12 @@ __Ceil()__ is used to find nearest maximum values of passing value.
         	Echo $ans;
         	Output:- 7
 ```
-```php
 __Floor()__ is used to find nearest minimum values of  passing value.
+```php
 		$no = 6.5;
         	$ans = ceil($no);
         	Echo $ans;
         	Output:- 6
-```
-
 ```
 
 
