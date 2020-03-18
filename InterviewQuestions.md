@@ -416,16 +416,14 @@ Remove data from a session:- 	unset($_SESSION['USER_ID'];
 
 ### Ques. What is difference between seesion_unregister and session_unset ?
 __Ans.__ The session_unregister() function unregister a global variable from the current session and the session_unset() function frees all session variables.
-Ques. Difference between cookie and Session ?
-Ans.
-Cookie
-Session
-Cookie are stored on the server in text file format
-Session are stored on the server Side
-Cookie can not hold multiple variables
-Session can hold multiple variables.  
-We can set expiry for a cookie
-session only remains active as long as the browser is open
+
+### Ques. Difference between cookie and Session ?
+__Ans.__
+|Cookie|Session|
+|:---:|:---:|
+|Cookie are stored on the server in text file format|Session are stored on the server Side|
+|Cookie can not hold multiple variables|Session can hold multiple variables.  |
+|We can set expiry for a cookie|session only remains active as long as the browser is open|
 
 
 Users do not have access to the data you stored in Session,Since it is stored in the server
@@ -505,9 +503,6 @@ Ques. What is PDO ?
 Ans. Oops 
 
 ======Oops(Object oriented)======
-
-
-
 
 
 Ques. What is the relation between Classes and Objects ?
@@ -712,32 +707,36 @@ Ques. how to upload file in php ?
 Ans. The move_uploaded_file() function is used to upload file in PHP.
 	move_uploaded_file($source_path,$des_path);
 
-Ques. Difference between two dates in Php ?
-Ans. <?php
+### Ques. Difference between two dates in Php ?
+__Ans.__
+```php
+<?php
    $now = time();
    $your_date = strtotime("2017-01-15");
    $datediff = $now - $your_date;
    echo floor($datediff / (60 * 60 * 24));
 ?>
+```
 
 Ques. How to get value in the url ?
 Ans. $sort = $_GET[‘url’]
 
-Ques. What We can ceil() and floor() function in php ?
-Ans. Ceil() is used to find nearest maximum values of passing value.
-	Ex:- 
-$no = 6.5;
+### Ques. What We can ceil() and floor() function in php ?
+__Ans.__ 
+__Ceil()__ is used to find nearest maximum values of passing value.
+```php
+		$no = 6.5;
         	$ans = ceil($no);
         	Echo $ans;
         	Output:- 7
-
-Floor() is used to find nearest minimum values of  passing value.
-$no = 6.5;
+```
+```php
+__Floor()__ is used to find nearest minimum values of  passing value.
+		$no = 6.5;
         	$ans = ceil($no);
         	Echo $ans;
         	Output:- 6
-
-
+```
 
 ```
 
