@@ -460,7 +460,9 @@ $obj->a();
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Constructor ?
-__Ans.__ Constructors are special function/method which is automatically called when an object is created.
+__Ans.__ 
+* Constructors are special function/method which is automatically called when an object is created.
+* the construct function starts with two underscores (__)!
 
 #### Types of  Constructor ?
 
@@ -477,6 +479,8 @@ __Private Constructor:__
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Destructor ?
 __Ans.__ A Destructor is special functions which are automatically called when an object is destroyed.
+
+Tip: As constructors and destructors helps reducing the amount of code, they are very useful!
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. How we can retrive the data in the result set of the mysql using Php ?
