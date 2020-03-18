@@ -522,10 +522,12 @@ AJAX is a technique for creating fast and dynamic web pages.
 AJAX allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
 
 ### Ques. What are the 3 scope levels available in php  /  What is difference type of visibility ? or what are access modifiers  ? 
-Ans. 
-Public:- Public method or variable can be accessible from anywhere, Means a public method or variable of a class can be called outside of the class or in a subclass. 
-Private:- A private  method or variable of a class can only be called inside that class only in which it is declared.
-Protected:- A protected method or variable can only be called in that class & its subclass.
+__Ans.__
+__Public:-__ Public method or variable can be accessible from anywhere, Means a public method or variable of a class can be called outside of the class or in a subclass. 
+
+__Private:-__ A private  method or variable of a class can only be called inside that class only in which it is declared.
+
+__Protected:-__ A protected method or variable can only be called in that class & its subclass.
 
 ### Ques. What are the formatting and printing strings available in php  ?
 __Ans.__    
