@@ -731,7 +731,6 @@ Ques. How to get value in the url ?
 Ans. $sort = $_GET[‘url’]
 
 ### Ques. What We can ceil() and floor() function in php ?
-__Ans.__ 
 __Ceil()__ is used to find nearest maximum values of passing value.
 ```php
 		$no = 6.5;
