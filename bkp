@@ -30,14 +30,14 @@
 |23 | [What is class?](#Ques-What-is-class)|
 |24 | [What is object?](#ques-What-is-object)|
 |25 | [What is Encapsulation?](#Ques-What-is-Encapsulation)|
-|26 | [What is Abstraction?](#)|
-|27 | [What is Abstraction?](#)|
-|28 | [What is Polymorphism?](#)|
-|29 | [What is Interface?](#)|
-|30 | [What is Inheritance?](#)|
-|31 | [What is Static class?](#)|
-|32 | [What is Constructor?](#)|
-|33 | [What is Destructor ?](#)|
+|26 | [What is Abstraction?](#Ques-What-is-Abstraction)|
+|27 | [What is Interface?](#Ques-What-is-Interface)|
+|28 | [What is the difference between Abstract class Interface?](#ques-What-is-the-difference-between-Abstract-class-Interface)|
+|29 | [What is Polymorphism?](#Ques-What-is-Polymorphism)|
+|30 | [What is Inheritance?](#Ques-What-is-Inheritance)|
+|31 | [What is Static class?](#Ques-What-is-Static-class)|
+|32 | [What is Constructor?](#Ques-What-is-Constructor)|
+|33 | [What is Destructor?](#Ques-What-is-Destructor)|
 
 
 
@@ -51,22 +51,18 @@ __Ans.__
 * PHP it is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.
 
 **[⬆ Back to Top](#table-of-contents)**
-
 ### Ques. Which is the latest version of PHP?
 __Ans.__ The latest stable version of PHP is 7.2  released on November 30, 2019.
 
 **[⬆ Back to Top](#table-of-contents)**
-
 ### Ques. What Type of Framework in Php?
 __Ans.__ Cakephp, Laravel, Codeigniter, Yii 2, Zend Framework, Phalcon, Slim, FuelPhp, Phpixie, etc
 
 **[⬆ Back to Top](#table-of-contents)**
-
 ### Ques. What Type of CMS(Content Management System) in Php?
 __Ans.__ Wordpress, Joomla, Magento, Drupal, etc
 
 **[⬆ Back to Top](#table-of-contents)**
-
 ### Ques. Full Form of LAMP?
 __Ans.__ Linux Apache MySql and Php.
 
@@ -239,7 +235,27 @@ __Persistent Cookie:-__ A persistent cookie is a cookie which is store informati
 __Non Persistent Cookie:-__ Non persistent cookies are stored in ram on the server. Ex:- login
 
 **[⬆ Back to Top](#table-of-contents)**
-###
+### Ques. What is Session ?
+__Ans.__ Session is way to store information to be used across multiple pages. It stores information on the server.
+```php
+Create session:- 			session_start(); 
+Set value into session:- 		$_SESSION['USER_ID']=1; 
+Remove data from a session:- 		unset($_SESSION['USER_ID'];
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is difference between seesion_unregister and session_unset ?
+__Ans.__ The session_unregister() function unregister a global variable from the current session and the session_unset() function frees all session variables.
+
+### Ques. Difference between cookie and Session ?
+__Ans.__
+|Cookie|Session|
+|:---:|:---:|
+|Cookie are stored on the server in text file format|Session are stored on the server Side|
+|Cookie can not hold multiple variables|Session can hold multiple variables.  |
+|We can set expiry for a cookie|session only remains active as long as the browser is open|
+| |Users do not have access to the data you stored in Session,Since it is stored in the server|
+|cookies using for user activity tracking|Session is mainly used for login/logout purpose|
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
@@ -337,7 +353,7 @@ echo $obj->getUserDetails();
 Hi, My Name is Ajay and I'm 23 old
 ```
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. What is Object ?
+### Ques. What is Object?
 __Ans.__
 Any entity that has state and behaviours is known as object. Ex- Chair, Pen, table etc
 ```php
@@ -368,83 +384,232 @@ $personObj->getName();
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-
+### Ques. What is Abstraction?
+__Ans.__
+* Hiding internal details and showing functionality is known as abstraction. 
+* Abstract class is a class which contains at least one or more abstract methods.
+* Abstract method is a method which is declared, but not defined.
+* Abstract class ka hum obj nahi bana sakte hai... agar banate hai to fatal error dega: cannot instance abstract class.
+Agar hame abstract class ke function ko call karni hai to inherit karke call karenge.
+```php
+<?php
+abstract class testParent
+{
+        	public function abc()
+        	{
+        	echo "mohit";
+        	}
+}
+class testChild extends testParent
+{
+        	public function xyz()
+        	{
+        	echo "saxena";
+        	}
+}
+$a = new testChild();
+$a -> abc();
+?>
 ```
-### Ques. How we can retrive the data in the result set of the mysql using Php ?
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Interface?
+__Ans.__ 
+* An interface is a description of action that object can do.
+* jo interface mai function honge wo class mai hona jaruri hai.
+* Purpose of interface is to allow the computer to enforce these properties and to know that an object of type t.
+```php
+<?php
+interface abc
+{
+	public function a();
+	public function b();
+}
+class xyz implements abc
+{  	public function a()
+	{
+    	echo "mohit";
+	}
+  	public function b()
+	{
+    	echo "saxena";
+	}
+}
+$obj = new xyz();
+$obj->a();
+?>
+```
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the difference between Abstract class Interface?
+__Ans.__
+|Abstract Class|Interface|
+|:---:|:---:|
+|In abstract class a method must be declared as abstract. Abstract methods doesn’t have any implementation.|In interface all the methods by default are abstract.|
+|Abstract class can also contain member variables and concrete functions/methods.|Interfaces cannot contain any member variables and concrete functions/methods except constants.|
+|An Abstract methods can be declare with access modifiers like public, protected etc. Concrete Class which is extending the abstract class must be defined with the same or visibility.|All methods declared in an interface must be public.|
+|A class can Inherits only one Abstract class and Multiple inheritance is not possible for Abstract class.|A class can implement many interfaces and Multiple interface inheritance is possible.|
+|Only complete member of abstract class can be static.|Members of Interface can not be static.|
+|Abstract class does nor support multiple inheritance.|Interface Supports multiple inheritance|
+|Abstract class contains Data Member.|Interface does not Contains Data member.|
+|Abstract class contains Constructors.|Interface does not contains Constructors|
+|An Abstract class  can contain both incomplete(abstract) and complete member|An interface contains only incomplete member (signature of member)|
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Polymorphism?
+__Ans.__ 
+* When one task is performed by different ways i.e known as polymorphism.
+* Polymorphism is ability to use function & method in different ways.
+
+#### Types of Polymorphism?
+Polymorphism could be static and dynamic both. Overloading is static polymorphism while, overriding is dynamic polymorphism.
+
+1. Compile time polymorphism (Static) - Method Overloading
+
+2. Runtime time polymorphism (Dynamic) - Method Overriding
+
+__Overloading__ is defining functions/methods that have same signatures with different parameters in the same class.
+
+__Overriding__ is redefining parent class functions/methods in child class with same signature. So, basically the purpose of overriding is to change the behavior of your parent class method.
+
+ The overloading methods are invoked when interacting with properties or methods that have not been declared or are not visible in the current scope. The rest of this section will use the terms "inaccessible properties" and "inaccessible methods" to refer to this combination of declaration and visibility.
+
+
+### Ques. What is Inheritance?
+__Ans.__ 
+* Acquiring the property from parent class to child class is called the inheritance.
+* An inherited class is defined by using the extends keyword.
+
+### Ques. What is Static class?
+__Ans.__ Static class ka hame object nahi banna padta hai, scope resolution se call kar lete hai.
+```php
+<?php
+class a
+{
+	static public function xyz()
+        	{
+                    	echo "mohit";
+        	}
+        	public function mno()
+        	{
+                    	echo "saxena";
+        	}
+}
+class b extends a
+{
+        	public static function xy()
+        	{
+                    	echo "mohi saxena";
+        	}
+        	
+}
+b ::xyz();      	
+?>
+```
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Constructor?
+__Ans.__ 
+* Constructors are special function/method which is automatically called when an object is created.
+* the construct function starts with two underscores (__)!
+
+#### Types of  Constructor?
+
+__Default Constructor:__ A constructor without any parameters is called a default constructor.
+
+__Parameterized Constructor:__ A constructor with at least one parameter is called a parametrized constructor.
+
+__Copy Constructor:__
+
+__Static Constructor:__
+
+__Private Constructor:__
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Destructor?
+__Ans.__ A Destructor is special functions which are automatically called when an object is destroyed.
+
+Tip: As constructors and destructors helps reducing the amount of code, they are very useful!
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. How we can retrive the data in the result set of the mysql using Php?
 __Ans.__
 Mysql_fetch_row:- It fetch array 
 Mysql_fetch_object:-
 Mysql_fetch_array:-
 Mysql_fetch_assoc:-
 
-### Ques. What is the difference between mysqli_fetch_object() and mysqli_fetch_array ?
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the difference between mysqli_fetch_object() and mysqli_fetch_array?
 __Ans.__
 The mysqli_fetch_object() function collects the first single matching record where mysqli_fetch_array() collects all matching records from the table in an array.
  
- 
 
-Ques. What is Session ?
-Ans. Session is way to store information to be used across multiple pages. It stores information on the server.
-Create session:- 			session_start(); 
-Set value into session:- 		$_SESSION['USER_ID']=1; 
-Remove data from a session:- 	unset($_SESSION['USER_ID'];
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is .htaccess file?
+__Ans.__ .htaccess is a configuration file used to alter the default behavior of a Apache web server software. Most common usage is to redirect the http request to some URLs based on some conditions. For example, we can hide the .html or .php extensions of the URLs to make it SEO friendly
 
-Ques. What is difference between seesion_unregister and session_unset ?
-Ans. The session_unregister() function unregister a global variable from the current session and the session_unset() function frees all session variables.
-Ques. Difference between cookie and Session ?
-Ans.
-Cookie
-Session
-Cookie are stored on the server in text file format
-Session are stored on the server Side
-Cookie can not hold multiple variables
-Session can hold multiple variables.  
-We can set expiry for a cookie
-session only remains active as long as the browser is open
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Timestamp?
+__Ans.__ A timestamp is the current time of event that is recorded by a computer.
 
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What does PEAR stand for?
+__Ans.__ PEAR means "PHP Extension and Application Repository". It extends PHP and provides a higher level of programming for web developers.
 
-Users do not have access to the data you stored in Session,Since it is stored in the server
-cookies using for user activity tracking
-Session is mainly used for login/logout purpose
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. How to find the length of an array in php?
+__Ans.__  count() or sizeof() function to get the number of elements or value in an array.
+```php
+<?php
+$days = array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+echo count($days);
+echo "<br>";
+echo sizeof($days);
+?>
+```
 
-Ques. What is .htaccess file ?
-Ans. .htaccess is a configuration file used to alter the default behavior of a Apache web server software. Most common usage is to redirect the http request to some URLs based on some conditions. For example, we can hide the .html or .php extensions of the URLs to make it SEO friendly
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the output of the following Code?
+__Ans.__
+```php
+$a = '1';
+$b = &$a;
+$b = "2$b";
+echo $a.", ".$b;
+Output:- 21, 21
+```
 
-
-Ques. What is Timestamp ?
-Ans. A timestamp is the current time of event that is recorded by a computer.
-
-Ques. What does PEAR stand for ?
-Ans. PEAR means "PHP Extension and Application Repository". It extends PHP and provides a higher level of programming for web developers.
-
-Ques. What is the use of header function in php ?
-Ans. The header() function sends a raw HTTP header to a client browser. We can use header() function for redirection of pages. It is important to notice that header() must be called before any actual output is seen.
+### Ques. What is the use of header function in php ?
+__Ans.__ The header() function sends a raw HTTP header to a client browser. We can use header() function for redirection of pages. It is important to notice that header() must be called before any actual output is seen.
 PHP header are bits of information that are sent to a computer before anything else, like a web page is sent
 THey tell the computer the information it needs so that it can execute commands when the rest of the information is received. 
 
-Ques. What is MVC ?
+### Ques. What is MVC ?
 Ans. The Model-view-controller (MVC) is an architectural pattern that separates an application into three main logical components: the model, the view, and the controller.
 ·         Control mai hum logic rakhte hai
 ·         Model mai hum database ke function rakhte hai
 ·         View mai hum html part rakhta hai.
 
-Ques. What is Ajax ?
+### Ques. What is Ajax?
 Ans. AJAX = Asynchronous JavaScript and XML. 
 AJAX is a technique for creating fast and dynamic web pages. 
 AJAX allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
 
-Ques. What are the 3 scope levels available in php  /  What is difference type of visibility ? or what are access modifiers  ? 
-Ans. 
-Public:- Public method or variable can be accessible from anywhere, Means a public method or variable of a class can be called outside of the class or in a subclass. 
-Private:- A private  method or variable of a class can only be called inside that class only in which it is declared.
-Protected:- A protected method or variable can only be called in that class & its subclass.
+### Ques. What are the 3 scope levels available in php  /  What is difference type of visibility ? or what are access modifiers  ? 
+__Ans.__
+__Public:-__ Public method or variable can be accessible from anywhere, Means a public method or variable of a class can be called outside of the class or in a subclass. 
 
-Ques. What are the formatting and printing strings available in php  ?
-Ans.    printf(): Display a formatted string.
-	sprintf(): Saves a formatted string in a variable.
-	fprintf(): prints a formatted string to a file.
-	number_format(): Formats number as string.
- 
+__Private:-__ A private  method or variable of a class can only be called inside that class only in which it is declared.
+
+__Protected:-__ A protected method or variable can only be called in that class & its subclass.
+
+### Ques. What are the formatting and printing strings available in php  ?
+__Ans.__    
+* printf(): Display a formatted string.
+* sprintf(): Saves a formatted string in a variable.
+* fprintf(): prints a formatted string to a file.
+* number_format(): Formats number as string.
+```php
 $today = date("F j, Y, g:i a"); // March 10, 2001, 5:16 pm 
 $today = date("m.d.y"); // 03.10.01 
 $today = date("j, n, Y"); // 10, 3, 2001 
@@ -454,17 +619,13 @@ $today = date("D M j G:i:s T Y"); // Sat Mar 10 17:16:18 MST 2001
 $today = date('H:m:s \m \i\s\ \m\o\n\t\h'); // 17:03:18 m is month 
 $today = date("H:i:s"); // 17:16:18 
 $today = date("Y-m-d H:i:s"); // 2001-03-10 17:16:18 (the MySQL DATETIME format)
+```
 
-Ques. What is PDO ?
-Ans. Oops 
-
-======Oops(Object oriented)======
-
+###  Ques. What is PDO ?
+Ans.  
 
 
-
-
-Ques. What is the relation between Classes and Objects ?
+### Ques. What is the relation between Classes and Objects ?
 They look very much same but are not same.
 A class is a definition, while an object is an instance of the class.
 A class is a blueprint while objects are actual objects existing in the real world.
@@ -494,32 +655,7 @@ Member function − These are the function defined inside a class and are used t
 
 
 
-Ques. What is Abstraction ?
-Hiding internal details and showing functionality is known as abstraction. 
-Abstract class is a class which contains at least one or more abstract methods.
-Abstract method is a method which is declared, but not defined.
 
-Abstract class ka hum obj nahi bana sakte hai... agar banate hai to fatal error dega: cannot instance abstract class.
-Agar hame abstract class ke function ko call karni hai to inherit karke call karenge.
-Ex:-
-<?php
-abstract class testParent
-{
-        	public function abc()
-        	{
-        	echo "mohit";
-        	}
-}
-class testChild extends testParent
-{
-        	public function xyz()
-        	{
-        	echo "saxena";
-        	}
-}
-$a = new testChild();
-$a -> abc();
-?>
 PHP 5 introduces abstract classes and methods.
 Classes defined as abstract may not be instantiated
 Classes that contains at least one abstract method must also be abstract.
@@ -546,193 +682,86 @@ class Sony extends TV {
        return "Sony";
    }
 }
-Q:- What is the need of abstract class?
+###  Q:- What is the need of abstract class?
 Suppose we were modeling the behavior of animals, by creating a class hierarchy that started with a base class called Animal.
 Animals are capable of doing different things like flying, digging and walking, but there are some common operations as well like eating and sleeping.
 Some common operations are performed by all animals, but in a different way as well.
 When an operation is performed in a different way, it is a good candidate for an abstract method (forcing subclasses to provide a custom implementation).
  
-Ques. What is Polymorphism ?
-When one task is performed by different ways i.e known as polymorphism.
-Polymorphism is ability to use function & method in different ways.
-Ques. Types of Polymorphism?
-Polymorphism could be static and dynamic both. Overloading is static polymorphism while, overriding is dynamic polymorphism.
-Compile time polymorphism (Static) - Method Overloading
-Runtime time polymorphism (Dynamic) - Method Overriding
-Overloading is defining functions/methods that have same signatures with different parameters in the same class.
-Overriding is redefining parent class functions/methods in child class with same signature. So, basically the purpose of overriding is to change the behavior of your parent class method.
- The overloading methods are invoked when interacting with properties or methods that have not been declared or are not visible in the current scope. The rest of this section will use the terms "inaccessible properties" and "inaccessible methods" to refer to this combination of declaration and visibility.
 
-Interface:- An interface is a description of action that object can do.
-jo interface mai function honge wo class mai hona jaruri hai.
-Purpose of interface is to allow the computer to enforce these properties and to know that an object of type t.
-Example:-
-<?php
-interface abc
-{
-	public function a();
-	public function b();
-}
-class xyz implements abc
-{  	public function a()
-	{
-    	echo "mohit";
-	}
-  	public function b()
-	{
-    	echo "saxena";
-	}
-}
-$obj = new xyz();
-$obj->a();
-?>
-Q:- What is the key difference between concrete class and abstract class?
+
+
+### Ques:- What is the key difference between concrete class and abstract class?
 Concrete classes are those classes which has to declare body of abstract methods which extends or implements from abstract class or interface
 OR
 Abstract classes usually have partial or no implementation. On the other hand, Concrete classes always have full implementation of its behavior. Unlike Concrete classes, Abstract classes cannot be instantiated.
 
-Inheritance:- Acquiring the property from parent class to child class is called the inheritance.
-
-Static class:-
-Static class ka hame object nahi banna padta hai, scope resolution se call kar lete hai.
-<?php
-class a
-{
-	static public function xyz()
-        	{
-                    	echo "mohit";
-        	}
-        	public function mno()
-        	{
-                    	echo "saxena";
-        	}
-}
-class b extends a
-{
-        	public static function xy()
-        	{
-                    	echo "mohi saxena";
-        	}
-        	
-}
-b ::xyz();
-        	
-?>
-
-
-Ques. What is the difference between Abstract class Interface ?
-
-Abstract Class
-Interface
-In abstract class a method must be declared as abstract. Abstract methods doesn’t have any implementation.
-In interface all the methods by default are abstract.
-Abstract class can also contain member variables and concrete functions/methods.
-Interfaces cannot contain any member variables and concrete functions/methods except constants.
-An Abstract methods can be declare with access modifiers like public, protected etc. Concrete Class which is extending the abstract class must be defined with the same or visibility.
-All methods declared in an interface must be public.
-A class can Inherits only one Abstract class and Multiple inheritance is not possible for Abstract class.
-A class can implement many interfaces and Multiple interface inheritance is possible.
-Only complete member of abstract class can be static.
-Members of Interface can not be static.
-Abstract class does nor support multiple inheritance.
-Interface Supports multiple inheritance
-Abstract class contains Data Member.
-Interface does not Contains Data member.
-Abstract class contains Constructors.
-Interface does not contains Constructors
-An Abstract class  can contain both incomplete(abstract) and complete member
-An interface contains only incomplete member (signature of member)
 
 
 
 
 
+### Ques. Is Multiple inheritance support in php ?
+__Ans.__ PHP supports only single inheritance; it means that a class can be extended from only one single class using the keyword 'extended'.
 
+### Ques. What is the meaning of a final class and final method ?
+__Ans.__ Final class means that this class cannot be extended and a final method cannot be overridden.
 
-Ques. What is Constructor ?
-Ans. Constructors are special function/method which is automatically called when an object is created.
-Ques. Types of  Constructor ?
-Ans.
-Default Constructor: A constructor without any parameters is called a default constructor.
-Parameterized Constructor: A constructor with at least one parameter is called a parametrized constructor.
-Copy Constructor:
-Static Constructor:
-Private Constructor:
+### Ques. How to collect IP address from an HTTP request ?
+__Ans.__ $_SERVER['REMOTE_ADDR'];
 
-Ques. What is Destructor ?
-Ans. A Destructor is special functions which are automatically called when an object is destroyed.
-
-Ques. Is Multiple inheritance support in php ?
-Ans. PHP supports only single inheritance; it means that a class can be extended from only one single class using the keyword 'extended'.
-
-Ques. What is the meaning of a final class and final method ?
-Ans. Final class means that this class cannot be extended and a final method cannot be overridden.
-
-Ques. How to collect IP address from an HTTP request ?
-Ans. $_SERVER['REMOTE_ADDR'];
-
-Ques. How to collect IP address of the web server in php ?
+### ### Ques. How to collect IP address of the web server in php ?
 Ans. $_SERVER['SERVER_ADDR'];
 
-Ques. Find The Php Information ?
-Ans.   <?php
+### Ques. Find The Php Information ?
+__Ans.__
+```php
+<?php
    echo phpinfo();
 ?>
-
-Ques. how to create a mySql connection ?
-Ans.
+```
+### Ques. how to create a mySql connection ?
+__Ans.__
 mysql_connect("host_name", "User_name", "Password") ;
 mysql_select_db("db_name");
 
-Ques. how to stop the execution of php Script ?
-Ans. The exit() function is used to stop the execution of PHP script.
+### Ques. how to stop the execution of php Script ?
+__Ans.__ The exit() function is used to stop the execution of PHP script.
 
-Ques. how to upload file in php ?
-Ans. The move_uploaded_file() function is used to upload file in PHP.
+Q### ues. how to upload file in php ?
+__Ans.__ The move_uploaded_file() function is used to upload file in PHP.
 	move_uploaded_file($source_path,$des_path);
 
-Ques. Difference between two dates in Php ?
-Ans. <?php
+### Ques. Difference between two dates in Php ?
+__Ans.__
+```php
+<?php
    $now = time();
    $your_date = strtotime("2017-01-15");
    $datediff = $now - $your_date;
    echo floor($datediff / (60 * 60 * 24));
 ?>
+```
 
 Ques. How to get value in the url ?
 Ans. $sort = $_GET[‘url’]
 
-Ques. What We can ceil() and floor() function in php ?
-Ans. Ceil() is used to find nearest maximum values of passing value.
-	Ex:- 
+### Ques. What We can ceil() and floor() function in php ?
+__Ceil()__ is used to find nearest maximum values of passing value.
+```php
 $no = 6.5;
-        	$ans = ceil($no);
-        	Echo $ans;
-        	Output:- 7
-
-Floor() is used to find nearest minimum values of  passing value.
-$no = 6.5;
-        	$ans = ceil($no);
-        	Echo $ans;
-        	Output:- 6
-
-Ques. What is the output of the following Code ?
-$a = '1';
-$b = &$a;
-$b = "2$b";
-echo $a.", ".$b;
-Output:- 21, 21
-
-Ques. How to find the length of an array in php  ?
-Ans.  count() or sizeof() function to get the number of elements or value in an array.
-<?php
-$days = array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
-echo count($days);
-echo "<br>";
-echo sizeof($days);
-?>
-
-Ques. p  ?
-Ans. 
+$ans = ceil($no);
+Echo $ans;
+Output:- 7
 ```
+__Floor()__ is used to find nearest minimum values of  passing value.
+```php
+$no = 6.5;
+$ans = ceil($no);
+Echo $ans;
+Output:- 6
+```
+
+
+
 
