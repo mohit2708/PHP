@@ -671,31 +671,19 @@ b ::xyz();
 ?>
 
 
-Ques. What is the difference between Abstract class Interface ?
-
-Abstract Class
-Interface
-In abstract class a method must be declared as abstract. Abstract methods doesn’t have any implementation.
-In interface all the methods by default are abstract.
-Abstract class can also contain member variables and concrete functions/methods.
-Interfaces cannot contain any member variables and concrete functions/methods except constants.
-An Abstract methods can be declare with access modifiers like public, protected etc. Concrete Class which is extending the abstract class must be defined with the same or visibility.
-All methods declared in an interface must be public.
-A class can Inherits only one Abstract class and Multiple inheritance is not possible for Abstract class.
-A class can implement many interfaces and Multiple interface inheritance is possible.
-Only complete member of abstract class can be static.
-Members of Interface can not be static.
-Abstract class does nor support multiple inheritance.
-Interface Supports multiple inheritance
-Abstract class contains Data Member.
-Interface does not Contains Data member.
-Abstract class contains Constructors.
-Interface does not contains Constructors
-An Abstract class  can contain both incomplete(abstract) and complete member
-An interface contains only incomplete member (signature of member)
-
-
-
+### Ques. What is the difference between Abstract class Interface ?
+__Ans.__
+|Abstract Class|Interface|
+|:---:|:---:|
+|In abstract class a method must be declared as abstract. Abstract methods doesn’t have any implementation.|In interface all the methods by default are abstract.|
+|Abstract class can also contain member variables and concrete functions/methods.|Interfaces cannot contain any member variables and concrete functions/methods except constants.|
+|An Abstract methods can be declare with access modifiers like public, protected etc. Concrete Class which is extending the abstract class must be defined with the same or visibility.|All methods declared in an interface must be public.|
+|A class can Inherits only one Abstract class and Multiple inheritance is not possible for Abstract class.|A class can implement many interfaces and Multiple interface inheritance is possible.|
+|Only complete member of abstract class can be static.|Members of Interface can not be static.|
+|Abstract class does nor support multiple inheritance.|Interface Supports multiple inheritance|
+|Abstract class contains Data Member.|Interface does not Contains Data member.|
+|Abstract class contains Constructors.|Interface does not contains Constructors|
+|An Abstract class  can contain both incomplete(abstract) and complete member|An interface contains only incomplete member (signature of member)|
 
 
 ### Ques. Is Multiple inheritance support in php ?
