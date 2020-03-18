@@ -51,22 +51,18 @@ __Ans.__
 * PHP it is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.
 
 **[⬆ Back to Top](#table-of-contents)**
-
 ### Ques. Which is the latest version of PHP?
 __Ans.__ The latest stable version of PHP is 7.2  released on November 30, 2019.
 
 **[⬆ Back to Top](#table-of-contents)**
-
 ### Ques. What Type of Framework in Php?
 __Ans.__ Cakephp, Laravel, Codeigniter, Yii 2, Zend Framework, Phalcon, Slim, FuelPhp, Phpixie, etc
 
 **[⬆ Back to Top](#table-of-contents)**
-
 ### Ques. What Type of CMS(Content Management System) in Php?
 __Ans.__ Wordpress, Joomla, Magento, Drupal, etc
 
 **[⬆ Back to Top](#table-of-contents)**
-
 ### Ques. Full Form of LAMP?
 __Ans.__ Linux Apache MySql and Php.
 
