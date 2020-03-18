@@ -457,7 +457,35 @@ $obj = new xyz();
 $obj->a();
 ?>
 ```
+### Ques:- What is Inheritance?
+__Ans.__ Acquiring the property from parent class to child class is called the inheritance.
 
+### Ques:- What is Static class?
+__Ans.__ Static class ka hame object nahi banna padta hai, scope resolution se call kar lete hai.
+```php
+<?php
+class a
+{
+	static public function xyz()
+        	{
+                    	echo "mohit";
+        	}
+        	public function mno()
+        	{
+                    	echo "saxena";
+        	}
+}
+class b extends a
+{
+        	public static function xy()
+        	{
+                    	echo "mohi saxena";
+        	}
+        	
+}
+b ::xyz();      	
+?>
+```
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Constructor ?
 __Ans.__ 
@@ -644,38 +672,11 @@ When an operation is performed in a different way, it is a good candidate for an
 
 
 
-### Q:- What is the key difference between concrete class and abstract class?
+### Ques:- What is the key difference between concrete class and abstract class?
 Concrete classes are those classes which has to declare body of abstract methods which extends or implements from abstract class or interface
 OR
 Abstract classes usually have partial or no implementation. On the other hand, Concrete classes always have full implementation of its behavior. Unlike Concrete classes, Abstract classes cannot be instantiated.
 
-Inheritance:- Acquiring the property from parent class to child class is called the inheritance.
-
-Static class:-
-Static class ka hame object nahi banna padta hai, scope resolution se call kar lete hai.
-<?php
-class a
-{
-	static public function xyz()
-        	{
-                    	echo "mohit";
-        	}
-        	public function mno()
-        	{
-                    	echo "saxena";
-        	}
-}
-class b extends a
-{
-        	public static function xy()
-        	{
-                    	echo "mohi saxena";
-        	}
-        	
-}
-b ::xyz();
-        	
-?>
 
 
 ### Ques. What is the difference between Abstract class Interface ?
