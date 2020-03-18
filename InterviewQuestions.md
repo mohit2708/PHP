@@ -458,7 +458,9 @@ $obj->a();
 ?>
 ```
 ### Ques:- What is Inheritance?
-__Ans.__ Acquiring the property from parent class to child class is called the inheritance.
+__Ans.__ 
+* Acquiring the property from parent class to child class is called the inheritance.
+* An inherited class is defined by using the extends keyword.
 
 ### Ques:- What is Static class?
 __Ans.__ Static class ka hame object nahi banna padta hai, scope resolution se call kar lete hai.
