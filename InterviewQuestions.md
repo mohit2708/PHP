@@ -30,14 +30,14 @@
 |23 | [What is class?](#Ques-What-is-class)|
 |24 | [What is object?](#ques-What-is-object)|
 |25 | [What is Encapsulation?](#Ques-What-is-Encapsulation)|
-|26 | [What is Abstraction?](#)|
-|27 | [What is Interface?](#)|
-|28 | [What is the difference between Abstract class Interface?](#)|
-|29 | [What is Polymorphism?](#)|
-|30 | [What is Inheritance?](#)|
-|31 | [What is Static class?](#)|
-|32 | [What is Constructor?](#)|
-|33 | [What is Destructor ?](#)|
+|26 | [What is Abstraction?](#Ques-What-is-Abstraction)|
+|27 | [What is Interface?](#Ques-What-is-Interface)|
+|28 | [What is the difference between Abstract class Interface?](#ques-What-is-the-difference-between-Abstract-class-Interface)|
+|29 | [What is Polymorphism?](#Ques-What-is-Polymorphism)|
+|30 | [What is Inheritance?](#Ques-What-is-Inheritance)|
+|31 | [What is Static class?](#Ques-What-is-Static-class)|
+|32 | [What is Constructor?](#Ques-What-is-Constructor)|
+|33 | [What is Destructor?](#Ques-What-is-Destructor)|
 
 
 
@@ -353,7 +353,7 @@ echo $obj->getUserDetails();
 Hi, My Name is Ajay and I'm 23 old
 ```
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. What is Object ?
+### Ques. What is Object?
 __Ans.__
 Any entity that has state and behaviours is known as object. Ex- Chair, Pen, table etc
 ```php
@@ -384,7 +384,7 @@ $personObj->getName();
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. What is Abstraction ?
+### Ques. What is Abstraction?
 __Ans.__
 * Hiding internal details and showing functionality is known as abstraction. 
 * Abstract class is a class which contains at least one or more abstract methods.
