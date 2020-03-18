@@ -506,12 +506,12 @@ b ::xyz();
 ?>
 ```
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. What is Constructor ?
+### Ques. What is Constructor?
 __Ans.__ 
 * Constructors are special function/method which is automatically called when an object is created.
 * the construct function starts with two underscores (__)!
 
-#### Types of  Constructor ?
+#### Types of  Constructor?
 
 __Default Constructor:__ A constructor without any parameters is called a default constructor.
 
@@ -524,13 +524,13 @@ __Static Constructor:__
 __Private Constructor:__
 
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. What is Destructor ?
+### Ques. What is Destructor?
 __Ans.__ A Destructor is special functions which are automatically called when an object is destroyed.
 
 Tip: As constructors and destructors helps reducing the amount of code, they are very useful!
 
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. How we can retrive the data in the result set of the mysql using Php ?
+### Ques. How we can retrive the data in the result set of the mysql using Php?
 __Ans.__
 Mysql_fetch_row:- It fetch array 
 Mysql_fetch_object:-
@@ -539,21 +539,21 @@ Mysql_fetch_assoc:-
 
 
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. What is the difference between mysqli_fetch_object() and mysqli_fetch_array ?
+### Ques. What is the difference between mysqli_fetch_object() and mysqli_fetch_array?
 __Ans.__
 The mysqli_fetch_object() function collects the first single matching record where mysqli_fetch_array() collects all matching records from the table in an array.
  
 
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. What is .htaccess file ?
+### Ques. What is .htaccess file?
 __Ans.__ .htaccess is a configuration file used to alter the default behavior of a Apache web server software. Most common usage is to redirect the http request to some URLs based on some conditions. For example, we can hide the .html or .php extensions of the URLs to make it SEO friendly
 
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. What is Timestamp ?
+### Ques. What is Timestamp?
 __Ans.__ A timestamp is the current time of event that is recorded by a computer.
 
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. What does PEAR stand for ?
+### Ques. What does PEAR stand for?
 __Ans.__ PEAR means "PHP Extension and Application Repository". It extends PHP and provides a higher level of programming for web developers.
 
 **[⬆ Back to Top](#table-of-contents)**
