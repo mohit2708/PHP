@@ -431,6 +431,33 @@ __Overriding__ is redefining parent class functions/methods in child class with 
 
  The overloading methods are invoked when interacting with properties or methods that have not been declared or are not visible in the current scope. The rest of this section will use the terms "inaccessible properties" and "inaccessible methods" to refer to this combination of declaration and visibility.
 
+### Ques. What is Interface?
+__Ans.__ 
+* An interface is a description of action that object can do.
+* jo interface mai function honge wo class mai hona jaruri hai.
+* Purpose of interface is to allow the computer to enforce these properties and to know that an object of type t.
+```php
+<?php
+interface abc
+{
+	public function a();
+	public function b();
+}
+class xyz implements abc
+{  	public function a()
+	{
+    	echo "mohit";
+	}
+  	public function b()
+	{
+    	echo "saxena";
+	}
+}
+$obj = new xyz();
+$obj->a();
+?>
+```
+
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Constructor ?
 __Ans.__ Constructors are special function/method which is automatically called when an object is created.
@@ -612,29 +639,6 @@ When an operation is performed in a different way, it is a good candidate for an
  
 
 
-### Interface:- An interface is a description of action that object can do.
-jo interface mai function honge wo class mai hona jaruri hai.
-Purpose of interface is to allow the computer to enforce these properties and to know that an object of type t.
-Example:-
-<?php
-interface abc
-{
-	public function a();
-	public function b();
-}
-class xyz implements abc
-{  	public function a()
-	{
-    	echo "mohit";
-	}
-  	public function b()
-	{
-    	echo "saxena";
-	}
-}
-$obj = new xyz();
-$obj->a();
-?>
 
 ### Q:- What is the key difference between concrete class and abstract class?
 Concrete classes are those classes which has to declare body of abstract methods which extends or implements from abstract class or interface
