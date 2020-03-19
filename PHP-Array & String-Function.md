@@ -12,7 +12,7 @@
 
 
 ### array_chunk
- The __array_chunk()__ function splits an array into chunks of new arrays.
+ The __array_chunk()__ function splits an array into chunks of new arrays.<br>
 __syntex:-__ array_chunk(array, size, preserve_key)
 ```php
 <?php
@@ -21,8 +21,11 @@ print_r(array_chunk($cars,2));
 ?>
 output:- Array ( [0] => Array ( [0] => Volvo [1] => BMW ) [1] => Array ( [0] => Toyota [1] => Honda ) [2] => Array ( [0] => Mercedes [1] => Opel ) )
 ```
-The array_key_exists() function checks an array for a specified key, and returns true if the key exists and false if the key does not exist.
-syntex:-array_key_exists(key,array)
+
+### array_key_exists
+The __array_key_exists()__ function checks an array for a specified key, and returns true if the key exists and false if the key does not exist.<br>
+__syntex:-__  array_key_exists(key,array)
+```php
 <?php
 $a=array("Volvo"=>"XC90","BMW"=>"X5");
 if (array_key_exists("Volvo",$a))
@@ -35,6 +38,7 @@ else
   }
 ?>
 output:- Key Exists!
+ ```
  
 The array_keys() function returns an array containing the keys.
 Syntex:-array_keys(array,value,strict)
