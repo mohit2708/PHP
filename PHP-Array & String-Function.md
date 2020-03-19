@@ -6,23 +6,28 @@
 |:---|:---|
 |[array_chunk](#array_chunk)|[strlen](#strlen)|
 |[array_key_exists](#array_key_exists)| [str_word_count](#str_word_count)|
-|[array_keys](#array_keys)||
-|[array_merge](#array_merge)||
-|[array_push](#array_push)||
-|[array_rand](#array_rand)||
-|[array_slice](#array_slice)||
-|[array_values](#array_values)||
-|[sort](#sort)||
-|[asort](#asort)||
-|[usort](#usort)||
-|[uasort](#uasort)||
-|[uksort](#uksort)||
-|[arsort](#arsort)||
-|[ksort](#ksort)||
-|[krsort](#krsort)||
-|[rsort](#rsort)||
-|[count](#count)||
-|[in_array](#in_array)||
+|[array_keys](#array_keys)|[strrev](#strrev)|
+|[array_merge](#array_merge)|[strpos](#strpos)|
+|[array_push](#array_push)|[str_replace](#str_replace)|
+|[array_rand](#array_rand)|[strtoupper](#strtoupper)|
+|[array_slice](#array_slice)|[strtolower](#strtolower)|
+|[array_values](#array_values)|[ucfirst](#ucfirst)|
+|[sort](#sort)|[lcfirst](#lcfirst)|
+|[asort](#asort)|[ucwords](#ucwords)|
+|[usort](#usort)|[addcslashes](#addcslashes)|
+|[uasort](#uasort)|[addslashes](#addslashes)|
+|[uksort](#uksort)|[stripslashes](#stripslashes)|
+|[arsort](#arsort)|[explode](#explode)|
+|[ksort](#ksort)|[implode](#implode)|
+|[krsort](#krsort)|[str_split](#str_split)|
+|[rsort](#rsort)|[trim](#trim)|
+|[count](#count)|[ltrim](#ltrim)|
+|[in_array](#in_array)|[rtrim](#rtrim)|
+||[strstr](#strstr)|
+||[md5](#md5)|
+||[substr](#substr)|
+||[wordwrap](#wordwrap)|
+||[nl2br](#nl2br)|
 
 
 ### array_chunk
