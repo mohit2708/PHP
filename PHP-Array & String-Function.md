@@ -2,8 +2,10 @@
 
 ## Array
 
-* [array_chunk](#array_chunk)
-* [array_key_exists](#array_key_exists)
+|Array Function|String Function|
+|:---|:---|
+|[array_chunk](#array_chunk)|[strlen](#strlen)|
+|[array_key_exists](#array_key_exists)||
 * [array_keys](#array_keys)
 * [array_merge](#array_merge)
 * [array_push](#array_push)
@@ -22,6 +24,8 @@
 * [count](#count)
 * [in_array](#in_array)
 
+* 
+* [str_word_count](#str_word_count)
 
 ### array_chunk
  The __array_chunk()__ function splits an array into chunks of new arrays.<br>
@@ -388,8 +392,6 @@ output:- Match found
 
 # String Function
 
-* [strlen](#strlen)
-* [str_word_count](#str_word_count)
 
 ### strlen
 The PHP __strlen()__ function returns the length of a string.
