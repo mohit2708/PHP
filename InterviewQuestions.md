@@ -514,6 +514,10 @@ class show extends Nestedchld{
 }}
 $obj= new show();
 Output:- Addition=1500 subtraction=500 multiplication=500000
+
+$obj= new Nestedchld();
+$obj->sub(); //subtraction=500
+$obj->add(); //Addition=1500
 ```
 
 
