@@ -543,6 +543,7 @@ b ::xyz();
 __Ans.__ 
 * Constructors are special function/method which is automatically called when an object is created.
 * the construct function starts with two underscores (__)!
+* PHP Constructor, If a class name and function name will be similar in that case function is known as constructor.
 
 #### Types of  Constructor?
 
