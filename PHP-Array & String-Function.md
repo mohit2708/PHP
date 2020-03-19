@@ -478,22 +478,29 @@ echo substr("Hello world",4);
 ?>
 output:-
 
-The __wordwrap()__ function wraps a string into new lines when it reaches a specific length.
-Syntax:-wordwrap(string,width,break,cut)
+### wordwrap
+The __wordwrap()__ function wraps a string into new lines when it reaches a specific length.<br>
+__Syntax:-__ wordwrap(string,width,break,cut)<br>
+```php
 <?php
 $str = "An example of a long word is: Supercalifragulistic";
 echo wordwrap($str,15,"<br>\n");
 ?>
 output:-
+An example of a
+long word is:
+Supercalifragulistic
+```
 
-
-
-The __nl2br()__ function inserts HTML line breaks (<br> or <br />) in front of each newline (\n) in a string.
-syntex:-nl2br(string,xhtml)
+### nl2br
+The __nl2br()__ function inserts HTML line breaks (<br> or <br />) in front of each newline (\n) in a string.<bbr>
+__syntex:-__ nl2br(string,xhtml)<br>
+```php
 <?php
 echo nl2br("One line.\nAnother line.");
 ?>
 output:-
-
-.....
+One line
+Another line
+```
 
