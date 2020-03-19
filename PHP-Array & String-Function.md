@@ -121,17 +121,26 @@ red
 blue
 yellow
 ```
-The __array_slice()__ function returns selected parts of an array.
-syntex:-array_slice(array,start,length,preserve)
+
+### array_slice
+The __array_slice()__ function returns selected parts of an array.<br>
+syntex:-array_slice(array,start,length,preserve)<br>
+```php
 <?php
 $a=array("red","green","blue","yellow","brown");
 print_r(array_slice($a,2));
 ?>
-
 output:-
+Array(
+[0] => blue
+[1] => yellow
+[2] => brown
+)
+```
 
-The __array_values()__ function returns an array containing all the values of an array.
-syntex:-array_values(array)
+### array_values
+The __array_values()__ function returns an array containing all the values of an array.<br>
+syntex:-array_values(array)<br>
 <?php
 $a=array("Name"=>"Peter","Age"=>"41","Country"=>"USA");
 print_r(array_values($a));
@@ -139,8 +148,8 @@ print_r(array_values($a));
 output:-
 
 
-The __sort()__ function sorts an indexed array in ascending order.
-syntex:-sort(array,sortingtype);
+The __sort()__ function sorts an indexed array in ascending order.<br>
+syntex:-sort(array,sortingtype);<br>
 <?php
 $cars=array("Volvo","BMW","Toyota");
 sort($cars);
@@ -153,9 +162,9 @@ for($x=0;$x<$clength;$x++)
   }
 ?>
 output:-
-
-The __asort()__ function sorts an associative array in ascending order, according to the value.
-syntex:-asort(array,sortingtype);
+```
+The __asort()__ function sorts an associative array in ascending order, according to the value.<br>
+syntex:-asort(array,sortingtype);<br>
 <?php
 $age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
 asort($age);
@@ -170,8 +179,8 @@ foreach($age as $x=>$x_value)
 
 output:-
 
-The __usort()__ function sorts an array using a user-defined comparison function.
-syntex:-usort(array,myfunction);
+The __usort()__ function sorts an array using a user-defined comparison function.<br>
+syntex:-usort(array,myfunction);<br>
 <?php
 function my_sort($a,$b)
 {
@@ -190,8 +199,8 @@ for($x=0;$x<$arrlength;$x++)
 ?> 
 output:-
 
-The __uasort()__ function sorts an array by values using a user-defined comparison function.
-syntex:-uasort(array,myfunction);
+The __uasort()__ function sorts an array by values using a user-defined comparison function.<br>
+syntex:-uasort(array,myfunction);<br>
 <?php
 function my_sort($a,$b)
 {
@@ -209,8 +218,8 @@ foreach($arr as $x=>$x_value)
 ?>
 output:-
  
-The __uksort()__ function sorts an array by keys using a user-defined comparison function.
-syntex:-uksort(array,myfunction);
+The __uksort()__ function sorts an array by keys using a user-defined comparison function.<br>
+syntex:-uksort(array,myfunction);<br>
 <?php
 function my_sort($a,$b)
 {
@@ -229,8 +238,8 @@ foreach($arr as $x=>$x_value)
 ?>
 output:-
 
-The __arsort()__ function sorts an associative array in descending order, according to the value.
-syntex:-arsort(array,sortingtype);
+The __arsort()__ function sorts an associative array in descending order, according to the value.<br>
+syntex:-arsort(array,sortingtype);<br>
 <?php
 $age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
 arsort($age);
@@ -247,8 +256,8 @@ foreach($age as $x=>$x_value)
 
 output:-
 
-The __ksort()__ function sorts an associative array in ascending order, according to the key.
-syntex:-ksort(array,sortingtype);
+The __ksort()__ function sorts an associative array in ascending order, according to the key.<br>
+syntex:-ksort(array,sortingtype);<br>
 <?php
 $age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
 ksort($age);
@@ -261,8 +270,8 @@ foreach($age as $x=>$x_value)
 ?>
 output:-
 
-The __krsort()__ function sorts an associative array in descending order, according to the key.
-syntex:-krsort(array,sortingtype);
+The __krsort()__ function sorts an associative array in descending order, according to the key.<br>
+syntex:-krsort(array,sortingtype);<br>
 <?php
 $age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
 krsort($age);
@@ -280,8 +289,8 @@ output:-
 
 
 
-The __rsort()__ function sorts an indexed array in descending order.
-syntex:-rsort(array,sortingtype);
+The __rsort()__ function sorts an indexed array in descending order.<br>
+syntex:-rsort(array,sortingtype);<br>
 <?php
 $cars=array("Volvo","BMW","Toyota");
 rsort($cars);
@@ -295,16 +304,16 @@ for($x=0;$x<$clength;$x++)
 ?>
 output:-
 
-The __count()__ function returns the number of elements in an array.
-syntex:-count(array,mode);
+The __count()__ function returns the number of elements in an array.<br>
+syntex:-count(array,mode);<br>
 <?php
 $cars=array("Volvo","BMW","Toyota");
 echo count($cars);
 ?>
 output:- 3
 
-The __in_array()__ function searches an array for a specific value.
-syntex:-in_array(search,array,type)
+The __in_array()__ function searches an array for a specific value.<br>
+syntex:-in_array(search,array,type)<br>
 <?php
 $people = array("Peter", "Joe", "Glenn", "Cleveland");
 
