@@ -291,15 +291,6 @@ __Ans.__
 ###
 
 **[⬆ Back to Top](#table-of-contents)**
-###
-
-**[⬆ Back to Top](#table-of-contents)**
-###
-
-**[⬆ Back to Top](#table-of-contents)**
-###
-
-**[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Oops(Object-oriented programming System)?
 __Ans.__
 Oops provide a way of programming language that organizes with objects rather than data.
@@ -325,10 +316,10 @@ __Example:-__
 ```php
 <?php
 class abc
-{       	public function add()
-        	{
-                    	echo "mohit";
-        	}
+{   public function add()
+   {
+    echo "mohit";
+   }
 }
 $obj = new abc(); //object create
 $obj->add();    //call function
