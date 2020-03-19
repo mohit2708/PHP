@@ -105,7 +105,7 @@ Array(
 )
 ```
 
-### array_rand
+### array_rand(#array_rand)
 The __array_rand()__ function returns a random key from an array, or it returns an array of random keys if you specify that the function should return more than one key.<br>
 __syntex:-__ array_rand(array,number)<br>
 ```php
