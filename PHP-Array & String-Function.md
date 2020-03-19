@@ -5,6 +5,7 @@
 * [array_chunk](#array_chunk)
 * [array_key_exists](#array_key_exists)
 * [array_keys](#array_keys)
+* [array_merge](#array_merge)
 
 
 
@@ -58,19 +59,23 @@ Array
 )
 ```
 
-The __array_merge()__ function merges one or more arrays into one array.
-syntex:-array_merge(array1,array2,array3...)
+### array_merge
+The __array_merge()__ function merges one or more arrays into one array.<br>
+__syntex:-__ array_merge(array1,array2,array3...)
+```php
 <?php
 $a1=array("red","green");
 $a2=array("blue","yellow");
 print_r(array_merge($a1,$a2));
 ?>
-
-
-
-
-
 output:-
+Array(
+[0] => red
+[1] => green
+[2] => blue
+[3] => yellow
+)
+```
 
 The __array_push()____ function inserts one or more elements to the end of an array.
 syntex:-array_push(array,value1,value2...)
