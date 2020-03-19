@@ -9,20 +9,20 @@
 |[array_keys](#array_keys)||
 |[array_merge](#array_merge)||
 |[array_push](#array_push)||
-* [array_rand](#array_rand)
-* [array_slice](#array_slice)
-* [array_values](#array_values)
-* [sort](#sort)
-* [asort](#asort)
-* [usort](#usort)
-* [uasort](#uasort)
-* [uksort](#uksort)
-* [arsort](#arsort)
-* [ksort](#ksort)
-* [krsort](#krsort)
-* [rsort](#rsort)
-* [count](#count)
-* [in_array](#in_array)
+|[array_rand](#array_rand)||
+|[array_slice](#array_slice)||
+|[array_values](#array_values)||
+|[sort](#sort)||
+|[asort](#asort)||
+|[usort](#usort)||
+|[uasort](#uasort)||
+|[uksort](#uksort)||
+|[arsort](#arsort)||
+|[ksort](#ksort)||
+|[krsort](#krsort)||
+|[rsort](#rsort)||
+|[count](#count)||
+|[in_array](#in_array)||
 
 
 ### array_chunk
