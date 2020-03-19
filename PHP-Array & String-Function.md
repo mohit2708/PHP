@@ -1,7 +1,5 @@
 # PHP Array & String Function
 
-## Array
-
 |Array Function|String Function|
 |:---|:---|
 |[array_chunk](#array_chunk)|[strlen](#strlen)|
@@ -461,30 +459,37 @@ echo strtolower("Hello WORLD.");
 output:- hello world.
 ```
 
+### ucfirst
 The __ucfirst()__ function converts the first character of a string to uppercase.<br>
 syntex:-ucfirst(string)<br>
 ```php
 <?php
 echo ucfirst("hello world!");
 ?> 
-output:-
+output:- Hello world!
+``` 
 
+### lcfirst
 The __lcfirst()__ function converts the first character of a string to lowercase.<br>
 syntex:-lcfirst(string)<br>
 ```php
 <?php
 echo lcfirst("Hello world!");
 ?> 
-output:-
+output:- hello world!
+```
 
+### ucwords
 The __ucwords()__ function converts the first character of each word in a string to uppercase.<br>
 syntex:-ucwords(string)<br>
 ```php
 <?php
 echo ucwords("hello world");
 ?> 
-output:-
+output:- Hello World
+```
 
+### addcslashes
 The __addcslashes()__ function returns a string with backslashes in front of the specified characters.<br>
 syntex:-addcslashes(string,characters)<br>
 ```php
@@ -492,7 +497,8 @@ syntex:-addcslashes(string,characters)<br>
 $str = addcslashes("Hello World!","W");
 echo($str); 
 ?>
-output:- 
+output:- Hello \World!
+```
 
 The __addslashes()__ function returns a string with backslashes in front of predefined characters.<br>
 syntex:-addslashes(string)<br>
@@ -525,19 +531,20 @@ syntex:-implode(separator,array)<br>
 $arr = array('Hello','World!','Beautiful','Day!');
 echo implode(" ",$arr);
 ?>
-
-
 output:-
+```
 
+### str_split
 The __str_split()__ function splits a string into an array.<br>
 syntes:-str_split(string,length)<br>
 ```php
 <?php
 print_r(str_split("Hello"));
 ?>
-output:-
+output:- Array ( [0] => H [1] => e [2] => l [3] => l [4] => o )
+```
 
-
+### trim
 The __trim()__ function removes whitespace and other predefined characters from both sides of a string.<br>
 syntex:-trim(string,charlist)<br>
 ```php
@@ -547,7 +554,11 @@ echo $str . "<br>";
 echo trim($str,"Hed!");
 ?>
 output:-
+Hello World!
+llo Worl
+```
 
+### ltrim
 The __ltrim()__ function removes whitespace or other predefined characters from the left side of a string.<br>
 syntex:-ltrim(string,charlist)<br>
 ```php
@@ -557,6 +568,8 @@ echo $str . "<br>";
 echo ltrim($str,"Hello");
 ?> 
 output:-
+Hello World!
+World!
 ```
 
 ### rtrim
