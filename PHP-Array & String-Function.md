@@ -36,7 +36,11 @@ __syntex:-__ array_chunk(array, size, preserve_key)
 $cars=array("Volvo","BMW","Toyota","Honda","Mercedes","Opel");
 print_r(array_chunk($cars,2));
 ?>
-output:- Array ( [0] => Array ( [0] => Volvo [1] => BMW ) [1] => Array ( [0] => Toyota [1] => Honda ) [2] => Array ( [0] => Mercedes [1] => Opel ) )
+output:- Array ( 
+[0] => Array ( [0] => Volvo [1] => BMW ) 
+[1] => Array ( [0] => Toyota [1] => Honda ) 
+[2] => Array ( [0] => Mercedes [1] => Opel ) 
+)
 ```
 
 ### array_key_exists
@@ -500,6 +504,7 @@ echo($str);
 output:- Hello \World!
 ```
 
+### addslashes
 The __addslashes()__ function returns a string with backslashes in front of predefined characters.<br>
 syntex:-addslashes(string)<br>
 ```php
@@ -507,15 +512,20 @@ syntex:-addslashes(string)<br>
 $str = addslashes('What does "yolo" mean?');
 echo($str); 
 ?> 
-output:-
+output:- What does \"yolo\" mean?
+```
 
+### stripslashes
 The __stripslashes()__ function removes backslashes<br>
 Syntax: - stripslashes(string)<br>
 ```php
 <?php
 echo stripslashes("Who\'s Peter Griffin?");
 ?>
+output:- Who's Peter Griffin?
+```
 
+### explode
 The __explode()__ function breaks a string into an array.<br>
 Syntax:-explode(separator,string,limit)<br>
 ```php
@@ -523,7 +533,17 @@ Syntax:-explode(separator,string,limit)<br>
 $str = "Hello world. It's a beautiful day.";
 print_r (explode(" ",$str));
 ?> 
+output:- Array ( 
+[0] => Hello 
+[1] => world. 
+[2] => It's 
+[3] => a 
+[4] => beautiful 
+[5] => day.
+)
+```
 
+### implode
 The __implode()__ function returns a string from the elements of an array.<br>
 syntex:-implode(separator,array)<br>
 ```php
@@ -532,6 +552,7 @@ $arr = array('Hello','World!','Beautiful','Day!');
 echo implode(" ",$arr);
 ?>
 output:-
+Hello World! Beautiful Day!
 ```
 
 ### str_split
