@@ -754,9 +754,11 @@ mysql_select_db("db_name");
 ### Ques. how to stop the execution of php Script ?
 __Ans.__ The exit() function is used to stop the execution of PHP script.
 
-Q### ues. how to upload file in php ?
-__Ans.__ The move_uploaded_file() function is used to upload file in PHP.
-	move_uploaded_file($source_path,$des_path);
+### Ques. how to upload file in php ?
+__Ans.__ The move_uploaded_file() function is used to upload file in PHP.<br>
+```php
+move_uploaded_file($source_path,$des_path);
+```
 
 ### Ques. Difference between two dates in Php ?
 __Ans.__
