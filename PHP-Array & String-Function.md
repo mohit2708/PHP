@@ -316,6 +316,7 @@ Key=Peter, Value=35
 ### krsort
 The __krsort()__ function sorts an associative array in descending order, according to the key.<br>
 syntex:-krsort(array,sortingtype);<br>
+```php
 <?php
 $age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
 krsort($age);
@@ -327,10 +328,15 @@ foreach($age as $x=>$x_value)
    }
 ?>
 output:-
+Key=Peter, Value=35
+Key=Joe, Value=43
+Key=Ben, Value=37
+```
 
 ### rsort
 The __rsort()__ function sorts an indexed array in descending order.<br>
 syntex:-rsort(array,sortingtype);<br>
+```php
 <?php
 $cars=array("Volvo","BMW","Toyota");
 rsort($cars);
@@ -343,17 +349,27 @@ for($x=0;$x<$clength;$x++)
   }
 ?>
 output:-
+Volvo
+Toyota
+BMW
+```
+
 ### count
 The __count()__ function returns the number of elements in an array.<br>
 syntex:-count(array,mode);<br>
+```php
 <?php
 $cars=array("Volvo","BMW","Toyota");
 echo count($cars);
 ?>
-output:- 3
+output:- 
+3
+```
+
 ### in_array
 The __in_array()__ function searches an array for a specific value.<br>
-syntex:-in_array(search,array,type)<br>
+syntex:-in_array(search,array,type)<br>\
+```php
 <?php
 $people = array("Peter", "Joe", "Glenn", "Cleveland");
 
@@ -367,22 +383,32 @@ else
   }
 ?>
 output:- Match found
-...
+```
 
 
 # String Function
 
+* [strlen](#strlen)
+* [str_word_count](#str_word_count)
 
+### strlen
 The PHP __strlen()__ function returns the length of a string.
+```php
 <?php
 echo strlen("Hello world!");
 ?> 
 Output:-12
+```
+
+### str_word_count
 The PHP __str_word_count()__ function counts the number of words in a string:
+```php
 <?php
 echo str_word_count("Hello world!");
 ?> 
 Output:- 2
+```
+
 The PHP __strrev()__ function reverses a string:
 <?php
 echo strrev("Hello world!");
