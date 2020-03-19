@@ -5,10 +5,10 @@
 |Array Function|String Function|
 |:---|:---|
 |[array_chunk](#array_chunk)|[strlen](#strlen)|
-|[array_key_exists](#array_key_exists)||
-* [array_keys](#array_keys)
-* [array_merge](#array_merge)
-* [array_push](#array_push)
+|[array_key_exists](#array_key_exists)| [str_word_count](#str_word_count)|
+|[array_keys](#array_keys)||
+|[array_merge](#array_merge)||
+|[array_push](#array_push)||
 * [array_rand](#array_rand)
 * [array_slice](#array_slice)
 * [array_values](#array_values)
@@ -24,8 +24,6 @@
 * [count](#count)
 * [in_array](#in_array)
 
-* 
-* [str_word_count](#str_word_count)
 
 ### array_chunk
  The __array_chunk()__ function splits an array into chunks of new arrays.<br>
