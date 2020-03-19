@@ -11,7 +11,7 @@
 
 
 
-
+### array_chunk
  The __array_chunk()__ function splits an array into chunks of new arrays.
 __syntex:-__ array_chunk(array, size, preserve_key)
 ```php
