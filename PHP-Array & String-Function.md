@@ -409,90 +409,113 @@ echo str_word_count("Hello world!");
 Output:- 2
 ```
 
+### strrev
 The PHP __strrev()__ function reverses a string:
+```php
 <?php
 echo strrev("Hello world!");
 ?> 
 Output:-dlrowolleH
+```
+
+### strpos
 The PHP __strpos()__ function searches for a specific text within a string.
+```php
 <?php
 echo strpos("Hello world!", "world");
 ?> 
 Output:- 6
+```
+
+### str_replace
 The PHP __str_replace()__ function replaces some characters with some other characters in a string.
+```php
 <?php
 echo str_replace("world", "Dolly", "Hello world!");
 ?> 
 Output:-Hello Dolly!
+```
 
-
-
-The __strtoupper()__ function converts a string to uppercase.
-syntex:-strtoupper(string)
+### strtoupper
+The __strtoupper()__ function converts a string to uppercase.<br>
+syntex:-strtoupper(string)<br>
+```php
 <?php
 echo strtoupper("Hello WORLD!");
 ?> 
-output:-
+output:- HELLO WORLD!
+```
 
-The __strtolower()__ function converts a string to lowercase.
-syntex:-strtolower(string)
+### strtolower
+The __strtolower()__ function converts a string to lowercase.<br>
+syntex:-strtolower(string)<br>
+```php
 <?php
 echo strtolower("Hello WORLD.");
 ?>
-output:-
+output:- hello world.
+```
 
-The __ucfirst()__ function converts the first character of a string to uppercase.
-syntex:-ucfirst(string)
+The __ucfirst()__ function converts the first character of a string to uppercase.<br>
+syntex:-ucfirst(string)<br>
+```php
 <?php
 echo ucfirst("hello world!");
 ?> 
 output:-
 
-The __lcfirst()__ function converts the first character of a string to lowercase.
-syntex:-lcfirst(string)
+The __lcfirst()__ function converts the first character of a string to lowercase.<br>
+syntex:-lcfirst(string)<br>
+```php
 <?php
 echo lcfirst("Hello world!");
 ?> 
 output:-
 
-The __ucwords()__ function converts the first character of each word in a string to uppercase.
-syntex:-ucwords(string)
+The __ucwords()__ function converts the first character of each word in a string to uppercase.<br>
+syntex:-ucwords(string)<br>
+```php
 <?php
 echo ucwords("hello world");
 ?> 
 output:-
 
-The __addcslashes()__ function returns a string with backslashes in front of the specified characters.
-syntex:-addcslashes(string,characters)
+The __addcslashes()__ function returns a string with backslashes in front of the specified characters.<br>
+syntex:-addcslashes(string,characters)<br>
+```php
 <?php 
 $str = addcslashes("Hello World!","W");
 echo($str); 
 ?>
 output:- 
 
-The __addslashes()__ function returns a string with backslashes in front of predefined characters.
-syntex:-addslashes(string)
+The __addslashes()__ function returns a string with backslashes in front of predefined characters.<br>
+syntex:-addslashes(string)<br>
+```php
 <?php 
 $str = addslashes('What does "yolo" mean?');
 echo($str); 
 ?> 
 output:-
 
-The __stripslashes()__ function removes backslashes
-Syntax: - stripslashes(string)
+The __stripslashes()__ function removes backslashes<br>
+Syntax: - stripslashes(string)<br>
+```php
 <?php
 echo stripslashes("Who\'s Peter Griffin?");
 ?>
 
-The __explode()__ function breaks a string into an array.
-Syntax:-explode(separator,string,limit)
+The __explode()__ function breaks a string into an array.<br>
+Syntax:-explode(separator,string,limit)<br>
+```php
 <?php
 $str = "Hello world. It's a beautiful day.";
 print_r (explode(" ",$str));
 ?> 
 
-The __implode()__ function returns a string from the elements of an array.
-syntex:-implode(separator,array)
+The __implode()__ function returns a string from the elements of an array.<br>
+syntex:-implode(separator,array)<br>
+```php
 <?php
 $arr = array('Hello','World!','Beautiful','Day!');
 echo implode(" ",$arr);
@@ -501,16 +524,18 @@ echo implode(" ",$arr);
 
 output:-
 
-The __str_split()__ function splits a string into an array.
-syntes:-str_split(string,length)
+The __str_split()__ function splits a string into an array.<br>
+syntes:-str_split(string,length)<br>
+```php
 <?php
 print_r(str_split("Hello"));
 ?>
 output:-
 
 
-The __trim()__ function removes whitespace and other predefined characters from both sides of a string.
-syntex:-trim(string,charlist)
+The __trim()__ function removes whitespace and other predefined characters from both sides of a string.<br>
+syntex:-trim(string,charlist)<br>
+```php
 <?php
 $str = "Hello World!";
 echo $str . "<br>";
@@ -518,45 +543,61 @@ echo trim($str,"Hed!");
 ?>
 output:-
 
-The __ltrim()__ function removes whitespace or other predefined characters from the left side of a string.
-syntex:-ltrim(string,charlist)
+The __ltrim()__ function removes whitespace or other predefined characters from the left side of a string.<br>
+syntex:-ltrim(string,charlist)<br>
+```php
 <?php
 $str = "Hello World!";
 echo $str . "<br>";
 echo ltrim($str,"Hello");
 ?> 
 output:-
+```
 
-The __rtrim()__ function removes whitespace or other predefined characters from the right side of a string.
-syntex:-rtrim(string,charlist)
+### rtrim
+The __rtrim()__ function removes whitespace or other predefined characters from the right side of a string.<br>
+syntex:-rtrim(string,charlist)<br>
+```php
 <?php
 $str = "Hello World!";
 echo $str . "<br>";
 echo rtrim($str,"World!");
 ?>
 output:-
+Hello World!
+Hello
+```
 
-The __strstr()__ function searches for the first occurrence of a string inside another string.
-Syntax:-strstr(string,search,before_search)
+### strstr
+The __strstr()__ function searches for the first occurrence of a string inside another string.<br>
+Syntax:-strstr(string,search,before_search)<br>
+```php
 <?php
 echo strstr("Hello world! mohit","world");
 ?>
-output:-
+output:- world! mohit
+```
 
-The __md5()__ function calculates the MD5 hash of a string.
-Syntax:-md5(string,raw)
+### md5
+The __md5()__ function calculates the MD5 hash of a string.<br>
+Syntax:-md5(string,raw)<br>
+```php
 <?php
 $str = "Hello";
 echo md5($str);
 ?>
-output:  
+output:  8b1a9953c4611296a827abf8c47804d7
+```
 
-The __substr()__ function returns a part of a string.
-Syntax:-substr(string,start,length)
+### substr
+The __substr()__ function returns a part of a string.<br>
+__Syntax:-__ substr(string,start,length)<br>
+```php
 <?php
 echo substr("Hello world",4);
 ?>
-output:-
+output:- o world
+```
 
 ### wordwrap
 The __wordwrap()__ function wraps a string into new lines when it reaches a specific length.<br>
