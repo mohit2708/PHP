@@ -193,9 +193,11 @@ Key=Peter, Value=35
 Key=Ben, Value=37
 Key=Joe, Value=43
 ```
+
 ### usort
 The __usort()__ function sorts an array using a user-defined comparison function.<br>
 syntex:-usort(array,myfunction);<br>
+```php
 <?php
 function my_sort($a,$b)
 {
@@ -213,10 +215,16 @@ for($x=0;$x<$arrlength;$x++)
   }
 ?> 
 output:-
+2
+4
+6
+8
+```
 
 ### uasort
 The __uasort()__ function sorts an array by values using a user-defined comparison function.<br>
 syntex:-uasort(array,myfunction);<br>
+```php
 <?php
 function my_sort($a,$b)
 {
@@ -233,16 +241,22 @@ foreach($arr as $x=>$x_value)
    }
 ?>
 output:-
+Key=b, Value=2
+Key=a, Value=4
+Key=d, Value=6
+Key=c, Value=8
+```
+
 ### uksort
 The __uksort()__ function sorts an array by keys using a user-defined comparison function.<br>
 syntex:-uksort(array,myfunction);<br>
+```php
 <?php
 function my_sort($a,$b)
 {
 if ($a==$b) return 0;
   return ($a<$b)?-1:1;
 }
-
 $arr=array("a"=>4,"b"=>2,"c"=>8,d=>"6");
 uksort($arr,"my_sort");
  
@@ -253,9 +267,16 @@ foreach($arr as $x=>$x_value)
    }
 ?>
 output:-
+Key=a, Value=4
+Key=b, Value=2
+Key=c, Value=8
+Key=d, Value=6
+```
+
 ### arsort
 The __arsort()__ function sorts an associative array in descending order, according to the value.<br>
 syntex:-arsort(array,sortingtype);<br>
+```php
 <?php
 $age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
 arsort($age);
@@ -266,14 +287,16 @@ foreach($age as $x=>$x_value)
    echo "<br>";
    }
 ?>
-
-
-
-
 output:-
+Key=Joe, Value=43
+Key=Ben, Value=37
+Key=Peter, Value=35
+```
+
 ### ksort
 The __ksort()__ function sorts an associative array in ascending order, according to the key.<br>
 syntex:-ksort(array,sortingtype);<br>
+```php
 <?php
 $age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
 ksort($age);
@@ -285,6 +308,11 @@ foreach($age as $x=>$x_value)
    }
 ?>
 output:-
+Key=Ben, Value=37
+Key=Joe, Value=43
+Key=Peter, Value=35
+```
+
 ### krsort
 The __krsort()__ function sorts an associative array in descending order, according to the key.<br>
 syntex:-krsort(array,sortingtype);<br>
@@ -299,9 +327,6 @@ foreach($age as $x=>$x_value)
    }
 ?>
 output:-
-
-
-
 
 ### rsort
 The __rsort()__ function sorts an indexed array in descending order.<br>
