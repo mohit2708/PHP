@@ -4,6 +4,7 @@
 
 * [array_chunk](#array_chunk)
 * [array_key_exists](#array_key_exists)
+* [array_keys](#array_keys)
 
 
 
@@ -39,9 +40,11 @@ else
 ?>
 output:- Key Exists!
  ```
- 
-The array_keys() function returns an array containing the keys.
-Syntex:-array_keys(array,value,strict)
+
+### array_keys
+The __array_keys()__ function returns an array containing the keys.<br>
+__Syntex:-__ array_keys(array,value,strict)
+```php
 <?php
 $a=array("Volvo"=>"XC90","BMW"=>"X5","Toyota"=>"Highlander");
 print_r(array_keys($a));
@@ -53,6 +56,7 @@ Array
 	[1] => BMW
 	[2] => Toyota
 )
+```
 
 The array_merge() function merges one or more arrays into one array.
 syntex:-array_merge(array1,array2,array3...)
