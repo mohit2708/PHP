@@ -147,7 +147,7 @@ print_r(array_values($a));
 ?>
 output:-
 
-
+### sort
 The __sort()__ function sorts an indexed array in ascending order.<br>
 syntex:-sort(array,sortingtype);<br>
 <?php
@@ -162,7 +162,9 @@ for($x=0;$x<$clength;$x++)
   }
 ?>
 output:-
-```
+ 
+ 
+### asort
 The __asort()__ function sorts an associative array in ascending order, according to the value.<br>
 syntex:-asort(array,sortingtype);<br>
 <?php
@@ -178,7 +180,7 @@ foreach($age as $x=>$x_value)
 
 
 output:-
-
+### usort
 The __usort()__ function sorts an array using a user-defined comparison function.<br>
 syntex:-usort(array,myfunction);<br>
 <?php
@@ -199,6 +201,7 @@ for($x=0;$x<$arrlength;$x++)
 ?> 
 output:-
 
+### uasort
 The __uasort()__ function sorts an array by values using a user-defined comparison function.<br>
 syntex:-uasort(array,myfunction);<br>
 <?php
@@ -217,7 +220,7 @@ foreach($arr as $x=>$x_value)
    }
 ?>
 output:-
- 
+### uksort
 The __uksort()__ function sorts an array by keys using a user-defined comparison function.<br>
 syntex:-uksort(array,myfunction);<br>
 <?php
@@ -237,7 +240,7 @@ foreach($arr as $x=>$x_value)
    }
 ?>
 output:-
-
+### arsort
 The __arsort()__ function sorts an associative array in descending order, according to the value.<br>
 syntex:-arsort(array,sortingtype);<br>
 <?php
@@ -255,7 +258,7 @@ foreach($age as $x=>$x_value)
 
 
 output:-
-
+### ksort
 The __ksort()__ function sorts an associative array in ascending order, according to the key.<br>
 syntex:-ksort(array,sortingtype);<br>
 <?php
@@ -269,7 +272,7 @@ foreach($age as $x=>$x_value)
    }
 ?>
 output:-
-
+### krsort
 The __krsort()__ function sorts an associative array in descending order, according to the key.<br>
 syntex:-krsort(array,sortingtype);<br>
 <?php
@@ -287,8 +290,7 @@ output:-
 
 
 
-
-
+### rsort
 The __rsort()__ function sorts an indexed array in descending order.<br>
 syntex:-rsort(array,sortingtype);<br>
 <?php
@@ -303,7 +305,7 @@ for($x=0;$x<$clength;$x++)
   }
 ?>
 output:-
-
+### count
 The __count()__ function returns the number of elements in an array.<br>
 syntex:-count(array,mode);<br>
 <?php
@@ -311,7 +313,7 @@ $cars=array("Volvo","BMW","Toyota");
 echo count($cars);
 ?>
 output:- 3
-
+### in_array
 The __in_array()__ function searches an array for a specific value.<br>
 syntex:-in_array(search,array,type)<br>
 <?php
