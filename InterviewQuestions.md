@@ -483,6 +483,39 @@ __Overriding__ is redefining parent class functions/methods in child class with 
 __Ans.__ 
 * Acquiring the property from parent class to child class is called the inheritance.
 * An inherited class is defined by using the extends keyword.
+```php
+class BaseClass{
+	function add(){
+		$x=1000;
+		$y=500;
+		$add=$x+$y;
+		echo "Addition=".$add."<br/>";
+}}
+
+class chld extends BaseClass{
+	function sub(){
+		$x=1000;
+		$y=500;
+		$sub=$x-$y;
+		echo "subtraction=".$sub."<br/>";
+}}
+class Nestedchld extends chld{
+	function mult(){
+		$x=1000;
+		$y=500;
+		$mult=$x*$y;
+		echo "multiplication=".$mult."<br/>";
+}}
+class show extends Nestedchld{
+	function __construct(){
+	parent::add();
+	parent::sub();
+	parent::mult();
+}}
+$obj= new show();
+Output:- Addition=1500 subtraction=500 multiplication=500000
+```
+
 
 ### Ques. What is Static class?
 __Ans.__ Static class ka hame object nahi banna padta hai, scope resolution se call kar lete hai.
