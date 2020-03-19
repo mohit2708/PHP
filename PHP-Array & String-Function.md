@@ -141,19 +141,26 @@ Array(
 ### array_values
 The __array_values()__ function returns an array containing all the values of an array.<br>
 syntex:-array_values(array)<br>
+```php
 <?php
 $a=array("Name"=>"Peter","Age"=>"41","Country"=>"USA");
 print_r(array_values($a));
 ?>
 output:-
+Array ( 
+[0] => Peter 
+[1] => 41 
+[2] => USA 
+)
+```
 
 ### sort
 The __sort()__ function sorts an indexed array in ascending order.<br>
 syntex:-sort(array,sortingtype);<br>
+```php
 <?php
 $cars=array("Volvo","BMW","Toyota");
 sort($cars);
-
 $clength=count($cars);
 for($x=0;$x<$clength;$x++)
   {
@@ -162,11 +169,15 @@ for($x=0;$x<$clength;$x++)
   }
 ?>
 output:-
- 
+BMW
+Toyota
+Volvo
+```
  
 ### asort
 The __asort()__ function sorts an associative array in ascending order, according to the value.<br>
 syntex:-asort(array,sortingtype);<br>
+```php
 <?php
 $age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
 asort($age);
@@ -177,9 +188,11 @@ foreach($age as $x=>$x_value)
    echo "<br>";
    }
 ?>
-
-
 output:-
+Key=Peter, Value=35
+Key=Ben, Value=37
+Key=Joe, Value=43
+```
 ### usort
 The __usort()__ function sorts an array using a user-defined comparison function.<br>
 syntex:-usort(array,myfunction);<br>
