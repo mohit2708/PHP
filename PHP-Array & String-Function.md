@@ -105,8 +105,10 @@ Array(
 )
 ```
 
-The __array_rand()__ function returns a random key from an array, or it returns an array of random keys if you specify that the function should return more than one key.
-syntex:-array_rand(array,number)
+### array_rand
+The __array_rand()__ function returns a random key from an array, or it returns an array of random keys if you specify that the function should return more than one key.<br>
+__syntex:-__ array_rand(array,number)<br>
+```php
 <?php
 $a=array("red","green","blue","yellow","brown");
 $random_keys=array_rand($a,3);
@@ -115,7 +117,10 @@ echo $a[$random_keys[1]]."<br>";
 echo $a[$random_keys[2]];
 ?>
 output:-
-
+red
+blue
+yellow
+```
 The __array_slice()__ function returns selected parts of an array.
 syntex:-array_slice(array,start,length,preserve)
 <?php
