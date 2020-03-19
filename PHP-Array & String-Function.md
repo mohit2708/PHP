@@ -6,11 +6,21 @@
 * [array_key_exists](#array_key_exists)
 * [array_keys](#array_keys)
 * [array_merge](#array_merge)
-
-
-
-
-
+* [array_push](#array_push)
+* [array_rand](#array_rand)
+* [array_slice](#array_slice)
+* [array_values](#array_values)
+* [sort](#sort)
+* [asort](#asort)
+* [usort](#usort)
+* [uasort](#uasort)
+* [uksort](#uksort)
+* [arsort](#arsort)
+* [ksort](#ksort)
+* [krsort](#krsort)
+* [rsort](#rsort)
+* [count](#count)
+* [in_array](#in_array)
 
 
 ### array_chunk
@@ -77,14 +87,23 @@ Array(
 )
 ```
 
-The __array_push()____ function inserts one or more elements to the end of an array.
-syntex:-array_push(array,value1,value2...)
+### array_push
+The __array_push()____ function inserts one or more elements to the end of an array.<br>
+__syntex:-__ array_push(array,value1,value2...)
+```php
 <?php
 $a=array("red","green");
 array_push($a,"blue","yellow");
 print_r($a);
 ?>
 output:-
+Array(
+[0] => red
+[1] => green
+[2] => blue
+[3] => yellow
+)
+```
 
 The __array_rand()__ function returns a random key from an array, or it returns an array of random keys if you specify that the function should return more than one key.
 syntex:-array_rand(array,number)
@@ -103,8 +122,6 @@ syntex:-array_slice(array,start,length,preserve)
 $a=array("red","green","blue","yellow","brown");
 print_r(array_slice($a,2));
 ?>
-
-
 
 output:-
 
