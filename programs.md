@@ -249,6 +249,102 @@ Output:-  odd number
 ```
 **[⬆ Back to Top](#table-of-contents)**
 
+
+### Higest value in array:-
+```php
+<?php
+$a = array(10, 20, 52, 105, 56,120, 89, 96);
+$b = 0;
+foreach ($a as $key=>$val) {
+    if ($val > $b) {
+        $b = $val;
+    }
+}
+echo $b;
+?>
+```
+
+### Add space after 2 character:- //my-na-me-is-mo-hi-ts
+```php
+<?php
+$str = "my name is mohit saxena";
+$len = strlen($str);
+for($i=0; $i<$len; $i++)
+{
+	if($i%2==0 && $i!=0)
+	{
+		echo "-";
+	}
+	echo $str[$i];
+}
+?>
+```
+
+### Array max value:- 
+__Type 1__
+```php
+<?php
+     $a = array(1, 44, 5, 6, 68, 9);
+     $blank = 0;
+     foreach($a as $v)
+{
+       if($blank < $v)
+      $blank = $v;
+ }
+ echo $blank;
+?>
+```
+__Type 2__
+```php
+<?php
+ $a =array(2,44,5,6,68,9);
+ $l = count($a);
+ $res=0;
+for($i=0;$i<$l;$i++)
+{	
+  if($res<$a[$i])
+    {
+      $res=$a[$i];
+    }
+}
+echo $res;
+?>
+```
+
+
+
+
+```php
+<?php
+for($i=0;$i<=5;$i++){
+for($j=1;$j<=$i;$j++){
+echo $i;
+}
+echo '<br>';
+} 
+?>
+```
+1
+22
+333
+4444
+55555
+
+```php
+<?php
+for($i=0;$i<=5;$i++){
+for($j=1;$j<=$i;$j++){
+echo "1";
+}
+echo '<br>';
+} 
+?>
+```
+1
+11
+111
+1111
+11111
 ```
 ============================
 Highest Value in the array:-
