@@ -137,6 +137,7 @@ __Ans.__
 |Echo does not return any value | Print always return 1 |
 |Echo is faster than print | Print is slower than echo |
 |echo can pass multiple string separated as ( , ) | using print can doesn’t pass multiple argument |
+|Echo is statement|Print is function|
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. Php Global Variables (Superglobals)?
