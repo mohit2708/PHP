@@ -475,6 +475,34 @@ __Overriding__ is redefining parent class functions/methods in child class with 
 __Ans.__ 
 * Acquiring the property from parent class to child class is called the inheritance.
 * An inherited class is defined by using the extends keyword.
+
+__Single Inheritance:-__
+```php
+class abc
+{
+	public function a()		//agar function private ho to or call karna ho to 
+	{
+		echo "mohit";
+	}
+
+	public function b()
+	{
+		//self::a();		// to self laga kar call  karenge
+		echo "saxena";
+	}
+}
+class xyz extends abc
+{
+	public function c()
+	{
+		echo "mohit saxena";
+	}
+}
+$obj = New xyz();
+$obj -> b(); //saxena
+$obj -> a(); //mohit
+$obj -> c(); //mohit saxena
+```
 ```php
 class BaseClass{
 	function add(){
