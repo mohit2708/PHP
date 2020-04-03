@@ -222,18 +222,30 @@ Output:- mohit
 __Ans.__
 Php cookie is a small piece of information, which is stored on the client browser.
 __Ex:-__ Remember me.
-session_start();
 
-$_SESSION["username"] = 'nikita';	// store session data
-
-__How to set cookie:-__        Setcookie(“name”, “value”, time()+3600);
-__How to Retrieve a cookie:-__ echo $_cookie[“user”];
-__How to unset Cookie:-__      Setcookie(“sample”, “ram”, time()-3600);
+__How to set cookie:-__        Setcookie(“name”, “value”, time()+3600);<br>
+__How to Retrieve a cookie:-__ echo $_cookie[“user”];<br>
+__How to unset Cookie:-__      Setcookie(“sample”, “ram”, time()-3600);<br>
 
 ##### Two types of cookie:-
 __Persistent Cookie:-__ A persistent cookie is a cookie which is store information for certain time in a browser. By default cookie are temporary and are erased if we close the browser.
 
 __Non Persistent Cookie:-__ Non persistent cookies are stored in ram on the server. Ex:- login
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. How can we destroy a session in PHP?
+We can destroy a session by:
+```php
+<?php
+	session_destroy();
+?>
+```
+To delete a speciﬁc session variable, we use:-
+```php
+<?php
+	seesion_unset($_seesion['variable_name']);
+?>
+```
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Session ?
@@ -841,6 +853,15 @@ Echo $ans;
 Output:- 6
 ```
 
-
+```
+Q:-
+function changevalue(&$y)
+	{ 
+		 $y = $y + 7;  
+	}  
+	$num = 8; 
+	changevalue($num); 
+	echo $num;
+```
 
 
