@@ -382,7 +382,8 @@ __Ans.__
 * Abstract class is a class which contains at least one or more abstract methods.
 * Abstract method is a method which is declared, but not defined.
 * Abstract class ka hum obj nahi bana sakte hai... agar banate hai to fatal error dega: cannot instance abstract class.
-Agar hame abstract class ke function ko call karni hai to inherit karke call karenge.
+* Agar hame abstract class ke function ko call karni hai to inherit karke call karenge.
+* abstract class mai kam sa kam 1 abstract method hona chaiye.
 ```php
 <?php
 abstract class testParent
@@ -441,6 +442,9 @@ $obj->a();
 __Ans.__
 |Abstract Class|Interface|
 |:---:|:---:|
+|abstract class ko hum extend karte hai|interface ko hum implement karte hai|
+|abstarct class ko hum acess modifier bana sakte hai|not acess modifier|
+|abstart class mai kam sa kam 1 abstarct method hona jaruri hai|interface mai sare abstarct method hona chaiye|
 |In abstract class a method must be declared as abstract. Abstract methods doesn’t have any implementation.|In interface all the methods by default are abstract.|
 |Abstract class can also contain member variables and concrete functions/methods.|Interfaces cannot contain any member variables and concrete functions/methods except constants.|
 |An Abstract methods can be declare with access modifiers like public, protected etc. Concrete Class which is extending the abstract class must be defined with the same or visibility.|All methods declared in an interface must be public.|
