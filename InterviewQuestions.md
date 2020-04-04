@@ -230,7 +230,16 @@ __How to unset Cookie:-__      Setcookie(“sample”, “ram”, time()-3600);<
 ##### Two types of cookie:-
 __Persistent Cookie:-__ A persistent cookie is a cookie which is store information for certain time in a browser. By default cookie are temporary and are erased if we close the browser.
 
-__Non Persistent Cookie:-__ Non persistent cookies are stored in ram on the server. Ex:- login
+__Non Persistent Cookie:-__ Non persistent cookies are stored in ram on the server, and destroyed when the browser is closed. Ex:- login
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Session ?
+__Ans.__ Session is way to store information to be used across multiple pages. It stores information on the server.
+```php
+Create session:- 			session_start(); 
+Set value into session:- 		$_SESSION['USER_ID']=1; 
+Remove data from a session:- 		unset($_SESSION['USER_ID'];
+```
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. How can we destroy a session in PHP?
@@ -245,15 +254,6 @@ To delete a speciﬁc session variable, we use:-
 <?php
 	seesion_unset($_seesion['variable_name']);
 ?>
-```
-
-**[⬆ Back to Top](#table-of-contents)**
-### Ques. What is Session ?
-__Ans.__ Session is way to store information to be used across multiple pages. It stores information on the server.
-```php
-Create session:- 			session_start(); 
-Set value into session:- 		$_SESSION['USER_ID']=1; 
-Remove data from a session:- 		unset($_SESSION['USER_ID'];
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -688,9 +688,23 @@ Ans. The Model-view-controller (MVC) is an architectural pattern that separates 
 ·         View mai hum html part rakhta hai.
 
 ### Ques. What is Ajax?
-Ans. AJAX = Asynchronous JavaScript and XML. 
-AJAX is a technique for creating fast and dynamic web pages. 
-AJAX allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+Ans. AJAX = Asynchronous JavaScript and XML.<br>
+AJAX is a technique for creating fast and dynamic web pages. <br>
+AJAX allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.<br>
+```php
+$.Ajax({
+  url:
+  type:
+  data:
+  sucess: function(data){
+    -----
+  }
+  error: function(error)
+  {
+
+  }
+});
+```
 
 ### Ques. What are the 3 scope levels available in php  /  What is difference type of visibility ? or what are access modifiers  ? 
 __Ans.__
