@@ -25,6 +25,9 @@
 |19 | [What is the difference between Single == & ===?](#Ques-What-is-the-difference-between-Single-==-&-===)|
 |20 | [What is the difference between $message and $$message?](#Ques-What-is-the-difference-between-$message-and-$$message)|
 |21 | [What is Cookie?](#ques-What-is-Cookie)|
+|22 | [What is Session?](#ques-What-is-Session)|
+|   | [How can we destroy a session in PHP?](#ques-How-can-we-destroy-a-session-in-PHP)|
+|   | [Difference between cookie and Session?](#Ques-Difference-between-cookie-and-Session)|
 |21 | [What is Oops(Object-oriented programming System)?](#)|
 |22 | [What is Advantage of Oops(Object-oriented programming System)?](#)|
 |23 | [What is class?](#Ques-What-is-class)|
@@ -38,7 +41,7 @@
 |31 | [What is Static class?](#Ques-What-is-Static-class)|
 |32 | [What is Constructor?](#Ques-What-is-Constructor)|
 |33 | [What is Destructor?](#Ques-What-is-Destructor)|
-
+|   | [What does isset() function?](#ques-What-does-isset()-function)|
 
 
 ### Ques. What is the PHP?
