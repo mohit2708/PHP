@@ -903,5 +903,23 @@ function changevalue(&$y)
 	changevalue($num); 
 	echo $num;
 ```
+### Ques. How can we get the browser properties using PHP?
+```php
+$_SERVER['HTTP_USER_AGENT']
+```
+
+### Ques. What does isset() function?
+The isset() function checks if the variable is defined and not null.
+
+### Ques. How can we submit a form without a submit button?
+```php
+document.formname.submit()
+```
+
+### Ques. mysqli_real_escape_string() function?
+The mysqli_real_escape_string() function escape special character in a string for use in an sql statement.
+```php 
+$fname = mysqli_real_escape_string($con, $_post['fname']);
+```
 
 
