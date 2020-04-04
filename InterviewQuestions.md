@@ -271,7 +271,16 @@ __Ans.__
 |cookies using for user activity tracking|Session is mainly used for login/logout purpose|
 
 **[⬆ Back to Top](#table-of-contents)**
-###
+### Ques. What is Array?
+* Array is used to store multipal value in single value
+* It stores the collection of datatype.
+* An array is a special varibale, which can hold more than one value at a time.
+
+__Three Types Of Array__
+1. Indexed Array:-<br>
+2. Multidimensional Array:-<br>
+3. Associative Array:-<br>
+
 
 **[⬆ Back to Top](#table-of-contents)**
 ###
@@ -714,6 +723,19 @@ __Private:-__ A private  method or variable of a class can only be called inside
 
 __Protected:-__ A protected method or variable can only be called in that class & its subclass.
 
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. Difference between two dates in Php ?
+__Ans.__ A timestamp is the current time of an event that is recorded by a computer.
+```php
+<?php
+   $now = time();
+   $your_date = strtotime("2017-01-15");
+   $datediff = $now - $your_date;
+   echo floor($datediff / (60 * 60 * 24));
+?>
+```
+
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. What are the formatting and printing strings available in php  ?
 __Ans.__    
 * printf(): Display a formatted string.
@@ -837,19 +859,8 @@ __Ans.__ The move_uploaded_file() function is used to upload file in PHP.<br>
 move_uploaded_file($source_path,$des_path);
 ```
 
-### Ques. Difference between two dates in Php ?
-__Ans.__
-```php
-<?php
-   $now = time();
-   $your_date = strtotime("2017-01-15");
-   $datediff = $now - $your_date;
-   echo floor($datediff / (60 * 60 * 24));
-?>
-```
-
-Ques. How to get value in the url ?
-Ans. $sort = $_GET[‘url’]
+### Ques. How to get value in the url ?
+__Ans.__ $sort = $_GET[‘url’]
 
 ### Ques. What We can ceil() and floor() function in php ?
 __Ceil()__ is used to find nearest maximum values of passing value.
