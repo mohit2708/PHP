@@ -867,6 +867,21 @@ Echo $ans;
 Output:- 6
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the differance between explode and split?
+__Split__ The Split function the string into an array using a regular expression and return an array.<br>
+Spli regular expression ke sath work karta hai.
+```php
+$a = split(':', india : pakistan : srilanka : usa)
+print_r($a);
+```
+__Explode__ The explode function splits the string by string.<br>
+explode dalimeter char ke sath work karta hai.
+```php
+$a = explode('and','india and pakistan and usa');
+print_r($a);
+```
+
 ```
 Q:-
 function changevalue(&$y)
