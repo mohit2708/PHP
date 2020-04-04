@@ -29,8 +29,8 @@
 
 
 ### array_chunk
- The __array_chunk()__ function splits an array into chunks of new arrays.<br>
-__syntex:-__ array_chunk(array, size, preserve_key)
+:pushpin: The __array_chunk()__ function splits an array into chunks of new arrays.<br>
+	  __syntex:-__ array_chunk(array, size, preserve_key)
 ```php
 <?php
 $cars=array("Volvo","BMW","Toyota","Honda","Mercedes","Opel");
