@@ -395,3 +395,315 @@ Star printing Formeting 2:-
 * * *
 * * * *
 * * * * *
+
+
+
+```
+
+1.	Prime Number:- 
+Check Prime no hai ya nahi	1 
+<?php  
+function IsPrime($n)  
+{  
+ for($x=2; $x<$n; $x++)  
+   {  
+      if($n %$x ==0)  
+          {  
+           return 0;  
+          }  
+    }  
+  return 1;  
+   }  
+$a = IsPrime(12);  
+if ($a==0)  
+echo 'This is not a Prime Number.....'."\n";  
+else  
+echo 'This is a Prime Number..'."\n";  
+?>  
+	<?php
+$num =23;
+for( $j = 2; $j <= $num; $j++ )
+{
+	for( $k = 2; $k < $j; $k++ )
+	{
+		if( $j % $k == 0 )
+		{
+			break;
+		}
+	}
+	if( $j == $k )
+	echo $j;
+}
+?>
+Output:- 2 3 5 7 11 13 17 19 23
+
+  
+
+
+
+2.	Array min value:-
+<?php
+    $a = array(10, 44, 5, 6, 68, 9);
+    $blank = $a[0];
+    foreach($a as $v)
+{
+        if($blank > $v)
+       $blank = $v;
+ }
+    echo $blank;
+
+?>
+
+	<?php
+$a = array(15,10,20,100,25,30);
+$max = max($a);
+$l = count($a);
+for ($i=0; $i<$l; $i++)
+	{
+		$chek = $a[$i];	
+		if($chek<$max)
+		{
+		$z = $chek;
+		$max = $z;	
+		}
+    }
+	echo $z;
+?>
+
+
+
+3.	Bubble sort:-
+<?php
+function bubbleSort(array $arr)
+{
+    $n = count($arr);
+    for ($i = 1; $i<$n; $i++)
+		{
+        for ($j = $n-1; $j>= $i; $j--) 
+		{
+			if($arr[$j-1] > $arr[$j]) 
+			{
+				$tmp = $arr[$j-1];
+                $arr[$j-1] = $arr[$j];
+                $arr[$j] = $tmp;
+            }
+        }
+    }
+     return $arr;
+}
+echo '<pre>'; 
+$arr = array(255,1,22,3,45,5);
+$result = bubbleSort($arr);
+print_r($result);
+?>
+
+4.	print ho jae 1, 3 ,5 ,7 ,9, 11, 13, 15….
+<?php
+function abc($s,$e)
+{
+	 for($i=$s; $i<=$e; $i+=2)			// print ho jae 1 3 5 7 9 11 13 15
+	 {
+		 echo '<pre>';
+		 echo $i;
+	 }
+}
+ abc (1,50);
+?>
+
+5.	Greatest Number:-
+ <?php
+function abc($a,$b)
+{
+	if($a>$b)							{
+		echo $a;
+	}
+	else
+	{
+		echo $b;
+	}
+}
+$n1 = 21;
+$n2 = 20;
+abc ($n1,$n2);
+?>
+6.	Array mai 1 position & 4 position ki value ko add karna:- 
+<?php
+function add($x,$y) 
+{
+		$u = array(5,3,4,6,9);			
+		$x1 = $u[$x];
+		$y1 = $u[$y];
+		 $sum = $x1 + $y1;
+		 echo $sum;	
+}
+add(1,4);
+?>
+Output:- 12
+
+
+
+
+
+
+<?php 
+function check_palindrome($n){
+ 
+     $inpt = $n;
+     $sum = 0;
+ 
+    while(floor($inpt)) {
+ 
+        $newnum = $inpt % 10;
+        $sum = $sum * 10 + $newnum;
+        $inpt = $inpt/10;
+    }
+    return $sum;
+}
+ 
+  $input = 12321;
+  $num = check_palindrome($input);
+  
+ if($input==$num){
+ echo "Palindrome number";
+  } else {
+ echo "Not a Palindrome";
+ }
+ ?>
+
+
+
+
+
+<br>
+<?php
+$count ='a';			// a
+for($i=0;$i<5;$i++)		// b
+{	echo $count;		// c
+	echo '<br>';		// d
+	$count++;
+}
+?> 
+<br>
+ 
+<br>
+<?php
+function add($x,$y) 
+{
+		$u = array(5,3,4,6,9);			// array mai 1 or 4 value ko add karna
+		$x1 = $u[$x];
+		$y1 = $u[$y];
+		 $sum = $x1 + $y1;
+		 echo $sum;	
+}
+add(0,4);
+?>
+<br>
+<?php
+for ($i=2; $i<=100; $i+=2)		//Find all even numbers between 1 to 100
+{
+	echo $i." ";
+} 
+?>
+<br>
+<?php 
+$myarray = array(8,7,5,14,4,5,9,11,9,10);			// arraye ki even location wale number add jo jae
+$c = count($myarray);
+$x = 0;
+for ($i=0; $i<$c; $i++) 
+{ 
+	echo '<pre>';
+	echo  $i;
+	if ($i % 2 == 0) 
+	{
+		$sum = $myarray[$i] + $x;
+		$x = $sum;
+		echo $x;
+	}
+	else 
+	{
+		echo "odd\n";
+	}
+}
+?>
+
+<br>
+<?php
+function add($n1) 
+{	//$a = count($n1);			// array ke sare no add karne ke liye
+	$b = 0;
+	for($i=0; $i<3 ;$i++)		// array ke 1 to 3 number add ho jae
+	{	 $x = $n1[$i];
+		 $y = $b + $x;
+		 $b = $y;
+
+		 echo '<pre>';
+		 echo $b;
+	}
+}
+$x = array(5,5,4,6,1);
+add($x);
+?>
+<br>
+<?php
+function abc($a)
+{	$l = strlen($a);
+	$str='';
+	for($i=0; $i<$l; $i++)  		// string mai 3 ka baad dot(....) ho jae....
+	{						
+		$m = $a[$i];
+		$str = $str.$m;	
+		
+		if(strlen($str)>=3)
+		{
+			echo $str.'------';
+			break;
+		}
+	}
+}
+$x = 'abcdefgh';
+abc ($x);
+?>
+<br>
+<?php
+for ($row = 1; $row <= 5; $row++)		//string print *
+{										//			   *
+ echo "* </br>";						//			   *	
+}
+?>
+<br>
+<?php
+for ($row = 1; $row <= 5; $row++)		// * * * * *
+{										// * * * * *
+ for ($col = 1; $col <= 5; $col++)		// * * * * *
+  {
+   echo '* ';
+  }
+   echo "</br>";
+}
+?>
+<br>
+<?php
+for($i=0;$i<=5;$i++){			//string paterrn  * * * * *
+for($j=5-$i;$j>=1;$j--){		//				  * * *	
+echo "*&nbsp&nbsp;";			//				  * *	
+}								//				  *			
+echo "<br>";
+}
+?>
+<br>
+<?php									// 1
+for ($i=1; $i<=5; $i++){  				// 2
+echo "The Number is: ".$i."<br/>";		// 3
+} 										// 4
+?>
+<br>
+<?php
+for($i=0;$i<=7;$i++){				// 1
+for($j=1;$j<=$i;$j++){				// 1 2
+echo $j;							// 1 2 3
+}
+echo '<br>';
+} ?>
+<br>
+
+```
