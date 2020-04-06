@@ -475,36 +475,6 @@ Output:- 2 3 5 7 11 13 17 19 23
 
 
 
-2.	Array min value:-
-<?php
-    $a = array(10, 44, 5, 6, 68, 9);
-    $blank = $a[0];
-    foreach($a as $v)
-{
-        if($blank > $v)
-       $blank = $v;
- }
-    echo $blank;
-
-?>
-
-	<?php
-$a = array(15,10,20,100,25,30);
-$max = max($a);
-$l = count($a);
-for ($i=0; $i<$l; $i++)
-	{
-		$chek = $a[$i];	
-		if($chek<$max)
-		{
-		$z = $chek;
-		$max = $z;	
-		}
-    }
-	echo $z;
-?>
-
-
 
 3.	Bubble sort:-
 <?php
