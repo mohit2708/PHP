@@ -42,12 +42,6 @@
 |32 | [What is Constructor?](#Ques-What-is-Constructor)|
 |33 | [What is Destructor?](#Ques-What-is-Destructor)|
 |   | [What does isset() function?](#ques-What-does-isset()-function)|
-|18 | [Types of Error in Php?](#Ques-Types-of-Error-in-Php)|
-|19 | [What is the difference between Single == & ===?](#Ques-What-is-the-difference-between-Single-==-&-===)|
-|20 | [What is the difference between $message and $$message?](#Ques-What-is-the-difference-between-$message-and-$$message)|
-|21 | [What is Cookie?](#ques-What-is-Cookie)|
-
-
 
 ### Ques. What is the PHP?
 __Ans.__ 
@@ -846,17 +840,12 @@ __Ans.__ $_SERVER['REMOTE_ADDR'];
 ### Ques. How to collect IP address of the web server in php ?
 __Ans.__ $_SERVER['SERVER_ADDR'];
 
-### Ques. Find The Php Information ?
-__Ans.__
-```php
-<?php
-   echo phpinfo();
-?>
-```
 ### Ques. how to create a mySql connection ?
 __Ans.__
+```
 mysql_connect("host_name", "User_name", "Password") ;
 mysql_select_db("db_name");
+```
 
 ### Ques. how to stop the execution of php Script ?
 __Ans.__ The exit() function is used to stop the execution of PHP script.
@@ -894,6 +883,14 @@ Echo $ans;
 Output:- 6
 ```
 
+### Ques. Find The Php Information ?
+__Ans.__
+```php
+<?php
+   echo phpinfo();
+?>
+```
+
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is the differance between explode and split?
 __Split__ The Split function the string into an array using a regular expression and return an array.<br>
@@ -909,16 +906,6 @@ $a = explode('and','india and pakistan and usa');
 print_r($a);
 ```
 
-```
-Q:-
-function changevalue(&$y)
-	{ 
-		 $y = $y + 7;  
-	}  
-	$num = 8; 
-	changevalue($num); 
-	echo $num;
-```
 ### Ques. How can we get the browser properties using PHP?
 ```php
 $_SERVER['HTTP_USER_AGENT']
@@ -936,4 +923,15 @@ document.formname.submit()
 The mysqli_real_escape_string() function escape special character in a string for use in an sql statement.
 ```php 
 $fname = mysqli_real_escape_string($con, $_post['fname']);
+```
+
+```
+Q:-
+function changevalue(&$y)
+	{ 
+		 $y = $y + 7;  
+	}  
+	$num = 8; 
+	changevalue($num); 
+	echo $num;
 ```
