@@ -865,6 +865,14 @@ move_uploaded_file($source_path,$des_path);
 ### Ques. How to get value in the url ?
 __Ans.__ $sort = $_GET[‘url’]
 
+### Magic Method
+* Magic Method apne aap ek special event par call ho jata hai.<br>
+ex:- get, set, isset, unset, tosting, clone, sleep, wakeup, invoice, Autoload
+* magic method are member function that are available to all instance of class. magic method always start with "__"<br>
+ex: ```__construct```
+* all magic method need to be declared as public.
+* various magic method used be defined within the class or program scope.
+
 ### Ques. What We can ceil() and floor() function in php ?
 __Ceil()__ is used to find nearest maximum values of passing value.
 ```php
@@ -924,5 +932,3 @@ The mysqli_real_escape_string() function escape special character in a string fo
 ```php 
 $fname = mysqli_real_escape_string($con, $_post['fname']);
 ```
-
-
