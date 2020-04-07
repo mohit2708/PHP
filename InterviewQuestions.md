@@ -46,10 +46,7 @@
 |19 | [What is the difference between Single == & ===?](#Ques-What-is-the-difference-between-Single-==-&-===)|
 |20 | [What is the difference between $message and $$message?](#Ques-What-is-the-difference-between-$message-and-$$message)|
 |21 | [What is Cookie?](#ques-What-is-Cookie)|
-|22 | [What is Session?](#ques-What-is-Session)|
-|   | [How can we destroy a session in PHP?](#ques-How-can-we-destroy-a-session-in-PHP)|
-|   | [Difference between cookie and Session?](#Ques-Difference-between-cookie-and-Session)|
-|21 | [What is Oops(Object-oriented programming System)?](#)|
+
 
 
 ### Ques. What is the PHP?
