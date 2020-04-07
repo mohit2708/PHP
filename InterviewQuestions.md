@@ -44,6 +44,33 @@
 |   | [What does isset() function?](#ques-What-does-isset()-function)|
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Ques. What is the PHP?
 __Ans.__ 
 * PHP is an open source server side scripting language used to develop dynamic websites . PHP  stands for Hypertext Preprocessor , also stood for Personal Home Page. It was created by Rasmus lerdorf in 1995 . It is free software released under the PHP license .
