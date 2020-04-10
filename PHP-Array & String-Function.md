@@ -28,7 +28,7 @@
 ||[nl2br](#nl2br)|
 
 
-### 1. array_chunk
+### array_chunk
 The __array_chunk()__ function splits an array into chunks of new arrays.<br>
 __syntex:-__ array_chunk(array, size, preserve_key)
 ```php
