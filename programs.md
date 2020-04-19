@@ -53,9 +53,7 @@ echo $a . ',' . $b;
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-
 ### Reverse String?
-
 ```php
 <?php
  $s = 'mohit saxena';		
@@ -65,6 +63,7 @@ echo $a . ',' . $b;
    echo $s[$i];
   }
 ?>
+Output:- anexas tihom
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
