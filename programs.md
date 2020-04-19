@@ -365,7 +365,7 @@ Output:-
 ```
 
 ```php
-  <?php
+<?php
 for($i=0;$i<=5;$i++){
 for($j=1;$j<=$i;$j++){
 echo "1";
@@ -373,6 +373,8 @@ echo "1";
 echo '<br>';
 } 
 ?>
+
+Output:-
 1
 11
 111
@@ -380,22 +382,42 @@ echo '<br>';
 11111
 ```
 
-###### String Pattern
 ```php
 <?php
-	for($i=0;$i<=5;$i++){			
-	for($j=5-$i;$j>=1;$j--){		
-	echo "*&nbsp&nbsp;";			
-	}								
-	echo "<br>";
-	}
+ for($i=0;$i<=5;$i++){			
+ for($j=5-$i;$j>=1;$j--){		
+ echo "*&nbsp&nbsp;";			
+ }								
+ echo "<br>";
+}
 ?>
+
 Output:-
 * * * * *
 * * * *
 * * *
 * *
 *
+```
+
+```php
+<?php
+	for($i=0;$i<=5;$i++)			
+	{					
+	for($j=1;$j<=$i;$j++)		
+	{					
+	echo "* ";				
+	}					
+	echo "<br>";
+	}
+?>
+
+Output:-
+*
+* *
+* * *
+* * * *
+* * * * *
 ```
 
 ============================
@@ -413,29 +435,6 @@ Highest Value in the array:-
 	echo $b;
 ?>
 Output:- 105
-===========================
-Star printing Formeting 1:-
-===========================
-===========================
-Star printing Formeting 2:-
-===========================
-<?php
-	for($i=0;$i<=5;$i++)			
-	{					
-	for($j=1;$j<=$i;$j++)		
-	{					
-	echo "* ";				
-	}					
-	echo "<br>";
-	}
-?>
-*
-* *
-* * *
-* * * *
-* * * * *
-
-
 
 ```
 <?php
