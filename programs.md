@@ -664,22 +664,14 @@ for ($row = 1; $row <= 5; $row++)		// * * * * *
    echo "</br>";
 }
 ?>
-<br>
-<?php
-for($i=0;$i<=5;$i++){			//string paterrn  * * * * *
-for($j=5-$i;$j>=1;$j--){		//				  * * *	
-echo "*&nbsp&nbsp;";			//				  * *	
-}								//				  *			
-echo "<br>";
-}
-?>
-<br>
+```
+
 ```php
 <?php
-for ($i=1; $i<=5; $i++){
-echo "The Number is: ".$i."<br/>";
-} 
-?>
+ for ($i=1; $i<=5; $i++){
+ echo "The Number is: ".$i."<br/>";
+ } 
+ ?>
 ```
 The Number is: 1<br>
 The Number is: 2<br>
