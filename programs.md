@@ -344,8 +344,7 @@ echo $res;
 ?>
 ```
 
-
-
+### String Pattern
 
 ```php
 <?php
