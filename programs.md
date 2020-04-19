@@ -347,23 +347,38 @@ echo $res;
 ### String Pattern
 
 ```php
-<?php					<?php
-for($i=0;$i<=5;$i++){			 for($i=0;$i<=5;$i++){
-for($j=1;$j<=$i;$j++){			 for($j=1;$j<=$i;$j++){
-echo $i;				 echo "1";
-}					 }
-echo '<br>';				echo '<br>';
-} 					}
-?>					?>
+<?php			
+for($i=0;$i<=5;$i++){	
+for($j=1;$j<=$i;$j++){	
+echo $i;		
+}			
+echo '<br>';		
+} 			
+?>			
 
-Output:- 				Output:- 
-1					1
-22					11
-333					111
-4444					1111
-55555					11111
+Output:- 		
+1			
+22			
+333			
+4444			
+55555			
 ```
 
+```php
+  <?php
+for($i=0;$i<=5;$i++){
+for($j=1;$j<=$i;$j++){
+echo "1";
+}
+echo '<br>';
+} 
+?>
+1
+11
+111
+1111
+11111
+```
 
 ###### String Pattern
 ```php
