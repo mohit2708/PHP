@@ -674,19 +674,33 @@ echo "<br>";
 }
 ?>
 <br>
-<?php									// 1
-for ($i=1; $i<=5; $i++){  				// 2
-echo "The Number is: ".$i."<br/>";		// 3
-} 										// 4
-?>
-<br>
+```php
 <?php
-for($i=0;$i<=7;$i++){				// 1
-for($j=1;$j<=$i;$j++){				// 1 2
-echo $j;							// 1 2 3
-}
-echo '<br>';
-} ?>
-<br>
-
+for ($i=1; $i<=5; $i++){
+echo "The Number is: ".$i."<br/>";
+} 
+?>
 ```
+The Number is: 1<br>
+The Number is: 2<br>
+The Number is: 3<br>
+The Number is: 4<br>
+The Number is: 5<br>
+
+```php
+<?php
+ for($i=0;$i<=5;$i++){
+ for($j=1;$j<=$i;$j++){
+ echo $j;
+ }
+ echo '<br>';
+} 
+?>
+```
+1<br>
+12<br>
+123<br>
+1234<br>
+12345<br>
+
+
