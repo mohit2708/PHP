@@ -14,6 +14,7 @@
 |8  | [Print The Matrix?](#Print-The-Matrix)|
 |9  | [Find The Number Even Or Odd?](#Find-The-Number-Even-Or-Odd)|
 |10 | [Highest Value in the array?](#Highest-Value-in-the-array)|
+|   | [String Pattern](#string Pattern)|
 
 
 ### Swap Number?
@@ -380,6 +381,24 @@ echo '<br>';
 1111<br>
 11111<br>
 ```
+# String Pattern
+```php
+<?php
+	for($i=0;$i<=5;$i++){			
+	for($j=5-$i;$j>=1;$j--){		
+	echo "*&nbsp&nbsp;";			
+	}								
+	echo "<br>";
+	}
+?>
+```
+* * * * * <br>
+* * * *<br>
+* * *<br>
+* *<br>
+*<br>
+
+
 ============================
 Highest Value in the array:-
 ============================
@@ -398,19 +417,6 @@ Output:- 105
 ===========================
 Star printing Formeting 1:-
 ===========================
-<?php
-	for($i=0;$i<=5;$i++){			
-	for($j=5-$i;$j>=1;$j--){		
-	echo "*&nbsp&nbsp;";			
-	}								
-	echo "<br>";
-	}
-?>
-* * * * *
-* * * *
-* * *
-* *
-*
 ===========================
 Star printing Formeting 2:-
 ===========================
