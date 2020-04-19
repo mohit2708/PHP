@@ -358,11 +358,11 @@ echo '<br>';
 } 
 ?>
 ```
-1
-22
-333
-4444
-55555
+1<br>
+22<br>
+333<br>
+4444<br>
+55555<br>
 
 ```php
 <?php
@@ -374,11 +374,11 @@ echo '<br>';
 } 
 ?>
 ```
-1
-11
-111
-1111
-11111
+1<br>
+11<br>
+111<br>
+1111<br>
+11111<br>
 ```
 ============================
 Highest Value in the array:-
@@ -433,28 +433,7 @@ Star printing Formeting 2:-
 
 
 ```
-
-1.	Prime Number:- 
-Check Prime no hai ya nahi	1 
-<?php  
-function IsPrime($n)  
-{  
- for($x=2; $x<$n; $x++)  
-   {  
-      if($n %$x ==0)  
-          {  
-           return 0;  
-          }  
-    }  
-  return 1;  
-   }  
-$a = IsPrime(12);  
-if ($a==0)  
-echo 'This is not a Prime Number.....'."\n";  
-else  
-echo 'This is a Prime Number..'."\n";  
-?>  
-	<?php
+<?php
 $num =23;
 for( $j = 2; $j <= $num; $j++ )
 {
