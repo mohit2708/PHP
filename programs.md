@@ -14,7 +14,7 @@
 |8  | [Print The Matrix?](#Print-The-Matrix)|
 |9  | [Find The Number Even Or Odd?](#Find-The-Number-Even-Or-Odd)|
 |10 | [Highest Value in the array?](#Highest-Value-in-the-array)|
-|   | [String Pattern](#string Pattern)|
+|   | [String Pattern](#string-Pattern)|
 
 
 ### Swap Number?
@@ -391,13 +391,13 @@ echo '<br>';
 	echo "<br>";
 	}
 ?>
+Output:-
+* * * * *
+* * * *
+* * *
+* *
+*
 ```
-* * * * * <br>
-* * * *<br>
-* * *<br>
-* *<br>
-*<br>
-
 
 ============================
 Highest Value in the array:-
