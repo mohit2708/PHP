@@ -98,7 +98,6 @@ Output:- anexas tihom
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-
 ### Check the Prime Number or not?
 ```php
 <?php  
@@ -120,8 +119,8 @@ Output:- anexas tihom
 ?>
 Output :-  This is a Prime Number..
 ```
-**[⬆ Back to Top](#table-of-contents)**
 
+**[⬆ Back to Top](#table-of-contents)**
 ### Print the prime number?
 ```php
 <?php 
@@ -200,8 +199,8 @@ Output :-
 Output :- 
 Fibonacci Series 0 1 1 2 3 5 8 13 21 34 55 89
 ```
-**[⬆ Back to Top](#table-of-contents)**
 
+**[⬆ Back to Top](#table-of-contents)**
 ### Print The Matrix?
 ```php
 <?php
@@ -226,8 +225,8 @@ Output:-
 0 1 0 
 0 0 1
 ```
-**[⬆ Back to Top](#table-of-contents)**
 
+**[⬆ Back to Top](#table-of-contents)**
 ### Find The Number Even Or Odd?
 ```php 
 <?php
@@ -373,15 +372,15 @@ echo "1";
 echo '<br>';
 } 
 ?>
-```
-1<br>
-11<br>
-111<br>
-1111<br>
-11111<br>
+
+1
+11
+111
+1111
+11111
 ```
 
-# String Pattern
+###### String Pattern
 ```php
 <?php
 	for($i=0;$i<=5;$i++){			
