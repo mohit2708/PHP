@@ -381,6 +381,7 @@ echo '<br>';
 1111<br>
 11111<br>
 ```
+
 # String Pattern
 ```php
 <?php
