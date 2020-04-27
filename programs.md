@@ -420,23 +420,9 @@ Output:-
 * * * * *
 ```
 
-============================
-Highest Value in the array:-
-============================
-<?php
-	$a = array(10, 20, 52, 105, 56, 20, 89, 96);		//highest value in aaray
-	$b = 0;
-	foreach ($a as $key=>$val) 
-	{
-	    if ($b < $val) {
-	        $b = $val;
-	    }
-	}
-	echo $b;
-?>
-Output:- 105
 
-```
+
+```php
 <?php
 $num =23;
 for( $j = 2; $j <= $num; $j++ )
@@ -453,13 +439,10 @@ for( $j = 2; $j <= $num; $j++ )
 }
 ?>
 Output:- 2 3 5 7 11 13 17 19 23
+```
 
-  
-
-
-
-
-3.	Bubble sort:-
+### Bubble sort
+```php
 <?php
 function bubbleSort(array $arr)
 {
@@ -483,7 +466,10 @@ $arr = array(255,1,22,3,45,5);
 $result = bubbleSort($arr);
 print_r($result);
 ?>
+Output:- 1 3 5 22 45 255
+```
 
+```
 4.	print ho jae 1, 3 ,5 ,7 ,9, 11, 13, 15….
 <?php
 function abc($s,$e)
