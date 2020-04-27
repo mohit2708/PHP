@@ -634,7 +634,7 @@ add($x);
 
 ```
 
-```
+```php
 string mai 3 ka baad dot(....) ho jae....
 <?php
 function abc($a)
