@@ -420,6 +420,40 @@ Output:-
 * * * * *
 ```
 
+```php
+<?php
+for ($row = 1; $row <= 5; $row++)
+{		
+echo "* </br>";	
+}
+?>
+Output:-
+*
+*
+*
+*
+*
+```
+
+```php
+<?php
+for ($row = 1; $row <= 5; $row++)
+{				
+ for ($col = 1; $col <= 5; $col++)
+  {
+   echo '* ';
+  }
+   echo "</br>";
+}
+?>
+
+Output:-
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+```
 
 
 ```php
@@ -469,20 +503,23 @@ print_r($result);
 Output:- 1 3 5 22 45 255
 ```
 
-```
-4.	print ho jae 1, 3 ,5 ,7 ,9, 11, 13, 15….
+### Print the Odd Number
+```php
 <?php
 function abc($s,$e)
 {
-	 for($i=$s; $i<=$e; $i+=2)			// print ho jae 1 3 5 7 9 11 13 15
-	 {
-		 echo '<pre>';
-		 echo $i;
-	 }
+ for($i=$s; $i<=$e; $i+=2)
+ {
+ echo '<pre>';
+ echo $i;
+ }
 }
- abc (1,50);
+ abc (1,16);
 ?>
+Output:- 1 3 5 7 9 11 13 15
+```
 
+```
 5.	Greatest Number:-
  <?php
 function abc($a,$b)
@@ -642,41 +679,6 @@ abc ($x);
 ?>
 Output:-
 abc------
-```
-
-```php
-<?php
-for ($row = 1; $row <= 5; $row++)
-{		
-echo "* </br>";	
-}
-?>
-Output:-
-*
-*
-*
-*
-*
-```
-
-```php
-<?php
-for ($row = 1; $row <= 5; $row++)
-{				
- for ($col = 1; $col <= 5; $col++)
-  {
-   echo '* ';
-  }
-   echo "</br>";
-}
-?>
-
-Output:-
-* * * * *
-* * * * *
-* * * * *
-* * * * *
-* * * * *
 ```
 
 ```php
