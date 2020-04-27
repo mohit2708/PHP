@@ -519,8 +519,8 @@ function abc($s,$e)
 Output:- 1 3 5 7 9 11 13 15
 ```
 
-```
-5.	Greatest Number:-
+### Greatest Number
+```php
  <?php
 function abc($a,$b)
 {
@@ -536,7 +536,11 @@ $n1 = 21;
 $n2 = 20;
 abc ($n1,$n2);
 ?>
-6.	Array mai 1 position & 4 position ki value ko add karna:- 
+Output:- 21
+```
+
+### Array mai 1 position & 4 position ki value ko add karna
+```php
 <?php
 function add($x,$y) 
 {
@@ -549,12 +553,9 @@ function add($x,$y)
 add(1,4);
 ?>
 Output:- 12
+```
 
-
-
-
-
-
+```php
 <?php 
 function check_palindrome($n){
  
@@ -579,12 +580,11 @@ function check_palindrome($n){
  echo "Not a Palindrome";
  }
  ?>
+```
 
 
 
-
-
-<br>
+```
 <?php
 $count ='a';			// a
 for($i=0;$i<5;$i++)		// b
