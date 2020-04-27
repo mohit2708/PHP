@@ -651,13 +651,21 @@ $x = 'abcdefgh';
 abc ($x);
 ?>
 <br>
+```
+
+```php
 <?php
-for ($row = 1; $row <= 5; $row++)		//string print *
-{										//			   *
- echo "* </br>";						//			   *	
+for ($row = 1; $row <= 5; $row++)
+{		
+echo "* </br>";	
 }
 ?>
-<br>
+Output:-
+*
+*
+*
+*
+*
 ```
 
 ```php
@@ -686,12 +694,13 @@ Output:-
  echo "The Number is: ".$i."<br/>";
  } 
  ?>
-```
+Output:-
 The Number is: 1<br>
 The Number is: 2<br>
 The Number is: 3<br>
 The Number is: 4<br>
 The Number is: 5<br>
+```
 
 ```php
 <?php
@@ -702,11 +711,12 @@ The Number is: 5<br>
  echo '<br>';
 } 
 ?>
+Output:-
+1
+12
+123
+1234
+12345
 ```
-1<br>
-12<br>
-123<br>
-1234<br>
-12345<br>
 
 
