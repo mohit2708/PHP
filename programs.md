@@ -631,26 +631,31 @@ $x = array(5,5,4,6,1);
 add($x);
 ?>
 <br>
+
+```
+
+```
+string mai 3 ka baad dot(....) ho jae....
 <?php
 function abc($a)
-{	$l = strlen($a);
-	$str='';
-	for($i=0; $i<$l; $i++)  		// string mai 3 ka baad dot(....) ho jae....
+{ $l = strlen($a);
+  $str='';
+ for($i=0; $i<$l; $i++) 
 	{						
-		$m = $a[$i];
-		$str = $str.$m;	
-		
-		if(strlen($str)>=3)
-		{
-			echo $str.'------';
-			break;
-		}
+	 $m = $a[$i];
+	 $str = $str.$m;	
+	 if(strlen($str)>=4)
+	  {
+		echo $str.'------';
+		break;
+	  }
 	}
 }
 $x = 'abcdefgh';
 abc ($x);
 ?>
-<br>
+Output:-
+abc------
 ```
 
 ```php
