@@ -555,6 +555,7 @@ add(1,4);
 Output:- 12
 ```
 
+
 ```php
 <?php 
 function check_palindrome($n){
@@ -584,7 +585,7 @@ function check_palindrome($n){
 
 
 
-```
+```php
 <?php
 $count ='a';			// a
 for($i=0;$i<5;$i++)		// b
@@ -593,28 +594,18 @@ for($i=0;$i<5;$i++)		// b
 	$count++;
 }
 ?> 
-<br>
+```
  
-<br>
-<?php
-function add($x,$y) 
-{
-		$u = array(5,3,4,6,9);			// array mai 1 or 4 value ko add karna
-		$x1 = $u[$x];
-		$y1 = $u[$y];
-		 $sum = $x1 + $y1;
-		 echo $sum;	
-}
-add(0,4);
-?>
-<br>
+```php
 <?php
 for ($i=2; $i<=100; $i+=2)		//Find all even numbers between 1 to 100
 {
 	echo $i." ";
 } 
 ?>
-<br>
+```
+
+```php
 <?php 
 $myarray = array(8,7,5,14,4,5,9,11,9,10);			// arraye ki even location wale number add jo jae
 $c = count($myarray);
@@ -635,8 +626,10 @@ for ($i=0; $i<$c; $i++)
 	}
 }
 ?>
+```
 
-<br>
+
+```php
 <?php
 function add($n1) 
 {	//$a = count($n1);			// array ke sare no add karne ke liye
@@ -653,8 +646,6 @@ function add($n1)
 $x = array(5,5,4,6,1);
 add($x);
 ?>
-<br>
-
 ```
 
 ```php
