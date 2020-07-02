@@ -1,6 +1,20 @@
 # Php Code
 
-# Pagination
+### Searching
+```php
+if(isset($_POST['search']))
+{
+    $valueToSearch = mysql_real_escape_string($_POST['valueToSearch']);    
+    $rows = $wpdb->get_results("SELECT * FROM `wp_mmjobs` WHERE CONCAT(`job_tittle`) LIKE '%".$valueToSearch."%'");        
+}
+
+<form method="post">
+<input type="text" name="valueToSearch" placeholder="Search">
+<input type="submit" name="search" value="Search" class="btn btn-primary"><br><br>
+</form>
+```
+
+### Pagination
 ```php
 $sort = "";
 $n="id";
