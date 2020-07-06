@@ -384,6 +384,22 @@ Output:-
 
 ```php
 <?php
+for($i=0;$i<=3;$i++){				
+for($j=1;$j<=$i;$j++){
+echo $j;		
+}
+echo '<br>';
+} 
+?>
+
+Output:-
+1
+12
+123
+```
+
+```php
+<?php
  for($i=0;$i<=5;$i++){			
  for($j=5-$i;$j>=1;$j--){		
  echo "*&nbsp&nbsp;";			
