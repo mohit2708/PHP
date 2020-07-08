@@ -58,6 +58,17 @@ $second_last = $total_no_of_pages - 1; // total pages minus 1
 $rows = $wpdb->get_results("SELECT * from $table_name ORDER BY  $n $sort LIMIT $offset, $total_records_per_page");
 ```
 
+### Delete
+```php
+ if (isset($_GET['del'])) {
+    $del_id = $_GET['del'];
+    $wpdb->query("DELETE FROM $table_name WHERE id='$del_id'");
+    echo "<script>location.replace('admin.php?page=all-job-manager');</script>";
+  }
+
+<td><a href="<?php echo admin_url('admin.php?page=all-job-manager&del=' . $row->id); ?>"  onclick="return confirm('Are you sure?')"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></a></td></td>
+```
+
 ### country ko database sa uthana hai
 ```php
 <tr> <td>Country</td>  
