@@ -14,7 +14,7 @@ if(isset($_POST['search']))
 </form>
 ```
 
-### Pagination
+### Sorting
 ```php
 $sort = "";
 $n="id";
@@ -34,7 +34,29 @@ $rows = $wpdb->get_results("SELECT * from $table_name ORDER BY  $n $sort");
 <th><a href="admin.php?page=all-job-manager&sort=<?php echo $sort; ?>&n=company_name">Company Name</a></th> //                   
 ```
 
+### Pagination
+```php
+ if (isset($_GET['page_no']) && $_GET['page_no']!="") {
+    $page_no = $_GET['page_no'];
+    } else {
+      $page_no = 1;
+     }
+$total_records_per_page = 3;
 
+$offset = ($page_no-1) * $total_records_per_page;
+$previous_page = $page_no - 1;
+$next_page = $page_no + 1;
+$adjacents = "2";
+
+$my_query = $wpdb->get_results( "SELECT * FROM $table_name" );
+$total_records = count( $my_query ); //PHP count()
+
+$total_no_of_pages = ceil($total_records / $total_records_per_page);
+$total_no_of_pages;
+$second_last = $total_no_of_pages - 1; // total pages minus 1
+
+$rows = $wpdb->get_results("SELECT * from $table_name ORDER BY  $n $sort LIMIT $offset, $total_records_per_page");
+```
 
 ### country ko database sa uthana hai
 ```php
