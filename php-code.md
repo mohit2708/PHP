@@ -56,6 +56,23 @@ $total_no_of_pages;
 $second_last = $total_no_of_pages - 1; // total pages minus 1
 
 $rows = $wpdb->get_results("SELECT * from $table_name ORDER BY  $n $sort LIMIT $offset, $total_records_per_page");
+
+<div style='padding: 10px 20px 0px; border-top: dotted 1px #CCC;'>
+<strong>Page <?php echo $page_no." of ".$total_no_of_pages; ?></strong>
+</div>
+
+<ul class="pagination pull-right">
+<?php
+if ($total_no_of_pages <= 10){   
+ for ($counter = 1; $counter <= $total_no_of_pages; $counter++){
+ if ($counter == $page_no) {
+ echo "<li class='active'><a>$counter</a></li>"; 
+         }else{
+        echo "<li><a href='?page=all-job-manager&page_no=$counter'>$counter</a></li>";
+        } }
+}
+?>
+</ul>
 ```
 
 ### Delete
