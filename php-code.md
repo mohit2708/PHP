@@ -86,6 +86,52 @@ if ($total_no_of_pages <= 10){
 <td><a href="<?php echo admin_url('admin.php?page=all-job-manager&del=' . $row->id); ?>"  onclick="return confirm('Are you sure?')"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></a></td></td>
 ```
 
+### Delete multiple data by selecting checkboxes
+```php
+<?php
+if(isset($_POST['save'])){
+  $checkbox = $_POST['checked_id'];
+  for($i=0;$i<count($checkbox);$i++){
+  $del_id1 = $checkbox[$i]; 
+  $wpdb->query("DELETE FROM $table_name WHERE id='$del_id1'");
+  $message = "Data deleted successfully !";
+  //echo "<script>location.replace('admin.php?page=all-job-manager');</script>";
+}
+}  
+?>
+
+<?php if(!empty($message)){ ?>
+<div class="alert alert-success"><?php echo $message; ?></div>
+<?php } ?>
+
+<th><input type="checkbox" id="select_all" value=""/></th>
+<th>Position</th>
+
+<td><input type="checkbox" name="checked_id[]" class="checkbox" value="<?php echo $row->id; ?>"></td> 
+<td><?php echo $row->job_tittle; ?></td>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    function delete_confirm(){
+    if($('.checkbox:checked').length > 0){
+        var result = confirm("Are you sure to delete selected users?");
+        if(result){
+            return true;
+        }else{
+            return false;
+        }
+    }else{
+        alert('Select at least 1 record to delete.');
+        return false;
+    }
+}
+ 
+$("#select_all").click(function () {
+$('input:checkbox').not(this).prop('checked', this.checked);
+});
+</script>
+```
+
 ### country ko database sa uthana hai
 ```php
 <tr> <td>Country</td>  
