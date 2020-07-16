@@ -21,7 +21,7 @@
 |[rsort](#rsort)|[trim](#trim)|
 |[count](#count)|[ltrim](#ltrim)|
 |[in_array](#in_array)|[rtrim](#rtrim)|
-||[strstr](#strstr)|
+|[array_search](#array_search)|[strstr](#strstr)|
 ||[md5](#md5)|
 ||[substr](#substr)|
 ||[wordwrap](#wordwrap)|
@@ -404,11 +404,8 @@ echo array_search("red",$a);
 ?>
 output:- a
 ```
-<?php
-$a=array("a"=>"red","b"=>"green","c"=>"blue");
-echo array_search("red",$a);
-?>
-output:- a
+
+
 
 # String Function
 
