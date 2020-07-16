@@ -377,7 +377,7 @@ output:-
 
 ### in_array
 The __in_array()__ function searches an array for a specific value.<br>
-syntex:-in_array(search,array,type)<br>\
+syntex:-in_array(search,array,type)<br>
 ```php
 <?php
 $people = array("Peter", "Joe", "Glenn", "Cleveland");
@@ -394,6 +394,21 @@ else
 output:- Match found
 ```
 
+### array_search
+The __array_search()__ function search an array for a value and returns the key.<br>
+syntex:- array_search(value, array, strict)<br>
+```php
+<?php
+$a=array("a"=>"red","b"=>"green","c"=>"blue");
+echo array_search("red",$a);
+?>
+output:- a
+```
+<?php
+$a=array("a"=>"red","b"=>"green","c"=>"blue");
+echo array_search("red",$a);
+?>
+output:- a
 
 # String Function
 
