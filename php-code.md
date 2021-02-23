@@ -1,5 +1,47 @@
 # Php Code
 
+### Image Insert
+```php
+		<?php 
+		$source_path = $_FILES['fileToUpload']['tmp_name'];
+    $name = $_FILES['fileToUpload']['name'];
+		
+    $rand = time().'_';
+    $des_path =ABSPATH."wp-content/themes/mytheme/img/" . $rand.$name;
+    move_uploaded_file($source_path,$des_path);
+		
+    $img = $rand.$name;
+		
+		$sql = "INSERT INTO wp_product (product_name,pro_cat,pro_img) VALUES ('$product_name','$nutrition','$img')";
+
+==========update.php==============================
+$id = $_POST['id'];
+
+      $source_path = $_FILES['fileToUpload']['tmp_name'];
+      $name = $_FILES['fileToUpload']['name'];
+      $find_img = mysqli_query($conn, "SELECT pro_img FROM wp_product where id = '$id'");
+      $product_img = mysqli_fetch_array($find_img);
+
+      //Blank na jaye update ke time
+      if( $name ==""){         
+         $img = $product_img['pro_img'];
+      }else{
+         $rand = time().'_';
+         $des_path =ABSPATH."wp-content/themes/mytheme/img/" . $rand.$name;
+         move_uploaded_file($source_path,$des_path);
+         $img = $rand.$name;
+         unlink(ABSPATH."wp-content/themes/mytheme/img/" . $product_img['pro_img']); //folder mai se delete ho jayega
+      }
+
+?>
+		
+
+		<form action="" method="post" enctype="multipart/form-data">
+			<input type="file" name="fileToUpload" id="fileToUpload">
+		</form>
+
+```
+
 ### Searching
 ```php
 if(isset($_POST['search']))
