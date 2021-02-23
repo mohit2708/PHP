@@ -2,8 +2,8 @@
 
 ### Image Insert
 ```php
-		<?php 
-		$source_path = $_FILES['fileToUpload']['tmp_name'];
+<?php 
+    $source_path = $_FILES['fileToUpload']['tmp_name'];
     $name = $_FILES['fileToUpload']['name'];
 		
     $rand = time().'_';
@@ -12,7 +12,7 @@
 		
     $img = $rand.$name;
 		
-		$sql = "INSERT INTO wp_product (product_name,pro_cat,pro_img) VALUES ('$product_name','$nutrition','$img')";
+    $sql = "INSERT INTO wp_product (product_name,pro_cat,pro_img) VALUES ('$product_name','$nutrition','$img')";
 
 ==========update.php==============================
 $id = $_POST['id'];
@@ -22,7 +22,7 @@ $id = $_POST['id'];
       $find_img = mysqli_query($conn, "SELECT pro_img FROM wp_product where id = '$id'");
       $product_img = mysqli_fetch_array($find_img);
 
-      //Blank na jaye update ke time
+      //Blank na jaye update ke time agar file bina select kiye update karte hai to
       if( $name ==""){         
          $img = $product_img['pro_img'];
       }else{
