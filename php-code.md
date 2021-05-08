@@ -1,5 +1,113 @@
 # Php Code
 
+### Config.php
+```php
+<?php 
+define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT'].'myexamplan/');
+define('HTTP_PATH','http://'.$_SERVER['SERVER_NAME'].'/myexamplan');
+#echo '<pre>';
+#print_r($_SERVER);
+#die;
+?>
+```
+
+### Add Form By oops.
+```php
+=====================adduser.php
+<?php 
+include('../config/config.php');
+include(DOCUMENT_ROOT.'/common/common.php');
+include(DOCUMENT_ROOT.'/user/user_ctrl.php');
+$objclsUser = new clsUser();
+$objclsUser->getUser();
+
+echo clsCommon::getHeader();
+?>
+<table border='1'>
+<html>
+<head>
+</head>
+<body>
+<script src="<?php echo HTTP_PATH; ?>/js/jquery.min.js"></script>
+<form name="adduser" id="adduser" action="#" method="post" onsubmit="return validateForm()">
+<table border ="1">
+<tr>
+	<td>Name:</td><td><input type="text" id="name" name="name"></td>
+</tr>
+<tr>
+	<td>Email:</td><td><input type="text" id="emname" name="emname"></td>
+</tr>
+<tr>
+	<td>Password:</td>
+	<td><input type="password" id="dname" name="dname"></td>
+</tr>
+<tr>
+	<td><input type="submit" name="SubmitButton" value="Submit"/></td>
+</tr>
+</table>
+</form>
+<script src="<?php echo HTTP_PATH; ?>/js/common.js"></script>
+<?php echo clsCommon::getFooter(); ?>
+</body>
+</html>
+========================user_ctrl.php
+<?php 
+include('userlist_model.php');
+class  clsUser
+{
+	public function getUser()
+	{
+		if(@$_POST['SubmitButton'])
+		{
+			$txtName = $_POST['name'];
+			$eamil = $_POST['emname'];
+			$pas = $_POST['dname'];
+			$city = $_POST['cname'];
+			$coun = $_POST['ename'];
+			$User = new User();
+			$record = $User->AddUser($txtName,$eamil,$pas,$city,$coun);
+			return $record;
+		}
+	}
+}
+?>
+===========================userlist_modul.php
+<?php 
+class User
+{
+	public function User()	
+	{
+		mysql_connect("localhost", "root", "") ;
+		mysql_select_db("myexamplan");
+	}
+	
+	public function AddUser($txtName,$eamil,$pas,$city,$coun)
+	{
+			$sql = "INSERT INTO user (name,email,password,city,country_id) values('$txtName','$eamil','$pas','$city','$coun')";
+			mysql_query($sql);
+			echo $location ='userlist.php?msg=succ';
+			header("Location:$location");
+			exit();
+		
+	}
+	
+	public function getUserList()
+	{		
+		$sql ="select * from user";
+		$result = mysql_query($sql);
+		$record = array();
+		while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) 
+		{
+			$record[] = $row;
+		}
+		return $record;
+		mysql_free_result($result);	
+	}
+}
+?>
+```
+
+
 ### Image Insert
 ```php
 <?php 
