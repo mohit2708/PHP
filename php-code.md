@@ -106,7 +106,75 @@ class User
 }
 ?>
 ```
-
+### list show karna By oops
+```php
+============================usellist.php
+<?php 
+include('userlist_ctrl.php');
+$objclsUserList = new clsUserList();
+$record = $objclsUserList->getUserList();
+?>
+<table border='1'>
+<?php
+for($i=0;$i<count($record);$i++)
+{
+	?>
+	<tr>
+		<td><?php echo $record[$i]['id'];?></td>
+		<td><?php echo $record[$i]['name'];?></td>
+		<td><?php echo $record[$i]['email'];?></td>
+		<td><?php echo $record[$i]['password'];?></td>
+		<td><?php echo $record[$i]['city'];?></td>
+		<td><?php echo $record[$i]['country_id'];?></td>
+	</tr>
+	<?php 
+}
+?>
+=========userlist_ctrl.php
+<?php 
+include('userlist_model.php');
+class  clsUserList
+{
+	public function getUserList()
+	{
+		$User = new User();
+		$record = $User->getUserList();
+		return $record;
+	}
+}
+?>
+=======================user_model.php
+<?php 
+class User
+{
+	public function User()	
+	{
+		mysql_connect("localhost", "root", "") ;
+		mysql_select_db("myexamplan");
+	}
+	public function AddUser($txtName,$eamil,$pas,$city,$coun)
+	{
+			$sql = "INSERT INTO user (name,email,password,city,country_id) values('$txtName','$eamil','$pas','$city','$coun')";
+			mysql_query($sql);
+			echo $location ='userlist.php?msg=succ';
+			header("Location:$location");
+			exit();
+	}
+	public function getUserList()
+	{
+		$sql ="select * from user";
+		$result = mysql_query($sql);
+		$record = array();
+		while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) 
+		{
+			$record[] = $row;
+		}
+		return $record;
+		mysql_free_result($result);
+	}
+}
+?>
+```
 
 ### Image Insert
 ```php
