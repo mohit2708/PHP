@@ -65,22 +65,16 @@ __Ans.__ Cakephp, Laravel, Codeigniter, Yii 2, Zend Framework, Phalcon, Slim, Fu
 __Ans.__ Wordpress, Joomla, Magento, Drupal, etc
 
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. Full Form of LAMP?
-__Ans.__ Linux Apache MySql and Php.
-
-**[⬆ Back to Top](#table-of-contents)**
-### Ques. Full Form of WAMP?
-__Ans.__ Windows Apache MySql And Php.
-
-**[⬆ Back to Top](#table-of-contents)**
-### Ques. Full Form of XAMPP?
-__Ans.__
-X-OS, Apache Mysql Php Perl
-X: Any of the different operating system(Windows, Linux, Mac OS X), to be read as “cross”, meaning cross-platform.
-Apache(HTTP Server)
-Mysql(Database)
-PHP
-Perl
+### Ques. Full Form of LAMP, WAMP, XAMPP?
+* __LAMP:-__ Linux Apache MySql and Php.
+* __WAMP:-__ Windows Apache MySql And Php.
+* __XAMPP:-__ 
+X-OS, Apache Mysql Php Perl<br>
+X: Any of the different operating system(Windows, Linux, Mac OS X), to be read as “cross”, meaning cross-platform.<br>
+Apache(HTTP Server)<br>
+Mysql(Database)<br>
+PHP<br>
+Perl<br>
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. Difference between Php4 and php5?
