@@ -1,5 +1,3 @@
-# PHP programs
-
 ### Table of Contents
 
 | No. | Questions |
@@ -37,7 +35,6 @@
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-
 ### Swap Number Without Third Variable?
 ```php
 <?php
@@ -69,8 +66,8 @@ Output:- anexas tihom
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Revers number?
-###### Type 1st:-
 ```php
+# Type 1st:-
 <?php
  $num = 2039;
  $revnum = 0;
@@ -81,9 +78,9 @@ Output:- anexas tihom
  } 
  echo "Reverse number: $revnum";
 ?>
-```
-###### Type 2nd:-
-```php
+
+--------------------------------------------------------------------------
+# Type 2nd:-
 <?php  
  $num = 23456;  
  $revnum = 0;  
@@ -382,21 +379,24 @@ Output:-
 11111
 ```
 
+
 ```php
 <?php
-for($i=0;$i<=3;$i++){				
-for($j=1;$j<=$i;$j++){
-echo $j;		
-}
-echo '<br>';
+ for($i=0;$i<=5;$i++){
+ for($j=1;$j<=$i;$j++){
+ echo $j;
+ }
+ echo '<br>';
 } 
 ?>
-
 Output:-
 1
 12
 123
+1234
+12345
 ```
+
 
 ```php
 <?php
@@ -701,22 +701,3 @@ The Number is: 3<br>
 The Number is: 4<br>
 The Number is: 5<br>
 ```
-
-```php
-<?php
- for($i=0;$i<=5;$i++){
- for($j=1;$j<=$i;$j++){
- echo $j;
- }
- echo '<br>';
-} 
-?>
-Output:-
-1
-12
-123
-1234
-12345
-```
-
-
