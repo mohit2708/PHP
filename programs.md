@@ -244,6 +244,36 @@ Output:-
 Output:-  odd number
 ```
 
+### Array Questions
+
+##### Sort an Array / Using Bubble sort
+```php
+<?php
+function bubbleSort(array $arr)
+{
+    $n = count($arr);
+    for ($i = 1; $i<$n; $i++)
+		{
+        for ($j = $n-1; $j>= $i; $j--) 
+		{
+			if($arr[$j-1] > $arr[$j]) 
+			{
+				$tmp = $arr[$j-1];
+                $arr[$j-1] = $arr[$j];
+                $arr[$j] = $tmp;
+            }
+        }
+    }
+     return $arr;
+}
+echo '<pre>'; 
+$arr = array(255,1,22,3,45,5);
+$result = bubbleSort($arr);
+print_r($result);
+?>
+Output:- 1 3 5 22 45 255
+```
+
 **[⬆ Back to Top](#table-of-contents)**
 ### Minimum value in array:-
 __Type 1__
@@ -294,22 +324,6 @@ echo $b;
 ?>
 ```
 
-### Add space after 2 character:- //my-na-me-is-mo-hi-ts
-```php
-<?php
-$str = "my name is mohit saxena";
-$len = strlen($str);
-for($i=0; $i<$len; $i++)
-{
-	if($i%2==0 && $i!=0)
-	{
-		echo "-";
-	}
-	echo $str[$i];
-}
-?>
-```
-
 ### Array max value:- 
 __Type 1__
 ```php
@@ -338,6 +352,22 @@ for($i=0;$i<$l;$i++)
     }
 }
 echo $res;
+?>
+```
+
+### Add space after 2 character:- //my-na-me-is-mo-hi-ts
+```php
+<?php
+$str = "my name is mohit saxena";
+$len = strlen($str);
+for($i=0; $i<$len; $i++)
+{
+	if($i%2==0 && $i!=0)
+	{
+		echo "-";
+	}
+	echo $str[$i];
+}
 ?>
 ```
 
@@ -491,33 +521,7 @@ for( $j = 2; $j <= $num; $j++ )
 Output:- 2 3 5 7 11 13 17 19 23
 ```
 
-### Bubble sort
-```php
-<?php
-function bubbleSort(array $arr)
-{
-    $n = count($arr);
-    for ($i = 1; $i<$n; $i++)
-		{
-        for ($j = $n-1; $j>= $i; $j--) 
-		{
-			if($arr[$j-1] > $arr[$j]) 
-			{
-				$tmp = $arr[$j-1];
-                $arr[$j-1] = $arr[$j];
-                $arr[$j] = $tmp;
-            }
-        }
-    }
-     return $arr;
-}
-echo '<pre>'; 
-$arr = array(255,1,22,3,45,5);
-$result = bubbleSort($arr);
-print_r($result);
-?>
-Output:- 1 3 5 22 45 255
-```
+
 
 ### Print the Odd Number
 ```php
@@ -555,7 +559,7 @@ abc ($n1,$n2);
 Output:- 21
 ```
 
-### Array mai 1 position & 4 position ki value ko add karna
+##### Array mai 1 position & 4 position ki value ko add karna
 ```php
 <?php
 function add($x,$y) 
