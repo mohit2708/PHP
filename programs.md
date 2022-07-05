@@ -705,3 +705,1069 @@ The Number is: 3<br>
 The Number is: 4<br>
 The Number is: 5<br>
 ```
+
+
+https://phpgurukul.com/php-programming-logical-interview-questions-answers/
+For Array logic questions link
+https://www.mostlikers.com/p/php-logical-interview-questions-and.html
+https://www.tutsmake.com/php-logical-interview-questions-and-answers-for-1235-year-experience/
+
+https://www.bestinterviewquestion.com/php-arrays
+programmes
+https://www.letsknowit.com/php-programming-questions
+
+https://www.w3resource.com/php-exercises/php-for-loop-exercises.php
+
+https://tutorialdeep.com/php/print-pyramid-star-patterns-php/
+
+Q1):- Remove Duplicate records from an array.
+Ans1:- 
+$array1 = array(2,3,4,2,3,4,5,4,6,3,7,4,7,2,6,4);
+$array2 = array();
+foreach($array1 as $key=>$val) {
+	$array2[$val] = $val;
+}
+
+print_r($array2);
+
+Q2:- Find largest and second largest number from the array
+Ans:-
+$array1 = array(2,4,2,3,3,6,5,9,3,15,4,5,6,9);
+$maxV = $minV = 0;
+foreach($array1 as $key=>$val) {
+	if($val > $maxV) {
+    	$minV = $maxV;
+    	$maxV = $val;
+        
+    } else if($val > $minV && $val != $maxV) {
+    	$minV = $val;
+    }
+
+}
+echo "<pre>";
+print_r($minV);
+echo "<br />";
+print_r($maxV);
+
+or 
+Q2:- Find the largest and second,third fourth and fifth largest number from the array.
+Ans:- $array1 = array(2,4,2,3,3,6,5,9,11,3,15,4,5,6,9);
+$maxV = $minV = $thirdLN = $fourthLN = $fifthLN = 0;
+foreach($array1 as $key=>$val) {
+	if($val > $maxV) {
+    	$fifthLN = $fourthLN;
+    	$fourthLN = $thirdLN;
+    	$thirdLN = $minV;
+        $minV = $maxV;
+        $maxV = $val;
+        
+    } else if($val > $minV && $val != $maxV) {
+    	$minV = $val;
+    } else if($val > $thirdLN && $val != $maxV && $val != $minV) {
+    	$thirdLN = $val;
+    } else if($val > $fourthLN && $val != $maxV && $val != $minV && $val != $thirdLN) {
+    	$fourthLN = $val;
+    } else if($val > $fifthLN && $val != $maxV && $val != $minV && $val != $thirdLN && $val != $fourthLN) {
+    	$fifthLN = $val;
+    }
+
+}
+echo "<pre>";
+print_r($fifthLN);
+echo "<br />";
+print_r($fourthLN);
+echo "<br />";
+print_r($thirdLN);
+echo "<br />";
+print_r($minV);
+echo "<br />";
+print_r($maxV);
+
+Q3:- Find the largest and minimum number from the array
+Ans:-
+$array1 = [2,4,6,8,3,4,2,6,8,10,45,11];
+Using Array function.
+For max array = max($array1)
+For min array = min($array1)
+-----------------------------------
+$min = $max = $array1[0];
+foreach($array1 as $val) {
+    if($val <= $min ) {
+        $min =  $val ;
+    }
+if($val > $max ) {
+        $max =  $val ;
+    }
+}
+
+echo $min;
+echo "<br>";
+echo $max;
+
+
+Q4:-Reverse given string in php
+Ans:-
+$string = "NADEEM";
+       $length = strlen($string);
+       for($i=($length-1); $i >= 0 ; $i--)
+       {
+       echo $string[$i];
+       }
+OR
+$str = 'Nadeem';
+
+$length = strlen($str);
+
+$rev = '';
+for($i = $length-1; $i >= 0; $i--) {
+    
+    $rev .= $str[$i]; 
+    
+}
+
+echo $rev;
+
+Q5 – Swap two values without third variable ?
+Answer –
+
+$a = 10;
+$b = 5;
+$a = $a + $b;
+$b = $a - $b;
+$a = $a - $b;
+
+echo $a;
+echo "<br>";
+echo $b;
+
+Q6 – Swap two values with third variable ?
+Answer –
+
+
+$a = 10;
+$b = 5;
+$c = $a;
+$a = $b;
+$b = $c;
+
+echo $a;
+echo "<br>";
+echo $b;
+
+Q6 – Print even number from the given array ?
+Answer –
+
+
+$array1 = [2,3,6,9,1,7,4,3,5];
+$array2 = array();
+foreach($array1 as $key => $val) {
+   if(($val % 2) == 0) {
+   $array2[] = $val;
+   }
+
+}
+
+echo "<pre>";
+print_r($array2);
+Print even no and remove dublicate even number
+$arr = [2,5,4,2,6,9,4,2,5,8];
+$evenNo = [];
+foreach($arr as $key => $val) {
+    if($val%2 == 0) {
+        $evenNo[$val] = $val;
+    }
+}
+
+
+print_r($evenNo);
+
+Q6 – Print odd number from the given array ?
+Answer –
+
+$array1 = [2,3,6,9,1,7,4,3,5];
+$array2 = array();
+foreach($array1 as $key => $val) {
+   if(($val % 2) == 1) {
+   $array2[] = $val;
+   }
+
+}
+
+echo "<pre>";
+print_r($array2);
+
+print odd number but remove the dublicate odd number
+$arr = [2,5,4,2,6,9,4,2,5,8];
+$oddNo = [];
+foreach($arr as $key => $val) {
+    if($val%2 == 1) {
+        $oddNo[$val] = $val;
+    }
+}
+
+
+print_r($oddNo);
+
+Q7:- Check given number is prime or not.
+Ans:- Prime number:-A number that is divisible only by itself and 1 is called prime number (e.g. 2, 3, 5, 7, 11).
+$num = 11;  
+$count=0;  
+
+for ($i = 1; $i <= $num; $i++) {
+	if(($num % $i) == 0) {
+    	$count ++;
+    }
+}
+
+if($count == 2) {
+ 	echo $num. " Number is prime";
+} else {
+	echo $num. " Number is not prime";
+}
+
+Q8:- Print 1 to 100 prime numbers
+Ans:-
+function primeno($n){
+
+  for($i=1;$i<=$n;$i++){  //numbers to be checked as prime
+
+          $counter = 0; 
+          for($j = 1; $j <= $i; $j++) { //all divisible factors
+
+
+                if($i % $j==0) { 
+
+                      $counter++;
+                }
+          }
+
+        //prime requires 2 rules ( divisible by 1 and divisible by itself)
+        if($counter==2){
+
+               print $i." is Prime <br/>";
+        }
+    }
+} 
+
+primeno(100);  //find prime numbers from 1-100
+
+
+Q9:- Print 1 to 100 alternate prime numbers.
+Ans:-
+function primeno($n){
+  $alternate = 0;
+  for($i=1;$i<=$n;$i++){  //numbers to be checked as prime
+
+          $counter = 0; 
+          for($j=1;$j<=$i;$j++){ //all divisible factors
+
+
+                if($i % $j==0){ 
+
+                      $counter++;
+                }
+          }
+
+        //prime requires 2 rules ( divisible by 1 and divisible by itself)
+        if($counter==2){
+	if($alternate == 1) {
+                $alternate = 0;
+                } else {
+             		print $i." is Prime <br/>";
+                    $alternate = 1;
+                }
+                 
+               
+        }
+    }
+} 
+
+primeno(100);  //find prime numbers from 1-100
+
+Q:-Print prime no only given number by the user like if suppose user enter 5 then it should print 5 prime no.
+Ans:-
+<?php
+
+function primeNo($n) {
+    $length = $n*$n;
+    for($i=2; $i <= $length; $i++) {
+        $count = 0;
+        for($j=1; $j<=$i; $j++) {
+            if($i % $j == 0) {
+                $count++;
+            }            
+        }
+        if($count == 2) {
+            $n--;
+            echo $i. " is a prime no". "\n";
+        }
+        if($n==0)  {
+            break;
+        }
+        
+    }
+}
+
+primeNo(5);
+OUTPUT:-
+2 is a prime no
+3 is a prime no
+5 is a prime no
+7 is a prime no
+11 is a prime no
+
+Q:- What is the output below.
+$search = "Hello";
+
+$string = "Hello welcome to in Chetu India";
+
+if(strpos($search, $string)) {
+    echo "found";
+}else {
+    echo "not found";
+}
+Ans:- not found because “Hello” is the zero position and strpos return position of a string.
+
+Q:- Sorting array in php.
+Ans:-
+    $array = array(1, 6, 23, 10, 3, 2, 15,7);
+    $total = count($array);
+    for ($i=0; $i < $total; $i++) { 
+        for ($j=$i+1; $j < $total; $j++) { 
+            if($array[$i] > $array[$j]) {
+                $temp = $array[$i];
+                $array[$i] = $array[$j];
+                $array[$j] = $temp;
+            }
+        }
+    }
+    echo '<pre>';
+    echo "Ascending Sorted Array is: "; 
+    print_r($array);
+or
+$arr = [3,5,10,66,22,31,5,7,34,1,9];
+for($i = 0; $i < count($arr); $i++) {
+    for($j=0; $j< count($arr)-1; $j++) {
+        if($arr[$j] > $arr[$j+1]) {
+            $temp = $arr[$j];
+            $arr[$j] = $arr[$j+1];
+            $arr[$j+1] = $temp;
+        }
+    }
+}
+print_r($arr);die;
+
+7.show only duplicate values from an array without built-in function PHP. ex array $arr = array(8,9,10,3,4,8,7,9,11,3);
+Ans:-
+<?php
+$arr = array(8,9,10,3,4,8,7,9,11,3);
+foreach($arr as $key => $val)
+{
+  unset($arr[$key]); 
+  if (in_array($val,$arr))
+  {
+    echo $val . ",";
+  }
+} 
+8. Write a Function that combines two lists by alternatingly taking element. For example Given two lists [a, b, c] and [1, 2, 3] the function should return [a, 1, b, 2, c, 3]
+Ans:-
+<?php
+    
+    $arr = array(‘a’,’b’,’c’);
+    $arr1 = array(1,2,3);
+    $new_array = array();
+
+    for ($i=0; $i < count($arr); $i++)
+    { 
+        $new_array[] = $arr[$i];
+        $new_array[] = $arr1[$i];
+
+    }
+    echo '<pre>'; print_r($new_array);
+?>
+Q:- Sum numberic value from array if array has string and numberic value.
+Ans:-
+$a = ['w',3,'tk','nm', 5,8,'4','9klp','lk'];
+$sum = 0;
+foreach($a as $key => $val) {
+    
+   if(is_numeric($val)) {
+       $sum = $sum+ $val;
+   } 
+}
+echo $sum;
+
+Q:- Write a program to concatenate two strings character by character. e.g : JOHN + SMITH = JSOMHINTH
+Ans
+$str = 'JOHN';
+$str2 = 'SMITH';
+
+$arr = str_split($str);
+$arr2 = str_split($str2);
+
+// Find the longest string
+$max = max(array(strlen($str), strlen($str2)));
+or
+$max = max(count($arr1), count($arr2));
+
+$result = '';
+
+for($i = 0; $i < $max; $i++){
+    // Check if array key exists. If so, add it to result
+    if (array_key_exists($i, $arr)){
+        $result .= $arr[$i];
+    }
+
+    if (array_key_exists($i, $arr2)){
+        $result .= $arr2[$i]; 
+    }
+}
+
+echo $result; //JSOMHINTH
+
+Q:- Php Program to find Palindrome string?
+
+    $str = 'level';
+    $strLen = strlen($str)-1;
+    $revStr = '';
+    for($i=$strLen; $i>=0; $i--){
+        $revStr.=$str[$i];
+    }
+    if($revStr == $str)
+        echo 'Palindrome';
+    else
+        echo "Not Palindrome";
+
+Q:- count occurence of character in a string
+exp:-aabbccca
+output:-a3,b2,c3
+
+$str = "cdcdcdcdeeeefe";
+
+$arr = str_split($str);
+$result = array_count_values($arr);
+//print_r($result);die;
+
+$order = '';
+foreach($result as $key=>$value) {
+    $order .= $key.$value;
+    
+}
+
+print_r($order);die;
+
+OR Method 2
+$str = 'aabbccca';
+$arr = str_split($str);
+$newArr = [];
+foreach($arr as $key=> $val) {
+    $newArr[$val][] = $val;
+}
+$string = '';
+foreach($newArr as $k => $v) {
+    $string .= $k.count($v);
+}
+
+print_r($string);
+
+Factorial progamme usign recursive function
+
+function fact ($n)  
+{  
+    if($n <= 1)   
+    {  
+        return 1;  
+    }  
+    else   
+    {  
+        return $n * fact($n - 1);  
+    }  
+}  
+  
+echo "Factorial of 6 is " .fact(6);  
+
+Q:-$a = "PHP";
+$b = $a + 1;
+echo $b;
+
+
+
+
+
+Q:-
+
+
+      1
+    1 2 1
+  1 2 3 2 1
+1 2 3 4 3 21
+
+
+Ans:-
+<?php
+for($i = 1; $i <= 4; $i++) {
+    for($j=1; $j <= 4-$i; $j++) {
+        
+        echo ' ';
+        
+    }
+    for($k=1; $k<=$i; $k++){
+        echo $k. " ";
+    }
+    for($m=($i-1); $m>=1; $m--){
+        echo $m . " ";
+    }
+
+    echo "\n";
+}
+
+Q:-Given a number and arrya find all possible combinations that sum of the given numbers.
+Ans:-
+$arr = [1,2,1,1,1];
+$target = 3;
+for($i=0; $i < count($arr); $i++) {
+$sum = 0;
+for($j = $i; $j < count($arr); $j++) {
+$sum += $arr[$j];
+if($sum === $target){
+for($k = $i; $k <= $j; $k++) {
+echo $arr[$k]. " ";
+}
+echo "\n";
+}
+}
+}
+
+============================+++=========================++++++++++++++++++++++++++
+```PHP
+https://phpgurukul.com/php-programming-logical-interview-questions-answers/
+For Array logic questions link
+https://www.mostlikers.com/p/php-logical-interview-questions-and.html
+https://www.tutsmake.com/php-logical-interview-questions-and-answers-for-1235-year-experience/
+
+https://www.bestinterviewquestion.com/php-arrays
+programmes
+https://www.letsknowit.com/php-programming-questions
+
+https://www.w3resource.com/php-exercises/php-for-loop-exercises.php
+
+https://tutorialdeep.com/php/print-pyramid-star-patterns-php/
+
+Q1):- Remove Duplicate records from an array.
+Ans1:- 
+$array1 = array(2,3,4,2,3,4,5,4,6,3,7,4,7,2,6,4);
+$array2 = array();
+foreach($array1 as $key=>$val) {
+	$array2[$val] = $val;
+}
+
+print_r($array2);
+
+Q2:- Find largest and second largest number from the array
+Ans:-
+$array1 = array(2,4,2,3,3,6,5,9,3,15,4,5,6,9);
+$maxV = $minV = 0;
+foreach($array1 as $key=>$val) {
+	if($val > $maxV) {
+    	$minV = $maxV;
+    	$maxV = $val;
+        
+    } else if($val > $minV && $val != $maxV) {
+    	$minV = $val;
+    }
+
+}
+echo "<pre>";
+print_r($minV);
+echo "<br />";
+print_r($maxV);
+
+or 
+Q2:- Find the largest and second,third fourth and fifth largest number from the array.
+Ans:- $array1 = array(2,4,2,3,3,6,5,9,11,3,15,4,5,6,9);
+$maxV = $minV = $thirdLN = $fourthLN = $fifthLN = 0;
+foreach($array1 as $key=>$val) {
+	if($val > $maxV) {
+    	$fifthLN = $fourthLN;
+    	$fourthLN = $thirdLN;
+    	$thirdLN = $minV;
+        $minV = $maxV;
+        $maxV = $val;
+        
+    } else if($val > $minV && $val != $maxV) {
+    	$minV = $val;
+    } else if($val > $thirdLN && $val != $maxV && $val != $minV) {
+    	$thirdLN = $val;
+    } else if($val > $fourthLN && $val != $maxV && $val != $minV && $val != $thirdLN) {
+    	$fourthLN = $val;
+    } else if($val > $fifthLN && $val != $maxV && $val != $minV && $val != $thirdLN && $val != $fourthLN) {
+    	$fifthLN = $val;
+    }
+
+}
+echo "<pre>";
+print_r($fifthLN);
+echo "<br />";
+print_r($fourthLN);
+echo "<br />";
+print_r($thirdLN);
+echo "<br />";
+print_r($minV);
+echo "<br />";
+print_r($maxV);
+
+Q3:- Find the largest and minimum number from the array
+Ans:-
+$array1 = [2,4,6,8,3,4,2,6,8,10,45,11];
+Using Array function.
+For max array = max($array1)
+For min array = min($array1)
+-----------------------------------
+$min = $max = $array1[0];
+foreach($array1 as $val) {
+    if($val <= $min ) {
+        $min =  $val ;
+    }
+if($val > $max ) {
+        $max =  $val ;
+    }
+}
+
+echo $min;
+echo "<br>";
+echo $max;
+
+
+Q4:-Reverse given string in php
+Ans:-
+$string = "NADEEM";
+       $length = strlen($string);
+       for($i=($length-1); $i >= 0 ; $i--)
+       {
+       echo $string[$i];
+       }
+OR
+$str = 'Nadeem';
+
+$length = strlen($str);
+
+$rev = '';
+for($i = $length-1; $i >= 0; $i--) {
+    
+    $rev .= $str[$i]; 
+    
+}
+
+echo $rev;
+
+Q5 – Swap two values without third variable ?
+Answer –
+
+$a = 10;
+$b = 5;
+$a = $a + $b;
+$b = $a - $b;
+$a = $a - $b;
+
+echo $a;
+echo "<br>";
+echo $b;
+
+Q6 – Swap two values with third variable ?
+Answer –
+
+
+$a = 10;
+$b = 5;
+$c = $a;
+$a = $b;
+$b = $c;
+
+echo $a;
+echo "<br>";
+echo $b;
+
+Q6 – Print even number from the given array ?
+Answer –
+
+
+$array1 = [2,3,6,9,1,7,4,3,5];
+$array2 = array();
+foreach($array1 as $key => $val) {
+   if(($val % 2) == 0) {
+   $array2[] = $val;
+   }
+
+}
+
+echo "<pre>";
+print_r($array2);
+Print even no and remove dublicate even number
+$arr = [2,5,4,2,6,9,4,2,5,8];
+$evenNo = [];
+foreach($arr as $key => $val) {
+    if($val%2 == 0) {
+        $evenNo[$val] = $val;
+    }
+}
+
+
+print_r($evenNo);
+
+Q6 – Print odd number from the given array ?
+Answer –
+
+$array1 = [2,3,6,9,1,7,4,3,5];
+$array2 = array();
+foreach($array1 as $key => $val) {
+   if(($val % 2) == 1) {
+   $array2[] = $val;
+   }
+
+}
+
+echo "<pre>";
+print_r($array2);
+
+print odd number but remove the dublicate odd number
+$arr = [2,5,4,2,6,9,4,2,5,8];
+$oddNo = [];
+foreach($arr as $key => $val) {
+    if($val%2 == 1) {
+        $oddNo[$val] = $val;
+    }
+}
+
+
+print_r($oddNo);
+
+Q7:- Check given number is prime or not.
+Ans:- Prime number:-A number that is divisible only by itself and 1 is called prime number (e.g. 2, 3, 5, 7, 11).
+$num = 11;  
+$count=0;  
+
+for ($i = 1; $i <= $num; $i++) {
+	if(($num % $i) == 0) {
+    	$count ++;
+    }
+}
+
+if($count == 2) {
+ 	echo $num. " Number is prime";
+} else {
+	echo $num. " Number is not prime";
+}
+
+Q8:- Print 1 to 100 prime numbers
+Ans:-
+function primeno($n){
+
+  for($i=1;$i<=$n;$i++){  //numbers to be checked as prime
+
+          $counter = 0; 
+          for($j = 1; $j <= $i; $j++) { //all divisible factors
+
+
+                if($i % $j==0) { 
+
+                      $counter++;
+                }
+          }
+
+        //prime requires 2 rules ( divisible by 1 and divisible by itself)
+        if($counter==2){
+
+               print $i." is Prime <br/>";
+        }
+    }
+} 
+
+primeno(100);  //find prime numbers from 1-100
+
+
+Q9:- Print 1 to 100 alternate prime numbers.
+Ans:-
+function primeno($n){
+  $alternate = 0;
+  for($i=1;$i<=$n;$i++){  //numbers to be checked as prime
+
+          $counter = 0; 
+          for($j=1;$j<=$i;$j++){ //all divisible factors
+
+
+                if($i % $j==0){ 
+
+                      $counter++;
+                }
+          }
+
+        //prime requires 2 rules ( divisible by 1 and divisible by itself)
+        if($counter==2){
+	if($alternate == 1) {
+                $alternate = 0;
+                } else {
+             		print $i." is Prime <br/>";
+                    $alternate = 1;
+                }
+                 
+               
+        }
+    }
+} 
+
+primeno(100);  //find prime numbers from 1-100
+
+Q:-Print prime no only given number by the user like if suppose user enter 5 then it should print 5 prime no.
+Ans:-
+<?php
+
+function primeNo($n) {
+    $length = $n*$n;
+    for($i=2; $i <= $length; $i++) {
+        $count = 0;
+        for($j=1; $j<=$i; $j++) {
+            if($i % $j == 0) {
+                $count++;
+            }            
+        }
+        if($count == 2) {
+            $n--;
+            echo $i. " is a prime no". "\n";
+        }
+        if($n==0)  {
+            break;
+        }
+        
+    }
+}
+
+primeNo(5);
+OUTPUT:-
+2 is a prime no
+3 is a prime no
+5 is a prime no
+7 is a prime no
+11 is a prime no
+
+Q:- What is the output below.
+$search = "Hello";
+
+$string = "Hello welcome to in Chetu India";
+
+if(strpos($search, $string)) {
+    echo "found";
+}else {
+    echo "not found";
+}
+Ans:- not found because “Hello” is the zero position and strpos return position of a string.
+
+Q:- Sorting array in php.
+Ans:-
+    $array = array(1, 6, 23, 10, 3, 2, 15,7);
+    $total = count($array);
+    for ($i=0; $i < $total; $i++) { 
+        for ($j=$i+1; $j < $total; $j++) { 
+            if($array[$i] > $array[$j]) {
+                $temp = $array[$i];
+                $array[$i] = $array[$j];
+                $array[$j] = $temp;
+            }
+        }
+    }
+    echo '<pre>';
+    echo "Ascending Sorted Array is: "; 
+    print_r($array);
+or
+$arr = [3,5,10,66,22,31,5,7,34,1,9];
+for($i = 0; $i < count($arr); $i++) {
+    for($j=0; $j< count($arr)-1; $j++) {
+        if($arr[$j] > $arr[$j+1]) {
+            $temp = $arr[$j];
+            $arr[$j] = $arr[$j+1];
+            $arr[$j+1] = $temp;
+        }
+    }
+}
+print_r($arr);die;
+
+7.show only duplicate values from an array without built-in function PHP. ex array $arr = array(8,9,10,3,4,8,7,9,11,3);
+Ans:-
+<?php
+$arr = array(8,9,10,3,4,8,7,9,11,3);
+foreach($arr as $key => $val)
+{
+  unset($arr[$key]); 
+  if (in_array($val,$arr))
+  {
+    echo $val . ",";
+  }
+} 
+8. Write a Function that combines two lists by alternatingly taking element. For example Given two lists [a, b, c] and [1, 2, 3] the function should return [a, 1, b, 2, c, 3]
+Ans:-
+<?php
+    
+    $arr = array(‘a’,’b’,’c’);
+    $arr1 = array(1,2,3);
+    $new_array = array();
+
+    for ($i=0; $i < count($arr); $i++)
+    { 
+        $new_array[] = $arr[$i];
+        $new_array[] = $arr1[$i];
+
+    }
+    echo '<pre>'; print_r($new_array);
+?>
+Q:- Sum numberic value from array if array has string and numberic value.
+Ans:-
+$a = ['w',3,'tk','nm', 5,8,'4','9klp','lk'];
+$sum = 0;
+foreach($a as $key => $val) {
+    
+   if(is_numeric($val)) {
+       $sum = $sum+ $val;
+   } 
+}
+echo $sum;
+
+Q:- Write a program to concatenate two strings character by character. e.g : JOHN + SMITH = JSOMHINTH
+Ans
+$str = 'JOHN';
+$str2 = 'SMITH';
+
+$arr = str_split($str);
+$arr2 = str_split($str2);
+
+// Find the longest string
+$max = max(array(strlen($str), strlen($str2)));
+or
+$max = max(count($arr1), count($arr2));
+
+$result = '';
+
+for($i = 0; $i < $max; $i++){
+    // Check if array key exists. If so, add it to result
+    if (array_key_exists($i, $arr)){
+        $result .= $arr[$i];
+    }
+
+    if (array_key_exists($i, $arr2)){
+        $result .= $arr2[$i]; 
+    }
+}
+
+echo $result; //JSOMHINTH
+
+Q:- Php Program to find Palindrome string?
+
+    $str = 'level';
+    $strLen = strlen($str)-1;
+    $revStr = '';
+    for($i=$strLen; $i>=0; $i--){
+        $revStr.=$str[$i];
+    }
+    if($revStr == $str)
+        echo 'Palindrome';
+    else
+        echo "Not Palindrome";
+
+Q:- count occurence of character in a string
+exp:-aabbccca
+output:-a3,b2,c3
+
+$str = "cdcdcdcdeeeefe";
+
+$arr = str_split($str);
+$result = array_count_values($arr);
+//print_r($result);die;
+
+$order = '';
+foreach($result as $key=>$value) {
+    $order .= $key.$value;
+    
+}
+
+print_r($order);die;
+
+OR Method 2
+$str = 'aabbccca';
+$arr = str_split($str);
+$newArr = [];
+foreach($arr as $key=> $val) {
+    $newArr[$val][] = $val;
+}
+$string = '';
+foreach($newArr as $k => $v) {
+    $string .= $k.count($v);
+}
+
+print_r($string);
+
+Factorial progamme usign recursive function
+
+function fact ($n)  
+{  
+    if($n <= 1)   
+    {  
+        return 1;  
+    }  
+    else   
+    {  
+        return $n * fact($n - 1);  
+    }  
+}  
+  
+echo "Factorial of 6 is " .fact(6);  
+
+Q:-$a = "PHP";
+$b = $a + 1;
+echo $b;
+
+
+
+
+
+Q:-
+
+
+      1
+    1 2 1
+  1 2 3 2 1
+1 2 3 4 3 21
+
+
+Ans:-
+<?php
+for($i = 1; $i <= 4; $i++) {
+    for($j=1; $j <= 4-$i; $j++) {
+        
+        echo ' ';
+        
+    }
+    for($k=1; $k<=$i; $k++){
+        echo $k. " ";
+    }
+    for($m=($i-1); $m>=1; $m--){
+        echo $m . " ";
+    }
+
+    echo "\n";
+}
+
+Q:-Given a number and arrya find all possible combinations that sum of the given numbers.
+Ans:-
+$arr = [1,2,1,1,1];
+$target = 3;
+for($i=0; $i < count($arr); $i++) {
+$sum = 0;
+for($j = $i; $j < count($arr); $j++) {
+$sum += $arr[$j];
+if($sum === $target){
+for($k = $i; $k <= $j; $k++) {
+echo $arr[$k]. " ";
+}
+echo "\n";
+}
+}
+}
+```
