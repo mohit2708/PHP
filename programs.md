@@ -62,6 +62,20 @@ echo $a . ',' . $b;
 ?>
 Output:- anexas tihom
 ```
+```php
+<?php
+$str = 'Mohit Saxena';
+$length = strlen($str);
+
+$rev = '';
+for($i = $length-1; $i >= 0; $i--) {
+    $rev .= $str[$i]; 
+}
+echo $rev;
+?>
+
+Output:- anexaS tihoM
+```
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -244,7 +258,78 @@ Output:-
 Output:-  odd number
 ```
 
-### Array Questions
+# Array Questions
+
+### Remove Duplicate Elements or Values from Array
+```php
+<?php
+$givenArray = array(2,5,2,10,4,5,8,16);
+$uniqueArry = array();
+
+foreach($givenArray as $val) { 
+   $uniqueArry[] = $val;
+}
+print_r($uniqueArry);
+?>
+
+Output:- Array ( [0] => 2 [1] => 5 [2] => 2 [3] => 10 [4] => 4 [5] => 5 [6] => 8 [7] => 16 )
+----------------------------------------------------------------------------------------
+
+<?php
+$givenArray = array(2,5,2,10,4,5,8,16);
+$uniqueArry = array();
+ 
+foreach($givenArray as $val) { //Loop1 
+    foreach($uniqueArry as $uniqueValue) { //Loop2 
+        if($val == $uniqueValue) {
+            continue 2; // Referring Outer loop (Loop 1)
+        }
+    }
+    $uniqueArry[] = $val;
+}
+print_r($uniqueArry);
+?>
+
+Output:- Array ( [0] => 2 [1] => 5 [2] => 10 [3] => 4 [4] => 8 [5] => 16 )
+--------------------------------------------------------------------------------
+
+<?php
+$inputArray = array(1, 4, 2, 1, 6, 4, 9, 7, 2, 9);
+$outputArray = array();
+
+foreach ($inputArray as $val){
+ if(!in_array($val,$outputArray)){
+  $outputArray[] = $val;
+ }
+}
+print_r($outputArray);
+?>
+
+Output:- Array ( [0] => 1 [1] => 4 [2] => 2 [3] => 6 [4] => 9 [5] => 7 )
+```
+
+### Find duplicate values in array
+```php
+<?php
+$givenArray = array(16, 2,5,2,10,4,5,8,16);
+
+$duplicateValues = array();
+
+$uniqueValues = array();
+ 
+foreach($givenArray as $val) {    
+    if (!isset($uniqueValues[$val])) {
+         $uniqueValues[$val] = $val;
+    } else {
+        $duplicateValues[] = $val;
+    }
+  
+}
+print_r($duplicateValues);
+?>
+
+Output:- Array ( [0] => 2 [1] => 5 [2] => 16 )
+```
 
 ##### Sort an Array / Using Bubble sort
 ```php
