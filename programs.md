@@ -13,6 +13,8 @@
 |9  | [Find The Number Even Or Odd?](#Find-The-Number-Even-Or-Odd)|
 |10 | [Highest Value in the array?](#Highest-Value-in-the-array)|
 |   | [String Pattern](#string-Pattern)|
+|   | [Highest Value in the array?](#Highest-Value-in-the-array)|
+|   | [Find the largest first, second, third, fourth and fifth largest number from the array](#find-the-largest-first-second-third-fourth-and-fifth-largest-number-from-the-array)
 
 
 ### Swap Number?
@@ -392,6 +394,42 @@ for ($i=0; $i<$l; $i++)
     }
 echo $z;
 ?>
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+### Find the largest first, second, third, fourth and fifth largest number from the array.
+```phph
+<?php
+$array1 = array(2,4,2,3,3,6,5,9,3,15,4,5,6,9);
+$first_highest = 0;
+$second_highest = 0;
+$third_highest = 0;
+
+foreach($array1 as $key=>$val) {
+	if($val > $first_highest) {
+        $second_highest = $first_highest;
+    	$first_highest = $val;
+
+     
+    }else if($val > $second_highest && $val != $first_highest) {
+    	$second_highest = $val;
+    }else if($val > $third_highest && $val != $first_highest && $val != $second_highest) {
+    	$third_highest = $val;
+    }
+
+}
+
+print_r($first_highest);
+echo "<br />";
+print_r($second_highest);
+echo "<br />";
+print_r($third_highest);
+?>
+
+Output:-
+15
+9
+6
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
